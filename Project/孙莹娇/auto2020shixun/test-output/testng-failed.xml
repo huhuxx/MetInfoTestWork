@@ -5,10 +5,9 @@
     <classes>
       <class name="com.webtest.demo.Admin_Login">
         <methods>
-          <include name="doAfterMethod"/>
-          <include name="test5"/>
+          <include name="test2"/>
+          <include name="test4"/>
           <include name="mailUtil"/>
-          <include name="doBeforeClass"/>
         </methods>
       </class> <!-- com.webtest.demo.Admin_Login -->
     </classes>

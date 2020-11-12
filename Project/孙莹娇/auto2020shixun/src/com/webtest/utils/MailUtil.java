@@ -1,9 +1,11 @@
 package com.webtest.utils;
 
 
-
+import java.text.SimpleDateFormat;
 import java.util.Properties;
 
+import javax.activation.DataHandler;
+import javax.activation.FileDataSource;
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -11,9 +13,11 @@ import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
-public class MailUtil {
+public class MailUtil extends FreeMarker{
 	
 	// 发送者
 	public String sender = ReadProperties.getPropertyValue("sender");
@@ -30,7 +34,7 @@ public class MailUtil {
 	public String value1 = ReadProperties.getPropertyValue("value1");
 	public String value2 = ReadProperties.getPropertyValue("value2");
 	
-	
+	public String dir=ReadProperties.getPropertyValue("dir");
 	public Properties props;
 	
 	public MailUtil() {
@@ -61,8 +65,20 @@ public class MailUtil {
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(toArray[i]));
 			}
 //			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
+//			设置标题
 			message.setSubject("发送邮件-孙莹娇");
 			message.setText(content);
+			
+//			一个Multipart对象包含一个或多个bodypart对象，组成邮件正文
+			MimeMultipart mimeMultipart =new MimeMultipart();
+			//读取本地测试报告文件,将文件添加到"节点"
+			MimeBodyPart file=new MimeBodyPart();
+			SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
+			DataHandler dataHandler1 = new DataHandler(new FileDataSource(dir +"/report"+ft.format(date)+".html"));
+	        file.setDataHandler(dataHandler1);
+	        
+	        mimeMultipart.addBodyPart(file);
+	        message.setContent(mimeMultipart);
 					
 
 			// 发送邮件
