@@ -28,13 +28,16 @@ public class FreeMarker extends JavaMailTestListener {
 		// 加载模板
 		Template template = conf.getTemplate("/freemarkerReport.ftl");
 		// 定义数据
-		Map root = new HashMap();
+		Map<String, Object> root = new HashMap<String, Object>();
+//		Map root = new HashMap();
 		root.put("casesize" ,caseSize);
 		root.put("failcasesize" ,failSize);
 		root.put("successcasesize",successSize);
+		root.put("skipsize",skipSize);
 		root.put("message", content);
-//        root.put("successTests", "测试报告");
-//        root.put("failTest", value)
+	
+		root.put("testMethodsList",testMethodsList);
+		
 		// 定义输出
 		date =new Date();
 		root.put("date",date);
@@ -42,8 +45,6 @@ public class FreeMarker extends JavaMailTestListener {
 		String reportFile=dir +"/report"+ft.format(date)+".html";
 		Writer out = new FileWriter(reportFile);
 		template.process(root, out);
-		
-		
 
 		out.flush();
 		out.close();

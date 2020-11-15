@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+  <suite name="Default suite" duration-ms="58" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+    <test name="Default test" duration-ms="58" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
       <class name="com.webtest.demo.Admin_Login">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test1" duration-ms="9" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test1" duration-ms="10" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test2" duration-ms="2" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+        <test-method status="FAIL" signature="test2()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test2" duration-ms="2" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [4] but found [1]]]>
@@ -58,11 +58,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test3" duration-ms="1" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test3" duration-ms="2" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method status="FAIL" signature="test4()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test4" duration-ms="1" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:21 CST">
+        <test-method status="FAIL" signature="test4()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test4" duration-ms="1" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:30 CST">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [2] but found [1]]]>
@@ -109,7 +109,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="mailUtil" is-config="true" duration-ms="1511" started-at="2020-11-12T10:10:21 CST" finished-at="2020-11-12T10:10:22 CST">
+        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="mailUtil" is-config="true" duration-ms="1570" started-at="2020-11-15T09:18:30 CST" finished-at="2020-11-15T09:18:31 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mailUtil -->
