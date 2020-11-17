@@ -33,9 +33,7 @@ public class FreeMarker extends JavaMailTestListener {
 		root.put("casesize" ,caseSize);
 		root.put("failcasesize" ,failSize);
 		root.put("successcasesize",successSize);
-		root.put("skipsize",skipSize);
-		root.put("message", content);
-	
+		root.put("skipsize",skipSize);	
 		root.put("testMethodsList",testMethodsList);
 		
 		// 定义输出

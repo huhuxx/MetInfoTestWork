@@ -45,7 +45,7 @@ public class MailUtil extends FreeMarker{
 		
 	}
 
-	public void sendMail(String content) {
+	public void sendMail() {
 		Session session = Session.getInstance(props, new Authenticator() {
 
 			@Override
@@ -67,7 +67,7 @@ public class MailUtil extends FreeMarker{
 //			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 //			设置标题
 			message.setSubject("发送邮件-孙莹娇");
-			message.setText(content);
+//			message.setText(content);
 			
 //			一个Multipart对象包含一个或多个bodypart对象，组成邮件正文
 			MimeMultipart mimeMultipart =new MimeMultipart();

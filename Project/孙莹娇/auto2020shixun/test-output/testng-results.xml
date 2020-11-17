@@ -1,119 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
+  <suite name="Default suite" duration-ms="25986" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:44 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
-      <class name="com.webtest.demo.Admin_Login">
-        <test-method status="PASS" signature="test1()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test1" duration-ms="12" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
+    <test name="Default test" duration-ms="25986" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:44 CST">
+      <class name="com.webtest.demo.Products">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Products@6e6c3152]" name="doBeforeClass" is-config="true" duration-ms="4405" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:23 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="FAIL" signature="test2()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test2" duration-ms="2" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [4] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [4] but found [1]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:839)
-at org.testng.Assert.assertEquals(Assert.java:849)
-at com.webtest.demo.Admin_Login.test2(Admin_Login.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.Products@6e6c3152]" name="loginTest" duration-ms="8703" started-at="2020-11-16T17:14:23 CST" finished-at="2020-11-16T17:14:32 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="test3()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test3" duration-ms="1" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="productTest()[pri:1, instance:com.webtest.demo.Products@6e6c3152]" name="productTest" duration-ms="12850" started-at="2020-11-16T17:14:32 CST" finished-at="2020-11-16T17:14:44 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3 -->
-        <test-method status="FAIL" signature="test4()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="test4" duration-ms="1" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:06 CST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [2] but found [1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [2] but found [1]
-at org.testng.Assert.fail(Assert.java:97)
-at org.testng.Assert.assertEqualsImpl(Assert.java:136)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:839)
-at org.testng.Assert.assertEquals(Assert.java:849)
-at com.webtest.demo.Admin_Login.test4(Admin_Login.java:48)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(Unknown Source)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.Admin_Login@32709393]" name="mailUtil" is-config="true" duration-ms="674" started-at="2020-11-15T09:46:06 CST" finished-at="2020-11-15T09:46:07 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mailUtil -->
-      </class> <!-- com.webtest.demo.Admin_Login -->
+        </test-method> <!-- productTest -->
+      </class> <!-- com.webtest.demo.Products -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
