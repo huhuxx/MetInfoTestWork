@@ -1,0 +1,83 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>自动化测试报告</title>
+            <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+            <h2 style="font-family: Microsoft YaHei">自动化测试报告</h2>
+            <p class='attribute'><strong>测试结果 : </strong> 共 10，通过 9，失败 1</p>
+            
+        </head>
+        <body>
+            <table id='result_table' class="table table-condensed table-bordered table-hover" >
+                <colgroup>
+                    <col align='left' />
+                    <col align='right' />
+                    <col align='right' />
+                    <col align='right' />
+                </colgroup>
+                <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+                    <th width="25%">客户端及版本</th>
+                    <th width="25%">通过率%</th>
+                    <th width="25%">开始时间</th>
+                    <th width="25%">结束时间</th>
+                </tr>
+                
+        <tr class='failClass warning'>
+            <td > 3.8.8</td>
+            <td>99</td>
+            <td>2019-04-17 20:21:27</td>
+            <td>2019-04-17 20:21:27</td>
+        </tr>
+            </table>
+        <!-- 执行模块 -->
+        <p class='attribute'><strong>测试详情 : </strong> 执行结果</p>    
+            <table id='result_table' class="table table-condensed table-bordered table-hover">
+                <colgroup>
+                    <col align='left' />
+                    <col align='right' />
+                    <col align='right' />
+                    <col align='right' />
+                </colgroup>
+                <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+                    <th colspan="2">业务模块</th>
+                    <th>用例总数</th>
+                    <th>通过数</th>
+                    <th>状态</th>
+                </tr>
+                 <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+                    <th width="20%"></th>
+                    <th width="20%">模块1</th>
+                    <th width="20%">10</th>
+                    <th width="20%">8</th>
+                    <th width="20%"><font color="green">PASS</font></th>
+                </tr>                           
+                
+        <tr class='failClass warning'>
+            <td></td>
+            <td>3.8.8</td>
+            <td>100</td>
+            <td>90</td>
+            <td><font color="green">PASS</font></td>
+        </tr>
+                 <tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+                    <th width="20%"></th>
+                    <th width="20%">模块2</th>
+                    <th width="20%">10</th>
+                    <th width="20%">8</th>
+                    <th width="20%"><font color="#FF0000">Fail</font></th>
+                </tr>                           
+                
+        <tr class='failClass warning'>
+            <td></td>
+            <td>3.8.8</td>
+            <td>100</td>
+            <td>90</td>
+            <td><font color="#FF0000">Fail</font></td>
+        </tr>        
+        
+            </table>        
+
+            
+        </body>
+        </html>
