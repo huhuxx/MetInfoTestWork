@@ -4,7 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 
+import org.apache.logging.log4j.core.util.Assert;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
