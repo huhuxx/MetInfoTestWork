@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="25986" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:44 CST">
+  <suite name="Default suite" duration-ms="96268" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:29:01 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="25986" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:44 CST">
-      <class name="com.webtest.demo.Products">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.Products@6e6c3152]" name="doBeforeClass" is-config="true" duration-ms="4405" started-at="2020-11-16T17:14:18 CST" finished-at="2020-11-16T17:14:23 CST">
+    <test name="Default test" duration-ms="96268" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:29:01 CST">
+      <class name="com.webtest.demo.NowPageSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="doBeforeClass" is-config="true" duration-ms="4891" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:27:30 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.Products@6e6c3152]" name="loginTest" duration-ms="8703" started-at="2020-11-16T17:14:23 CST" finished-at="2020-11-16T17:14:32 CST">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="loginTest" is-config="true" duration-ms="8635" started-at="2020-11-23T17:27:30 CST" finished-at="2020-11-23T17:27:38 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="productTest()[pri:1, instance:com.webtest.demo.Products@6e6c3152]" name="productTest" duration-ms="12850" started-at="2020-11-16T17:14:32 CST" finished-at="2020-11-16T17:14:44 CST">
+        <test-method status="PASS" signature="siteInfoSetting1()[pri:1, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="siteInfoSetting1" duration-ms="42309" started-at="2020-11-23T17:27:38 CST" finished-at="2020-11-23T17:28:21 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productTest -->
-      </class> <!-- com.webtest.demo.Products -->
+        </test-method> <!-- siteInfoSetting1 -->
+        <test-method status="PASS" signature="otherImg()[pri:2, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="otherImg" duration-ms="21124" started-at="2020-11-23T17:28:21 CST" finished-at="2020-11-23T17:28:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otherImg -->
+        <test-method status="PASS" signature="localImg()[pri:3, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="localImg" duration-ms="19232" started-at="2020-11-23T17:28:42 CST" finished-at="2020-11-23T17:29:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- localImg -->
+        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="mailUtil" is-config="true" duration-ms="2052" started-at="2020-11-23T17:29:01 CST" finished-at="2020-11-23T17:29:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mailUtil -->
+      </class> <!-- com.webtest.demo.NowPageSetting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

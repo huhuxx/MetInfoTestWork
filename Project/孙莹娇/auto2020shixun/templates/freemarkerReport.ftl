@@ -1,5 +1,5 @@
-<div style="font-size:12px">×Ô¶¯»¯²âÊÔ±¨¸æ-----${date?string("yyyy-MM-dd HH:mm:ss")}
-<br/>±¾´Î¹²ÔËĞĞ×Ô¶¯»¯case:${casesize}¸ö£¬ÆäÖĞÊ§°Ü:${failcasesize}¸ö£¬³É¹¦:${successcasesize}£¬Ìø¹ı${skipsize}
+<div style="font-size:12px">è‡ªåŠ¨åŒ–æµ‹è¯•æŠ¥å‘Š----------${date?string("yyyy-MM-dd HH:mm:ss")}
+<br/>æœ¬æ¬¡å…±è¿è¡Œè‡ªåŠ¨åŒ–case:${casesize}ï¼Œå…¶ä¸­å¤±è´¥:${failcasesize}ï¼ŒæˆåŠŸ:${successcasesize}ï¼Œè·³è¿‡${skipsize}
 <br/>
 
 <br/>
@@ -8,10 +8,10 @@
 <body>
 	<table border="2" align="center" width="100%" cellspacing="0" bgcolor="#F0F8FF">
 		<tr style="text-align: center;">
-			<th class="spec">ĞòºÅ</th>
-			<th>²âÊÔ·½·¨</th>
-			<th>²âÊÔÀà</th>
-			<th>²âÊÔ½á¹û</th>
+			<th class="spec">åºå·</th>
+			<th>æµ‹è¯•æ–¹æ³•</th>
+			<th>æµ‹è¯•ç±»</th>
+			<th>æµ‹è¯•ç»“æœ</th>
 		</tr>
 		<#list testMethodsList as testMethods>
 		<tr style="text-align: center;">

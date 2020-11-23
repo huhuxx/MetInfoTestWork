@@ -64,12 +64,6 @@ public class BaseTest {
 	}
 
 
-	/**
-	 * 
-	 *��ʼ�������
-	 * 
-	 */
-
 
 	@BeforeClass
 	public void doBeforeClass() throws Exception {

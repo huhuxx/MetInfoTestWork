@@ -25,58 +25,59 @@ import org.testng.annotations.Test;
 
 import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
+
 /**
  * author:lihuanzhen
- 
+ * 
  */
 public class WebDriverEngine {
 
 	WebDriver driver = null;
 	ElementFinder finder = null;
-	Actions action  =null;
+	Actions action = null;
 
 	public WebDriverEngine(WebDriver driver) {
-		
+
 		this.driver = driver;
 		driver.manage().window().maximize();
 		finder = new ElementFinder(driver);
 		action = new Actions(driver);
 	}
+
 	public String[] getAllWindowTitles() {
 		// TODO Auto-generated method stub
-	    String current = driver.getWindowHandle();
+		String current = driver.getWindowHandle();
 
-	    List<String> attributes = new ArrayList<String>();
-	    for (String handle : driver.getWindowHandles()) {
-	      driver.switchTo().window(handle);
-	      attributes.add(driver.getTitle());
-	    }
+		List<String> attributes = new ArrayList<String>();
+		for (String handle : driver.getWindowHandles()) {
+			driver.switchTo().window(handle);
+			attributes.add(driver.getTitle());
+		}
 
-	    driver.switchTo().window(current);
+		driver.switchTo().window(current);
 
-	    return attributes.toArray(new String[attributes.size()]);
+		return attributes.toArray(new String[attributes.size()]);
 	}
-
-
 
 	public void enterFrame(String frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
 		Log.info("Entered iframe " + frameID);
 	}
+
 	public void enterFrame(int frameID) {
 		this.pause(3000);
 		driver.switchTo().frame(frameID);
 		Log.info("Entered iframe " + frameID);
 	}
-	
+
 	public void enterFrame1(String locator) {
 		WebElement element = finder.findElement(locator);
 		this.pause(3000);
 		driver.switchTo().frame(element);
 		Log.info("Entered iframe " + element);
 	}
-
+	
 
 	public void leaveFrame() {
 		driver.switchTo().defaultContent();
@@ -90,7 +91,6 @@ public class WebDriverEngine {
 			pause(5000);
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
 		Log.info("Opened url " + url);
 	}
@@ -119,6 +119,7 @@ public class WebDriverEngine {
 		}
 		return false;
 	}
+
 	public void enter() {
 		action.sendKeys(Keys.ENTER);
 	}
@@ -138,7 +139,11 @@ public class WebDriverEngine {
 			element.sendKeys(value);
 		}
 	}
-
+	public void type(WebElement element,String value) {
+		if (element != null) {
+			element.sendKeys(value);
+		}
+	}
 	public boolean isChecked(String locator) {
 		WebElement element = finder.findElement(locator);
 		return element.isSelected();
@@ -152,7 +157,11 @@ public class WebDriverEngine {
 			this.pause(3000);
 		}
 	}
-
+	public void click(WebElement element) {
+		if (element != null) {
+			element.click();
+		}	
+	}
 	public void clickLonger(String locator) {
 
 		WebElement element = finder.findElement(locator);
@@ -165,7 +174,7 @@ public class WebDriverEngine {
 
 	public void doubleClick(String locator) throws InterruptedException {
 		WebElement element = finder.findElement(locator);
-	
+
 		action.doubleClick(element).build().perform();
 	}
 
@@ -199,10 +208,10 @@ public class WebDriverEngine {
 			return false;
 		}
 	}
+	
+	public String getValue(String locator,String attribute) {
 
-	public String getValue(String locator) {
-
-		return finder.findElement(locator).getAttribute("value");
+		return finder.findElement(locator).getAttribute(attribute);
 	}
 
 	public String getUrl() {
@@ -222,6 +231,7 @@ public class WebDriverEngine {
 		Alert alert = driver.switchTo().alert();
 		return alert;
 	}
+
 	public String getAlertTest() {
 
 		return getAlert().getText();
@@ -230,7 +240,7 @@ public class WebDriverEngine {
 	public void alertAccept() {
 
 		getAlert().accept();
-		}
+	}
 
 	public Select getSelect(String locator) {
 		Select inputSelect = new Select(finder.findElement(locator));
@@ -250,8 +260,6 @@ public class WebDriverEngine {
 		getSelect(locator).selectByIndex(index);
 	}
 
-	
-
 	public String getHtmlSource() {
 
 		return driver.getPageSource();
@@ -260,8 +268,12 @@ public class WebDriverEngine {
 	public void runJs(String js) {
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript(js);
+		
 	}
-
+	public void runJs(String js,WebElement element) {
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript(js, element);
+	}
 
 	public void mouseToElement(String locator) throws InterruptedException {
 		action.moveToElement(finder.findElement(locator)).perform();
@@ -270,42 +282,51 @@ public class WebDriverEngine {
 	public void mouseToElementandClick(String locator) throws InterruptedException {
 		action.moveToElement(finder.findElement(locator)).click().perform();
 	}
-	public void switchWidow(int i){
-	    List<String> windows = new ArrayList<String>();
-	    for (String handle : driver.getWindowHandles()) {
-	    
-	    	windows.add(handle);
-	    }
-	    driver.switchTo().window(windows.get(i));
-	}
-	//�Ҽ�
-	public void rightClickMouse(String locator) throws InterruptedException {
-		action.contextClick(finder.findElement(locator)).perform();
-		}
-	//Tab��
-	public void tapClick(){
-	
-		action.sendKeys(Keys.TAB).perform();;
-	}
-	
-	public void tapType(String content){
-		
-			action.sendKeys(content).perform();
-		}
-	
-	public void getWindow(int i){
+
+	public void switchWidow(int i) {
 		List<String> windows = new ArrayList<String>();
-		for (String handle : driver.getWindowHandles())
-		{
-			//System.out.println(handle);  //杩涘叆鍒扮浜屼釜椤甸潰
+		for (String handle : driver.getWindowHandles()) {
+
 			windows.add(handle);
 		}
 		driver.switchTo().window(windows.get(i));
 	}
 
+	// �Ҽ�
+	public void rightClickMouse(String locator) throws InterruptedException {
+		action.contextClick(finder.findElement(locator)).perform();
+	}
 
+	// Tab��
+	public void tapClick() {
 
+		action.sendKeys(Keys.TAB).perform();
+	}
+
+	public void tapType(String content) {
+
+		action.sendKeys(content).perform();
+	}
+
+	//down
+	public void down(int x) {
+		for (int i = 0; i < x; i++) {
+			action.sendKeys(Keys.DOWN).perform();
+		}
+		
+	}
+	public void getWindow(int i) {
+		List<String> windows = new ArrayList<String>();
+		for (String handle : driver.getWindowHandles()) {
+			// System.out.println(handle); //杩涘叆鍒扮浜屼釜椤甸潰
+			windows.add(handle);
+		}
+		driver.switchTo().window(windows.get(i));
+	}
+	public List<WebElement> getElementsList(String target) {
+		List<WebElement> elements=finder.findElements(target);
+		return elements;
+	}
 	
-	
-	
+
 }

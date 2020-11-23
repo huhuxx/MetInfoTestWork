@@ -1,5 +1,7 @@
 eclipse.preferences.version=1
 encoding//src/com/webtest/core/JavaMailTestListener.java=GBK
+encoding//src/com/webtest/core/WebDriverEngine.java=UTF-8
 encoding//src/com/webtest/dataprovider/MysqlDataProvider.java=UTF-8
 encoding//src/com/webtest/utils/MailUtil.java=GBK
+encoding//templates/freemarkerReport.ftl=UTF-8
 encoding/<project>=GBK
