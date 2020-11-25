@@ -1,37 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="96268" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:29:01 CST">
+  <suite name="Default suite" duration-ms="114319" started-at="2020-11-25T20:24:52 CST" finished-at="2020-11-25T20:26:46 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="96268" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:29:01 CST">
-      <class name="com.webtest.demo.NowPageSetting">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="doBeforeClass" is-config="true" duration-ms="4891" started-at="2020-11-23T17:27:25 CST" finished-at="2020-11-23T17:27:30 CST">
+    <test name="Default test" duration-ms="114319" started-at="2020-11-25T20:24:52 CST" finished-at="2020-11-25T20:26:46 CST">
+      <class name="com.webtest.demo.BannerSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.BannerSetting@32709393]" name="doBeforeClass" is-config="true" duration-ms="4298" started-at="2020-11-25T20:24:52 CST" finished-at="2020-11-25T20:24:56 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="loginTest" is-config="true" duration-ms="8635" started-at="2020-11-23T17:27:30 CST" finished-at="2020-11-23T17:27:38 CST">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.BannerSetting@32709393]" name="loginTest" is-config="true" duration-ms="8589" started-at="2020-11-25T20:24:56 CST" finished-at="2020-11-25T20:25:05 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="siteInfoSetting1()[pri:1, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="siteInfoSetting1" duration-ms="42309" started-at="2020-11-23T17:27:38 CST" finished-at="2020-11-23T17:28:21 CST">
+        <test-method status="PASS" signature="editBanner()[pri:3, instance:com.webtest.demo.BannerSetting@32709393]" name="editBanner" duration-ms="17862" started-at="2020-11-25T20:25:05 CST" finished-at="2020-11-25T20:25:23 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- siteInfoSetting1 -->
-        <test-method status="PASS" signature="otherImg()[pri:2, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="otherImg" duration-ms="21124" started-at="2020-11-23T17:28:21 CST" finished-at="2020-11-23T17:28:42 CST">
+        </test-method> <!-- editBanner -->
+        <test-method status="PASS" signature="addButtons()[pri:4, instance:com.webtest.demo.BannerSetting@32709393]" name="addButtons" duration-ms="33349" started-at="2020-11-25T20:25:23 CST" finished-at="2020-11-25T20:25:56 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- otherImg -->
-        <test-method status="PASS" signature="localImg()[pri:3, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="localImg" duration-ms="19232" started-at="2020-11-23T17:28:42 CST" finished-at="2020-11-23T17:29:01 CST">
+        </test-method> <!-- addButtons -->
+        <test-method status="PASS" signature="setBtnColor()[pri:5, instance:com.webtest.demo.BannerSetting@32709393]" name="setBtnColor" duration-ms="13706" started-at="2020-11-25T20:25:56 CST" finished-at="2020-11-25T20:26:10 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- localImg -->
-        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.NowPageSetting@57855c9a]" name="mailUtil" is-config="true" duration-ms="2052" started-at="2020-11-23T17:29:01 CST" finished-at="2020-11-23T17:29:03 CST">
+        </test-method> <!-- setBtnColor -->
+        <test-method status="PASS" signature="setWordsSize()[pri:6, instance:com.webtest.demo.BannerSetting@32709393]" name="setWordsSize" duration-ms="13633" started-at="2020-11-25T20:26:10 CST" finished-at="2020-11-25T20:26:24 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mailUtil -->
-      </class> <!-- com.webtest.demo.NowPageSetting -->
+        </test-method> <!-- setWordsSize -->
+        <test-method status="PASS" signature="showSet()[pri:7, instance:com.webtest.demo.BannerSetting@32709393]" name="showSet" duration-ms="22848" started-at="2020-11-25T20:26:24 CST" finished-at="2020-11-25T20:26:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showSet -->
+      </class> <!-- com.webtest.demo.BannerSetting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

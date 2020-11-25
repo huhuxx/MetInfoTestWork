@@ -42,7 +42,7 @@ public class LanguageSetting extends BaseTest{
 		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 	}
-//	ID24 语言设置-开启”后台语言切换“ 
+//4、	ID24 语言设置-开启”后台语言切换“ 
 	@Test(priority = 1)
 	public void openBackLanguageSwitch() throws InterruptedException {
 		//打开语言设置界面
@@ -71,7 +71,7 @@ public class LanguageSetting extends BaseTest{
 		}
 		System.out.println(result);
 	}
-//	ID25 语言设置-关闭”语言切换“
+//5、	ID25 语言设置-关闭”语言切换“
 	@Test(priority = 2)
 	public void closeLanguageSwitch() throws InterruptedException {
 		//打开语言设置界面
@@ -96,7 +96,7 @@ public class LanguageSetting extends BaseTest{
 		System.out.println(result);
 	}
 	
-//	ID26 语言设置-关闭”繁简体自动切换“ 
+//6、	ID26 语言设置-关闭”繁简体自动切换“ 
 	@Test(priority = 3)
 	public void closeCSLanguageSwtich() throws InterruptedException {
 		//打开语言设置界面
@@ -120,7 +120,7 @@ public class LanguageSetting extends BaseTest{
 		System.out.println(result);
 	}
 	
-//	ID27 网站语言-添加新语言
+//7、	ID27 网站语言-添加新语言
 	@Test(priority = 4)
 	public void addNewLanguage() throws InterruptedException {
 		webtest.click("xpath=//a[@data-url='language']");
@@ -137,7 +137,7 @@ public class LanguageSetting extends BaseTest{
 		webtest.click("xpath=//span[text()='×']");
 		System.out.println("ID27:添加韩语成功！");
 	}
-//	ID28 对新添加的语言进行“语言操作”
+//8、	ID28 对新添加的语言进行“语言操作”
 	@Test(priority = 5)
 	public void editLanguage() throws InterruptedException {
 		webtest.click("xpath=//a[@data-url='language']");
@@ -162,7 +162,7 @@ public class LanguageSetting extends BaseTest{
 		System.out.println("ID28:删除成功！");
 	}
 	
-//	ID29 对序号为1 的语言进行“插件语言”操作
+//9、	ID29 对序号为1 的语言进行“插件语言”操作
 	@Test(priority = 6)
 	public void plugInsEdit() throws InterruptedException {
 		webtest.click("xpath=//a[@data-url='language']");

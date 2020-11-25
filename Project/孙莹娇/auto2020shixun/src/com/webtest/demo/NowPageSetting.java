@@ -4,9 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Properties;
 
-import org.apache.logging.log4j.core.util.Assert;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -35,7 +33,7 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//div[@title='"+imgTitle+"']");
 		webtest.click("xpath=//div[@class='modal-dialog modal-dialog- modal-xl my-0 mx-auto h-100']/div//button[@class='btn btn-primary']");
 	}
-//	ID20 当前页设置网站基本信息设置
+//1、	ID20 当前页设置网站基本信息设置
 	@Test(priority = 1)
 	public void siteInfoSetting1() throws InterruptedException {
 		//点击顶部“当前页设置”
@@ -72,7 +70,7 @@ public class NowPageSetting extends BaseTest {
 		System.out.println("ID20 前页设置网站基本信息设置修改成功！");
 	}
 	
-//	ID22 “添加外部图片”替换网站LOGO和手机站LOGO
+//2、	ID22 “添加外部图片”替换网站LOGO和手机站LOGO
 	@Test(priority = 2)
 	public void otherImg() throws InterruptedException {
 		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
@@ -97,7 +95,7 @@ public class NowPageSetting extends BaseTest {
 		System.out.println("ID22 “添加外部图片”替换网站LOGO和手机站LOGO成功！");
 	}
 	
-//	ID23 “选择文件夹上传”图片替换网站LOGO、手机站LOGO和地址栏图标
+//3、	ID23 “选择文件夹上传”图片替换网站LOGO、手机站LOGO和地址栏图标
 	@Test(priority = 3)
 	public void localImg() throws InterruptedException {
 		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
