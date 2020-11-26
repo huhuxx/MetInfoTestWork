@@ -213,6 +213,10 @@ public class WebDriverEngine {
 
 		return finder.findElement(locator).getAttribute(attribute);
 	}
+	public String getValue(WebElement element,String attribute) {
+
+		return element.getAttribute(attribute);
+	}
 
 	public String getUrl() {
 		return driver.getCurrentUrl();
@@ -251,7 +255,10 @@ public class WebDriverEngine {
 		getSelect(locator).selectByValue(value);
 		this.pause(5000);
 	}
-
+	public void selectByValue(Select element, String value) {
+		element.selectByValue(value);
+		this.pause(5000);
+	}
 	public void selectByVisibleText(String locator, String value) {
 		getSelect(locator).selectByVisibleText(value);
 	}
@@ -327,6 +334,11 @@ public class WebDriverEngine {
 		List<WebElement> elements=finder.findElements(target);
 		return elements;
 	}
-	
+	public void chooseLocalImg(String fileName,String imgTitle) throws InterruptedException {
+		this.doubleClick("xpath=//a[@data-path='/upload/"+fileName+"']");
+		Thread.sleep(2000);
+		this.click("xpath=//div[@title='"+imgTitle+"']");
+//		this.click("xpath=//div[@class='modal-dialog modal-dialog- modal-xl my-0 mx-auto h-100']/div//button[@class='btn btn-primary']");
+	}
 
 }

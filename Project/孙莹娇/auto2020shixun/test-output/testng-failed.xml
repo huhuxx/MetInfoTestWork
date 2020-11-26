@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.demo.NowPageSetting">
+      <class name="com.webtest.demo.BannerSetting">
         <methods>
-          <include name="otherImg"/>
+          <include name="addButtons"/>
+          <include name="setWordsSize"/>
+          <include name="setBtnColor"/>
+          <include name="showSet"/>
           <include name="loginTest"/>
           <include name="doBeforeClass"/>
         </methods>
-      </class> <!-- com.webtest.demo.NowPageSetting -->
+      </class> <!-- com.webtest.demo.BannerSetting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
