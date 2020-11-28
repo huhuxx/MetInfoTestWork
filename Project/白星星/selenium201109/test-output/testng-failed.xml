@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bxx.test.LoginTest">
+      <class name="com.bxx.test.IndexPageTest">
         <methods>
-          <include name="loginTest1"/>
-          <include name="start"/>
-          <include name="end"/>
           <include name="addListener"/>
+          <include name="start"/>
+          <include name="loginTest"/>
+          <include name="end"/>
         </methods>
-      </class> <!-- com.bxx.test.LoginTest -->
+      </class> <!-- com.bxx.test.IndexPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

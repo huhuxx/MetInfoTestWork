@@ -8,8 +8,6 @@ import org.testng.ITestNGMethod;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
 
-import com.bxx.test.BaseTest;
-
 public class WebTestListener2 extends TestListenerAdapter {
 
 
