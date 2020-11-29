@@ -5,7 +5,9 @@ import static org.testng.Assert.assertEquals;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
@@ -117,6 +119,87 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//span[text()='×']");
 		System.out.println("ID23 “选择文件夹上传”图片替换网站LOGO、手机站LOGO和地址栏图标成功！");
 	}
+//22、	ID174 当前页设置-基本信息-底部信息设置-基本信息修改
+	//在版权信息、地址邮编和联系方式后均填入“syj123”，点击保存
+	@Test(priority = 4)
+	public void setBottomInf() throws InterruptedException {
+		//点击顶部“当前页设置”
+		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
+		//页面向下滑动
+		webtest.click("xpath=//h3[text()='网站基本信息设置']");
+		webtest.down(15);
+		//修改 版权信息、地址邮编和联系方式
+		String met_footright="我的网站 版权所有 2008-2014 湘ICP备8888888syj123";
+		String met_footaddress="本页面内容为网站演示数据，前台页面内容都可以在后台修改。syj123";
+		String met_foottel="syj123456789";
+		webtest.typeAndClear("xpath=//input[@name='met_footright']", met_footright);
+		webtest.typeAndClear("xpath=//input[@name='met_footaddress']", met_footaddress);
+		webtest.typeAndClear("xpath=//input[@name='met_foottel']", met_foottel);
+		//点击保存
+		webtest.mouseToElement("xpath=//dl[@class='position-absolute form-submit-position bg-white']");
+		webtest.click("xpath=//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
+		//进入前台页面，验证修改是否成功
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
+		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
+		for (int i = 0; i < 3; i++) {
+			System.out.println(bottomInfoList.get(i).getText());
+		}
+		Assert.assertEquals(bottomInfoList.get(0).getText(), met_footright);
+		Assert.assertEquals(bottomInfoList.get(1).getText(), met_footaddress);
+		Assert.assertEquals(bottomInfoList.get(2).getText(), met_foottel);
+		webtest.leaveFrame();
+		System.out.println("ID174 底部信息设置,版权信息、地址邮编和联系方式修改成功！");
+	}
+//23、ID175 当前页设置-基本信息-底部信息设置-其他信息修改 	
+	@Test(priority = 5)
+	public void setBottomOtherInf() throws InterruptedException {
+		//点击顶部“当前页设置”
+		String otherInf="测试其他信息123";
+		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
+		webtest.click("xpath=//h3[text()='网站基本信息设置']");
+		webtest.down(18);
+		webtest.enterFrame("ueditor_0");
+		webtest.typeAndClear("tag=body",otherInf );
+		webtest.leaveFrame();
+		//点击保存
+		webtest.mouseToElement("xpath=//dl[@class='position-absolute form-submit-position bg-white']");
+		webtest.click("xpath=//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
+		//进入前台页面，验证修改是否成功
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
+		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
+		System.out.println("修改后的其他信息为"+bottomInfoList.get(3).getText());
+		Assert.assertEquals(bottomInfoList.get(3).getText(), otherInf);
+		webtest.leaveFrame();
+		System.out.println("ID175 底部其他信息修改成功！");
+	}
+//24、	ID176 当前页设置-基本信息-底部信息设置-系统版权文字风格修改
+//	设置系统版权文字风格为第二个选项
+	@Test(priority = 6)
+	public void setTextStyle() throws InterruptedException {
+		//点击顶部“当前页设置”
+		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
+		//页面下滑
+		webtest.click("xpath=//h3[text()='网站基本信息设置']");
+		webtest.down(19);
+		//选择第二个系统版权文字风格
+		webtest.click("xpath=//label[text()='系统版权文字风格']/../following-sibling::dd[1]/div/div[2]/input");
+		//点击保存
+		webtest.mouseToElement("xpath=//dl[@class='position-absolute form-submit-position bg-white']");
+		webtest.click("xpath=//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
+		//进入前台页面，验证修改是否成功
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
+		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
+		System.out.println("修改后的的系统版权文字风格为："+bottomInfoList.get(bottomInfoList.size()-2).getText());
+		Assert.assertEquals(bottomInfoList.get(bottomInfoList.size()-2).getText(), "本站基于 米拓企业建站系统 7.1.0 搭建");
+		System.out.println("ID176 设置系统版权文字风格为第二个选项成功！");
+	}
+	
 	@AfterSuite
 	public void mailUtil() throws IOException, TemplateException {
 		FreeMarker freeMarker=new FreeMarker();
