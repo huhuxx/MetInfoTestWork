@@ -426,38 +426,156 @@ public class TestAuto extends BaseTest{
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='6']");
 		webtest.leaveFrame();
-		webtest.runJs("document.getElementsBytagNeme('met_msg_time')[0].value='300'");
-//		webtest.type("xpath=//input[@name='met_msg_time']", "300");
+//		webtest.runJs("document.getElementByTagNeme('met_msg_time').value='300'");
+		webtest.type("xpath=//input[@name='met_msg_time']", "300");
+		webtest.click("xpath=//button[@class='btn btn-primary ']");
+		webtest.open("http://localhost:8090/");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[@title='关于我们']");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='在线留言']");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para137']","杨佳乐");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para186']","1837519045@qq.com");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para138']","18732338187");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para139']","河北省");
+		Thread.sleep(1000);
+		webtest.type("xpath=//textarea[@name='para140']","好");
+		Thread.sleep(2000);
+		webtest.type("xpath=//input[@class='form-control input-codeimg']","aaaa");
+		Thread.sleep(1000);
+		webtest.click("xpath=//button[@class='btn btn-primary btn-block btn-squared']");
+		webtest.alertAccept();
+		Thread.sleep(2000);
+		webtest.type("xpath=//input[@name='para137']","杨佳乐");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para186']","1837519045@qq.com");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para138']","18732338187");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para139']","河北省");
+		Thread.sleep(1000);
+		webtest.type("xpath=//textarea[@name='para140']","好");
+		Thread.sleep(2000);
+		webtest.type("xpath=//input[@class='form-control input-codeimg']","aaaa");
+		Thread.sleep(1000);
+		webtest.click("xpath=//button[@class='btn btn-primary btn-block btn-squared']");
+		webtest.alertAccept();
 	}
 	
-	//18
+	//18，修改留言的内容设置（将姓名设为非必填项）
 	@Test
-	public void yjltest18() {
-		
+	public void yjltest18() throws InterruptedException {
+		webtest.open("http://localhost:8090/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "username");
+		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='wr_ok-137']");
+		webtest.click("xpath=//option[text()='否']");
+		webtest.click("xpath=//button[@class='btn btn-primary']");
+		webtest.open("http://localhost:8090/");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[@title='关于我们']");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='在线留言']");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para137']","");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para186']","1837519045@qq.com");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para138']","18732338187");
+		Thread.sleep(1000);
+		webtest.type("xpath=//input[@name='para139']","河北省");
+		Thread.sleep(1000);
+		webtest.type("xpath=//textarea[@name='para140']","好");
+		Thread.sleep(2000);
+		webtest.type("xpath=//input[@class='form-control input-codeimg']","aaaa");
+		Thread.sleep(1000);
+		webtest.click("xpath=//button[@class='btn btn-primary btn-block btn-squared']");
+		webtest.alertAccept();
 	}
 	
-	//19
+	//19,
 	@Test
 	public void yjltest19() {
 		
 	}
 	
-	//20
+	//20,后台界面删除姓名输入框
 	@Test
-	public void yjltest20() {
-		
+	public void yjltest20() throws InterruptedException {
+		webtest.open("http://localhost:8090/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "username");
+		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//input[@name='id']");
+		webtest.click("xpath=//button[text()='删除']");
+		webtest.click("xpath=//button[@class='ok btn btn-primary']");
+		webtest.open("http://localhost:8090/");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[@title='关于我们']");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='在线留言']");
 	}
 	
-	//21
+	//21，后台界面添加姓名输入框
 	@Test
-	public void yjltest21() {
-		
+	public void yjltest21() throws InterruptedException {
+		webtest.open("http://localhost:8090/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "username");
+		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//button[text()='添加']");
+		webtest.type("xpath=//input[@name='name-new-0']","姓名");
+		webtest.click("xpath=//button[@class='btn btn-primary']");
+		webtest.open("http://localhost:8090/");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[@title='关于我们']");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='在线留言']");
 	}
 	
-	//22
+	//22，姓名添加提示文字
 	@Test
-	public void yjltest22() {
-		
+	public void yjltest22() throws InterruptedException {
+		webtest.open("http://localhost:8090/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "username");
+		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.type("xpath=//input[@name='description-195']", "真实姓名");
+		webtest.click("xpath=//button[@class='btn btn-primary']");
+		webtest.open("http://localhost:8090/");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[@title='关于我们']");
+		Thread.sleep(1000);
+		webtest.click("xpath=//a[text()='在线留言']");
 	}
 	
 	//23,成功添加在线反馈
@@ -473,9 +591,13 @@ public class TestAuto extends BaseTest{
 		webtest.type("xpath=//input[@name='para177']", "河北师范大学");
 		webtest.type("xpath=//input[@name='para178']", "河北省");
 		webtest.type("xpath=//textarea[@name='para179']", "好");
-//		webtest.click("id=para180_3");
+		webtest.socll();
+//		webtest.mouseToElementandClick("xpath=//section[@m-id='feedback']");
+//		webtest.down(4);
+//		WebElement element=webtest.back("form-group ").get(6);
+//		webtest.click(element);
+//		webtest.click("xpath=//div[@class='form-group ']//div");
 		webtest.type("xpath=//input[@name='code']", "aaaa");
-		
 		sub1();
 	}
 	
