@@ -340,5 +340,10 @@ public class WebDriverEngine {
 		this.click("xpath=//div[@title='"+imgTitle+"']");
 //		this.click("xpath=//div[@class='modal-dialog modal-dialog- modal-xl my-0 mx-auto h-100']/div//button[@class='btn btn-primary']");
 	}
-
+	public void dragAndDrop(WebElement drag,WebElement drop) {
+		action.dragAndDrop(drag, drop).build().perform();
+	}
+	public WebElement getElement(String target) {
+		return finder.findElement(target);
+	}
 }

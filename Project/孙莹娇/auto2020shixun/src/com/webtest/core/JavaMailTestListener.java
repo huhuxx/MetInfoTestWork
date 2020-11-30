@@ -53,7 +53,7 @@ public class JavaMailTestListener extends TestListenerAdapter{
 		//成功的测试用例
 		List<ITestResult> successList=this.getPassedTests();
 		successSize=successList.size();
-		System.out.println("失败的测试用例个数:"+successSize);
+		System.out.println("成功的测试用例个数:"+successSize);
 		
 		for (int i = 0; i < successSize; i++) {
 			ITestResult trSuccess=successList.get(i);
