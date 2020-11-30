@@ -3,7 +3,6 @@ package com.webtest.demo;
 import java.io.IOException;
 import java.util.List;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -33,7 +32,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}
 //25、	ID184 手机菜单-按钮文字修改 
 	@Test(priority = 1)
-	public void editBtnText() throws InterruptedException {
+	public void editPhoneBtnText() throws InterruptedException {
 //		打开“手机菜单”设置界面方法一：
 //		鼠标移动到 手机菜单 div上，点击“内容”按钮
 //		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
@@ -61,7 +60,7 @@ public class PhoneMenuSetting extends BaseTest{
 //26、	ID185 手机菜单-链接修改 
 //	修改“联系”按钮的链接为https://www.baidu.com/
 	@Test(priority = 2)
-	public void editBtnUrl() throws InterruptedException {
+	public void editPhoneBtnUrl() throws InterruptedException {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//修改链接
@@ -82,7 +81,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}
 //27、ID186 手机菜单-图标删除 	
 	@Test(priority = 3)
-	public void deleteBtnImg() {
+	public void deletePhoneBtnImg() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//点击“新闻”的图标的删除按钮
@@ -100,7 +99,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}	
 //28、ID187 手机菜单-图标修改	
 	@Test(priority = 4)
-	public void editBtnImg() {
+	public void editPhoneBtnImg() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//点击“新闻”的图标的删除按钮
@@ -125,7 +124,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}
 //29、ID188 手机菜单-按钮颜色修改
 	@Test(priority = 5)
-	public void editBtnColor() {
+	public void editPhoneBtnColor() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//修改“产品”的按钮颜色为#1bdb51
@@ -143,7 +142,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}
 //30、ID189 手机菜单-文字颜色修改
 	@Test(priority = 6)
-	public void editTextColor() {
+	public void editPhoneTextColor() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//修改“联系”按钮的文字颜色为#1bdb51
@@ -161,7 +160,7 @@ public class PhoneMenuSetting extends BaseTest{
 	}
 //31、ID190 手机菜单-启用修改
 	@Test(priority = 7)
-	public void editEnable() {
+	public void editPhoneBtnEnable() {
 		//打开“手机菜单”设置界面，修改“新闻”按钮的启用
 		this.openPhoneMenuSetting();
 		String newsEnable=webtest.getValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "data-checked");
@@ -191,8 +190,8 @@ public class PhoneMenuSetting extends BaseTest{
 		}
 	}
 //32、	ID191 手机菜单-按钮顺序修改
-	@Test(priority = 8)
-	public void edtiBtnTurns() throws InterruptedException {
+//	@Test(priority = 8)
+	public void edtiPhoneBtnTurns() throws InterruptedException {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
 		//获取表格集合，以便拖拽
@@ -225,7 +224,44 @@ public class PhoneMenuSetting extends BaseTest{
 		}
 		Assert.assertEquals(beforeDrag_lastBtn, afterDrag_firstBtn);
 	}
-			
+//33、 ID192 手机菜单-按钮添加	
+	@Test(priority = 9)
+	public void addPhoneBtn() {
+		//打开“手机菜单”设置界面
+		this.openPhoneMenuSetting();
+		//添加按钮
+		webtest.click("xpath=//button[text()='添加']");
+		webtest.type("xpath=//input[@name='name-new-0']", "新按钮");
+		//保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
+		//进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		List<WebElement> btnsList=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
+		System.out.println(btnsList.get(btnsList.size()-1).getText());
+		Assert.assertEquals(btnsList.get(btnsList.size()-1).getText(), "新按钮");
+		System.out.println("ID192 手机菜单-新按钮添加成功！");
+	}
+//34、ID194 手机菜单-按钮删除 	
+	@Test(priority = 10)
+	public void deletePhoneBtn() {
+		
+		//打开“手机菜单”设置界面
+		this.openPhoneMenuSetting();
+		//删除按钮
+		webtest.click("xpath=//tbody/tr[last()]/td[last()]/button");
+		webtest.click("xpath=//div[@class='dialog']/div/nav/button[text()='确定']");
+		//关闭
+		webtest.click("xpath=//span[text()='×']");
+		//进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		List<WebElement> btnsList=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
+		System.out.println("最后一个手机按钮文字为："+ btnsList.get(btnsList.size()-1).getText());
+		if (!btnsList.get(btnsList.size()-1).getText().equals("新按钮")) {
+			System.out.println("ID192 手机菜单-新按钮删除成功！");
+		}
+		
+	}
 //	@AfterSuite
 	public void mailUtil() throws IOException, TemplateException {
 		FreeMarker freeMarker=new FreeMarker();

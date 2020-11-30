@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.demo.PhoneMenuSetting">
+      <class name="com.webtest.demo.CustomerServiceSetting">
         <methods>
-          <include name="edtiBtnTurns"/>
-          <include name="doBeforeClass"/>
           <include name="loginTest"/>
+          <include name="addColumn"/>
+          <include name="doBeforeClass"/>
         </methods>
-      </class> <!-- com.webtest.demo.PhoneMenuSetting -->
+      </class> <!-- com.webtest.demo.CustomerServiceSetting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
