@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="12" failed="4" ignored="0" total="39" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="980717" started-at="2020-12-01T23:44:53 CST" finished-at="2020-12-02T00:01:13 CST">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="543041" started-at="2020-12-01T23:44:53 CST" finished-at="2020-12-01T23:53:56 CST">
+      <class name="com.bxx.test.JoinusjobTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="addListener" is-config="true" duration-ms="20" started-at="2020-12-01T23:44:53 CST" description="添加监听器" finished-at="2020-12-01T23:44:53 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@23c05889]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="18706" started-at="2020-12-01T23:44:53 CST" finished-at="2020-12-01T23:45:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7170" started-at="2020-12-01T23:45:12 CST" finished-at="2020-12-01T23:45:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test1" duration-ms="10034" started-at="2020-12-01T23:45:19 CST" finished-at="2020-12-01T23:45:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1775" started-at="2020-12-01T23:45:29 CST" finished-at="2020-12-01T23:45:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16046" started-at="2020-12-01T23:45:31 CST" finished-at="2020-12-01T23:45:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6955" started-at="2020-12-01T23:45:47 CST" finished-at="2020-12-01T23:45:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test10" duration-ms="6717" started-at="2020-12-01T23:45:54 CST" finished-at="2020-12-01T23:46:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1653" started-at="2020-12-01T23:46:00 CST" finished-at="2020-12-01T23:46:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16438" started-at="2020-12-01T23:46:02 CST" finished-at="2020-12-01T23:46:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7331" started-at="2020-12-01T23:46:18 CST" finished-at="2020-12-01T23:46:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="FAIL" signature="test11()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test11" duration-ms="3341" started-at="2020-12-01T23:46:26 CST" finished-at="2020-12-01T23:46:29 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.core.WebDriverEngine.click(Unknown Source)
+at com.bxx.test.JoinusjobTest.test11(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1714" started-at="2020-12-01T23:46:30 CST" finished-at="2020-12-01T23:46:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16236" started-at="2020-12-01T23:46:31 CST" finished-at="2020-12-01T23:46:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6835" started-at="2020-12-01T23:46:48 CST" finished-at="2020-12-01T23:46:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="FAIL" signature="test12()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test12" duration-ms="3344" started-at="2020-12-01T23:46:54 CST" finished-at="2020-12-01T23:46:58 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.core.WebDriverEngine.click(Unknown Source)
+at com.bxx.test.JoinusjobTest.test12(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1780" started-at="2020-12-01T23:46:58 CST" finished-at="2020-12-01T23:47:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16375" started-at="2020-12-01T23:47:00 CST" finished-at="2020-12-01T23:47:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7159" started-at="2020-12-01T23:47:16 CST" finished-at="2020-12-01T23:47:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="FAIL" signature="test13()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test13" duration-ms="8332" started-at="2020-12-01T23:47:23 CST" finished-at="2020-12-01T23:47:32 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.core.WebDriverEngine.click(Unknown Source)
+at com.bxx.test.JoinusjobTest.test13(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1661" started-at="2020-12-01T23:47:32 CST" finished-at="2020-12-01T23:47:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16387" started-at="2020-12-01T23:47:34 CST" finished-at="2020-12-01T23:47:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7220" started-at="2020-12-01T23:47:50 CST" finished-at="2020-12-01T23:47:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test14()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test14" duration-ms="13239" started-at="2020-12-01T23:47:58 CST" finished-at="2020-12-01T23:48:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1672" started-at="2020-12-01T23:48:11 CST" finished-at="2020-12-01T23:48:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16223" started-at="2020-12-01T23:48:12 CST" finished-at="2020-12-01T23:48:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7186" started-at="2020-12-01T23:48:29 CST" finished-at="2020-12-01T23:48:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test15()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test15" duration-ms="9744" started-at="2020-12-01T23:48:36 CST" finished-at="2020-12-01T23:48:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1703" started-at="2020-12-01T23:48:46 CST" finished-at="2020-12-01T23:48:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16184" started-at="2020-12-01T23:48:47 CST" finished-at="2020-12-01T23:49:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7248" started-at="2020-12-01T23:49:04 CST" finished-at="2020-12-01T23:49:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test16()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test16" duration-ms="13086" started-at="2020-12-01T23:49:11 CST" finished-at="2020-12-01T23:49:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1764" started-at="2020-12-01T23:49:24 CST" finished-at="2020-12-01T23:49:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16172" started-at="2020-12-01T23:49:26 CST" finished-at="2020-12-01T23:49:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7036" started-at="2020-12-01T23:49:42 CST" finished-at="2020-12-01T23:49:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test2" duration-ms="10092" started-at="2020-12-01T23:49:49 CST" finished-at="2020-12-01T23:49:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1659" started-at="2020-12-01T23:49:59 CST" finished-at="2020-12-01T23:50:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16356" started-at="2020-12-01T23:50:01 CST" finished-at="2020-12-01T23:50:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7169" started-at="2020-12-01T23:50:17 CST" finished-at="2020-12-01T23:50:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test3" duration-ms="3455" started-at="2020-12-01T23:50:24 CST" finished-at="2020-12-01T23:50:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1774" started-at="2020-12-01T23:50:28 CST" finished-at="2020-12-01T23:50:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15871" started-at="2020-12-01T23:50:29 CST" finished-at="2020-12-01T23:50:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6978" started-at="2020-12-01T23:50:45 CST" finished-at="2020-12-01T23:50:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test4" duration-ms="9915" started-at="2020-12-01T23:50:52 CST" finished-at="2020-12-01T23:51:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1648" started-at="2020-12-01T23:51:02 CST" finished-at="2020-12-01T23:51:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16194" started-at="2020-12-01T23:51:04 CST" finished-at="2020-12-01T23:51:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7043" started-at="2020-12-01T23:51:20 CST" finished-at="2020-12-01T23:51:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test5" duration-ms="10445" started-at="2020-12-01T23:51:27 CST" finished-at="2020-12-01T23:51:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1707" started-at="2020-12-01T23:51:37 CST" finished-at="2020-12-01T23:51:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15993" started-at="2020-12-01T23:51:39 CST" finished-at="2020-12-01T23:51:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6867" started-at="2020-12-01T23:51:55 CST" finished-at="2020-12-01T23:52:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test6" duration-ms="10817" started-at="2020-12-01T23:52:02 CST" finished-at="2020-12-01T23:52:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1720" started-at="2020-12-01T23:52:13 CST" finished-at="2020-12-01T23:52:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15974" started-at="2020-12-01T23:52:15 CST" finished-at="2020-12-01T23:52:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7014" started-at="2020-12-01T23:52:31 CST" finished-at="2020-12-01T23:52:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test7" duration-ms="10073" started-at="2020-12-01T23:52:38 CST" finished-at="2020-12-01T23:52:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1659" started-at="2020-12-01T23:52:48 CST" finished-at="2020-12-01T23:52:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16117" started-at="2020-12-01T23:52:49 CST" finished-at="2020-12-01T23:53:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7211" started-at="2020-12-01T23:53:05 CST" finished-at="2020-12-01T23:53:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test8" duration-ms="10074" started-at="2020-12-01T23:53:13 CST" finished-at="2020-12-01T23:53:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1658" started-at="2020-12-01T23:53:23 CST" finished-at="2020-12-01T23:53:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15896" started-at="2020-12-01T23:53:24 CST" finished-at="2020-12-01T23:53:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7100" started-at="2020-12-01T23:53:40 CST" finished-at="2020-12-01T23:53:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test9()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test9" duration-ms="6717" started-at="2020-12-01T23:53:47 CST" finished-at="2020-12-01T23:53:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1774" started-at="2020-12-01T23:53:54 CST" finished-at="2020-12-01T23:53:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.JoinusjobTest -->
+    </test> <!-- test -->
+    <test name="test2" duration-ms="6" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+      <class name="com.bxx.test.kehuanliPageTest">
+        <test-method status="FAIL" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="0" started-at="2020-12-01T23:53:56 CST" depends-on-methods="com.bxx.test.BaseTest.addListener" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-01T23:53:56 CST" description="添加监听器" finished-at="2020-12-01T23:53:56 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12166229]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="-1606838036435" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="test4()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="test4" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="-1606838036437" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="-1606838036437" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="-1606838036437" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="test5()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="test5" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="SKIP" signature="testBanner1()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testBanner1" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBanner1 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="-1606838036438" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="testSearch2()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testSearch2" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch2 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="-1606838036438" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="-1606838036438" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="testSwitch3()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testSwitch3" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.kehuanliPageTest.testEnter(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitch3 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="-1606838036439" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="-1606838036439" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="-1606838036439" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.kehuanliPageTest -->
+    </test> <!-- test2 -->
+    <test name="test3" duration-ms="3" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+      <class name="com.bxx.test.JoinuszhaopinTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="addListener" is-config="true" duration-ms="1" started-at="2020-12-01T23:53:56 CST" description="添加监听器" finished-at="2020-12-01T23:53:56 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@208e5b23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="FAIL" signature="before()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="before" is-config="true" duration-ms="0" started-at="2020-12-01T23:53:56 CST" depends-on-methods="com.bxx.test.BaseTest.addListener" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuszhaopinTest.before(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doAfterMethod" is-config="true" duration-ms="-1606838036512" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="test1()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="test1" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuszhaopinTest.before(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doBeforeClass" is-config="true" duration-ms="-1606838036512" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doBeforeClass" is-config="true" duration-ms="-1606838036512" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doAfterMethod" is-config="true" duration-ms="-1606838036512" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="test2()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="test2" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuszhaopinTest.before(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doBeforeClass" is-config="true" duration-ms="-1606838036513" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="test3()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="test3" duration-ms="0" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:53:56 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuszhaopinTest.before(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@61832929]" name="doAfterMethod" is-config="true" duration-ms="-1606838036513" started-at="2020-12-01T23:53:56 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.JoinuszhaopinTest -->
+    </test> <!-- test3 -->
+    <test name="test4" duration-ms="437422" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-02T00:01:13 CST">
+      <class name="com.bxx.test.KehuanliEditTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-01T23:53:56 CST" description="添加监听器" finished-at="2020-12-01T23:53:56 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bcb1414]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="15866" started-at="2020-12-01T23:53:56 CST" finished-at="2020-12-01T23:54:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit2()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEdit2" duration-ms="13847" started-at="2020-12-01T23:54:12 CST" finished-at="2020-12-01T23:54:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1780" started-at="2020-12-01T23:54:26 CST" finished-at="2020-12-01T23:54:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="15900" started-at="2020-12-01T23:54:28 CST" finished-at="2020-12-01T23:54:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit3()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEdit3" duration-ms="10213" started-at="2020-12-01T23:54:43 CST" finished-at="2020-12-01T23:54:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1661" started-at="2020-12-01T23:54:54 CST" finished-at="2020-12-01T23:54:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16171" started-at="2020-12-01T23:54:55 CST" finished-at="2020-12-01T23:55:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit4()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEdit4" duration-ms="13749" started-at="2020-12-01T23:55:11 CST" finished-at="2020-12-01T23:55:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1667" started-at="2020-12-01T23:55:25 CST" finished-at="2020-12-01T23:55:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="17324" started-at="2020-12-01T23:55:27 CST" finished-at="2020-12-01T23:55:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd10()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd10" duration-ms="30249" started-at="2020-12-01T23:55:44 CST" finished-at="2020-12-01T23:56:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1718" started-at="2020-12-01T23:56:14 CST" finished-at="2020-12-01T23:56:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16379" started-at="2020-12-01T23:56:16 CST" finished-at="2020-12-01T23:56:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd11()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd11" duration-ms="30858" started-at="2020-12-01T23:56:33 CST" finished-at="2020-12-01T23:57:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd11 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1755" started-at="2020-12-01T23:57:03 CST" finished-at="2020-12-01T23:57:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="15639" started-at="2020-12-01T23:57:05 CST" finished-at="2020-12-01T23:57:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd5()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd5" duration-ms="16802" started-at="2020-12-01T23:57:21 CST" finished-at="2020-12-01T23:57:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1734" started-at="2020-12-01T23:57:38 CST" finished-at="2020-12-01T23:57:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16112" started-at="2020-12-01T23:57:39 CST" finished-at="2020-12-01T23:57:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd6()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd6" duration-ms="30722" started-at="2020-12-01T23:57:55 CST" finished-at="2020-12-01T23:58:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1714" started-at="2020-12-01T23:58:26 CST" finished-at="2020-12-01T23:58:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16143" started-at="2020-12-01T23:58:28 CST" finished-at="2020-12-01T23:58:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd7()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd7" duration-ms="24049" started-at="2020-12-01T23:58:44 CST" finished-at="2020-12-01T23:59:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1714" started-at="2020-12-01T23:59:08 CST" finished-at="2020-12-01T23:59:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16342" started-at="2020-12-01T23:59:10 CST" finished-at="2020-12-01T23:59:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd8()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd8" duration-ms="33667" started-at="2020-12-01T23:59:26 CST" finished-at="2020-12-02T00:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1860" started-at="2020-12-02T00:00:00 CST" finished-at="2020-12-02T00:00:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="15985" started-at="2020-12-02T00:00:02 CST" finished-at="2020-12-02T00:00:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd9()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditAdd9" duration-ms="32803" started-at="2020-12-02T00:00:18 CST" finished-at="2020-12-02T00:00:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1847" started-at="2020-12-02T00:00:50 CST" finished-at="2020-12-02T00:00:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doBeforeClass" is-config="true" duration-ms="16139" started-at="2020-12-02T00:00:52 CST" finished-at="2020-12-02T00:01:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="FAIL" signature="testEditDelete1()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="testEditDelete1" duration-ms="228" started-at="2020-12-02T00:01:08 CST" finished-at="2020-12-02T00:01:09 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.core.WebDriverEngine.click(Unknown Source)
+at com.bxx.test.KehuanliEditTest.testEditDelete1(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditDelete1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@59f99ea]" name="doAfterMethod" is-config="true" duration-ms="1876" started-at="2020-12-02T00:01:12 CST" finished-at="2020-12-02T00:01:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </test> <!-- test4 -->
+    <test name="test5" duration-ms="3" started-at="2020-12-02T00:01:13 CST" finished-at="2020-12-02T00:01:13 CST">
+      <class name="com.bxx.test.JoinuspageTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-02T00:01:13 CST" description="添加监听器" finished-at="2020-12-02T00:01:13 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@aee05f4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="FAIL" signature="beforeall()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="beforeall" is-config="true" duration-ms="0" started-at="2020-12-02T00:01:13 CST" depends-on-methods="com.bxx.test.BaseTest.addListener" finished-at="2020-12-02T00:01:13 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuspageTest.beforeall(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeall -->
+        <test-method status="SKIP" signature="test3()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="test3" duration-ms="0" started-at="2020-12-02T00:01:13 CST" finished-at="2020-12-02T00:01:13 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuspageTest.beforeall(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doBeforeClass" is-config="true" duration-ms="-1606838473996" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doAfterMethod" is-config="true" duration-ms="-1606838473996" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doAfterMethod" is-config="true" duration-ms="-1606838473996" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doBeforeClass" is-config="true" duration-ms="-1606838473996" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="test2()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="test2" duration-ms="0" started-at="2020-12-02T00:01:13 CST" finished-at="2020-12-02T00:01:13 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuspageTest.beforeall(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doBeforeClass" is-config="true" duration-ms="-1606838473997" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doBeforeClass" is-config="true" duration-ms="-1606838473997" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="SKIP" signature="text1()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="text1" duration-ms="0" started-at="2020-12-02T00:01:13 CST" finished-at="2020-12-02T00:01:13 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuspageTest.beforeall(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text1 -->
+        <test-method status="SKIP" signature="test4()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="test4" duration-ms="0" started-at="2020-12-02T00:01:13 CST" finished-at="2020-12-02T00:01:13 CST">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at com.bxx.test.JoinuspageTest.beforeall(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:619)
+at org.testng.TestRunner.beforeRun(TestRunner.java:609)
+at org.testng.TestRunner.run(TestRunner.java:580)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doAfterMethod" is-config="true" duration-ms="-1606838473997" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="doAfterMethod" is-config="true" duration-ms="-1606838473997" started-at="2020-12-02T00:01:13 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="end()[pri:0, instance:com.bxx.test.JoinuspageTest@1e88b3c]" name="end" is-config="true" duration-ms="-1606838474019" started-at="2020-12-02T00:01:14 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bxx.test.JoinuspageTest -->
+    </test> <!-- test5 -->
+  </suite> <!-- Suite1 -->
+</testng-results>

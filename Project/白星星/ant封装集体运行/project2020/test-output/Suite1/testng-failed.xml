@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="com.bxx.test.JoinusjobTest">
+        <methods>
+          <include name="test9"/>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="test6"/>
+          <include name="test7"/>
+          <include name="test8"/>
+          <include name="test5"/>
+          <include name="end"/>
+          <include name="addListener"/>
+          <include name="test13"/>
+          <include name="test15"/>
+          <include name="test14"/>
+          <include name="doBeforeClass"/>
+          <include name="basictest"/>
+          <include name="test16"/>
+          <include name="doAfterMethod"/>
+          <include name="test11"/>
+          <include name="test10"/>
+          <include name="test1"/>
+          <include name="test12"/>
+        </methods>
+      </class> <!-- com.bxx.test.JoinusjobTest -->
+      <class name="com.bxx.test.kehuanliPageTest">
+        <methods>
+          <include name="testBanner1"/>
+          <include name="test5"/>
+          <include name="testSearch2"/>
+          <include name="doBeforeClass"/>
+          <include name="testEnter"/>
+          <include name="doAfterMethod"/>
+          <include name="testSwitch3"/>
+          <include name="test4"/>
+          <include name="end"/>
+          <include name="addListener"/>
+        </methods>
+      </class> <!-- com.bxx.test.kehuanliPageTest -->
+      <class name="com.bxx.test.JoinuspageTest">
+        <methods>
+          <include name="test2"/>
+          <include name="test3"/>
+          <include name="test4"/>
+          <include name="doBeforeClass"/>
+          <include name="text1"/>
+          <include name="beforeall"/>
+          <include name="doAfterMethod"/>
+          <include name="end"/>
+          <include name="addListener"/>
+        </methods>
+      </class> <!-- com.bxx.test.JoinuspageTest -->
+      <class name="com.bxx.test.JoinuszhaopinTest">
+        <methods>
+          <include name="before"/>
+          <include name="doBeforeClass"/>
+          <include name="doAfterMethod"/>
+          <include name="test3"/>
+          <include name="test2"/>
+          <include name="test1"/>
+          <include name="end"/>
+          <include name="addListener"/>
+        </methods>
+      </class> <!-- com.bxx.test.JoinuszhaopinTest -->
+      <class name="com.bxx.test.KehuanliEditTest">
+        <methods>
+          <include name="testEditAdd9"/>
+          <include name="testEditAdd8"/>
+          <include name="testEditAdd5"/>
+          <include name="testEditAdd7"/>
+          <include name="testEditAdd6"/>
+          <include name="end"/>
+          <include name="addListener"/>
+          <include name="testEditDelete1"/>
+          <include name="doBeforeClass"/>
+          <include name="doAfterMethod"/>
+          <include name="testEdit3"/>
+          <include name="testEdit4"/>
+          <include name="testEditAdd11"/>
+          <include name="testEdit2"/>
+          <include name="testEditAdd10"/>
+        </methods>
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
