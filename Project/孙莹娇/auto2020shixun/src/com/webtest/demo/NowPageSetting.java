@@ -196,7 +196,7 @@ public class NowPageSetting extends BaseTest {
 		webtest.runJs("window.scrollTo(0, document.body.scrollHeight);");
 		List<WebElement> bottomInfoList=webtest.getElementsList("xpath=//div[@class='container text-xs-center']/*");
 		System.out.println("修改后的的系统版权文字风格为："+bottomInfoList.get(bottomInfoList.size()-2).getText());
-		Assert.assertEquals(bottomInfoList.get(bottomInfoList.size()-2).getText(), "本站基于 米拓企业建站系统 7.1.0 搭建");
+		Assert.assertEquals(bottomInfoList.get(bottomInfoList.size()-1).getText(), "本站基于 米拓企业建站系统 7.1.0 搭建");
 		System.out.println("ID176 设置系统版权文字风格为第二个选项成功！");
 	}
 	

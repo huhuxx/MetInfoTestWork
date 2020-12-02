@@ -1,15 +1,23 @@
 package com.webtest.demo;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
+import com.webtest.core.JavaMailTestListener;
+import com.webtest.utils.FreeMarker;
+import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
+import freemarker.template.TemplateException;
+@Listeners(JavaMailTestListener.class)
 public class TopSetting extends BaseTest {
 	@BeforeClass
 	public void loginTest() throws InterruptedException {
@@ -74,5 +82,14 @@ public class TopSetting extends BaseTest {
 		String nowName=webtest.getText("xpath=//a[@met-id='3']");
 		System.out.println("修改后为："+nowName);
 		Assert.assertEquals(nowName, "首页syj");
+	}
+	@AfterSuite
+	public void mailUtil() throws IOException, TemplateException {
+		FreeMarker freeMarker=new FreeMarker();
+		freeMarker.makeReport();
+		
+		MailUtil m=new MailUtil();
+		m.sendMail();
+		
 	}
 }

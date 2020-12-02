@@ -1,15 +1,24 @@
 package com.webtest.demo;
 
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
+import com.webtest.core.JavaMailTestListener;
+import com.webtest.utils.FreeMarker;
+import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
+import freemarker.template.TemplateException;
+@Listeners(JavaMailTestListener.class)
 public class CustomerServiceSetting extends BaseTest{
 	@BeforeClass
 	public void loginTest() throws InterruptedException {
@@ -17,6 +26,10 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.type("name=login_name",ReadProperties.getPropertyValue("username"));
 		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+	}
+//	@BeforeMethod
+	public void refreshPage() {
+		webtest.refresh();
 	}
 	//CustomerService以CS代称
 	public void openCSList() throws InterruptedException {
@@ -183,7 +196,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.typeAndClear("xpath=//span[text()='距离浏览器侧边']/following-sibling::input[1]", "0");
 		webtest.typeAndClear("xpath=//span[text()='距离浏览器顶部']/following-sibling::input[1]", "150");
 		//保存
-		webtest.click("xpath=//button[text()='保存']");
+		webtest.click("xpath=//dl[@class='position-absolute form-submit-position bg-white']/dd[1]/button[text()='保存']");
 		//关闭界面
 		webtest.click("xpath=//button[text()='关闭']");
 		System.out.println("ID203 客服设置-客服设置-功能设置-修改在线交流方式为“固定于页面左边” 成功！");
@@ -249,7 +262,7 @@ public class CustomerServiceSetting extends BaseTest{
 	}
 //45、ID	241 栏目管理-添加一级栏目
 	@Test(priority = 11)
-	public void addColumn() {
+	public void addColumn() throws InterruptedException {
 		//点击顶部的“栏目”，进入栏目管理
 		webtest.click("xpath=//a[text()='栏目']");
 		//点击最上方的“添加“按钮
@@ -263,12 +276,50 @@ public class CustomerServiceSetting extends BaseTest{
 		//保存、关闭
 		List<WebElement> submitBtns=webtest.getElementsList("xpath=//button[text()='保存']");
 		webtest.click(submitBtns.get(1));
-		webtest.click("xpath=//span[text()='×']");
+		Thread.sleep(3000);
+		webtest.click("xpath=//button[text()='关闭']");
 		//进入前台页面验证修改
-		boolean newExist=webtest.isElementPresent("xpath=//span[text()='新一级栏目']");
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		boolean newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
 		System.out.println("新添加'新一级栏目'是否存在："+newExist);
 		Assert.assertEquals(newExist, true);
-		System.out.println("ID	241 栏目管理-添加一级栏目 成功！");
+		webtest.leaveFrame();
+		System.out.println("ID241 栏目管理-添加一级栏目 成功！");
 	}
-	
+//46、ID11033 栏目管理-删除一级栏目
+	@Test(priority = 12)
+	public void deleteColumn() throws InterruptedException {
+		//删除前
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		boolean beforeDelete_newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
+		System.out.println("删除前'新一级栏目'是否存在："+beforeDelete_newExist);
+		webtest.leaveFrame();
+		//点击顶部的“栏目”，进入栏目管理
+		webtest.click("xpath=//a[text()='栏目']");
+		//选中用例241 中添加的序号为8
+		webtest.click("xpath=//input[@value='8']/../../preceding-sibling::td[1]/div");
+		//删除
+		webtest.down(2);
+		webtest.click("xpath=//button[text()='保存']/following-sibling::button[1]");
+		webtest.click("xpath=//button[text()='确定']");
+		//关闭页面
+		Thread.sleep(3000);
+		webtest.click("xpath=//button[text()='关闭']");
+		//进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		boolean afterDelete_newExist=webtest.isElementPresent("xpath=//a[@title='新一级栏目']");
+		System.out.println("新添加'新一级栏目'是否存在："+afterDelete_newExist);
+		Assert.assertEquals(afterDelete_newExist, false);
+		webtest.leaveFrame();
+		System.out.println("ID11033 栏目管理-删除一级栏目 成功！");
+	}
+	@AfterSuite
+	public void mailUtil() throws IOException, TemplateException {
+		FreeMarker freeMarker=new FreeMarker();
+		freeMarker.makeReport();
+		
+		MailUtil m=new MailUtil();
+		m.sendMail();
+		
+	}
 }

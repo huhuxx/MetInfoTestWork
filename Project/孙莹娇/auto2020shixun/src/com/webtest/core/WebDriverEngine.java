@@ -225,7 +225,10 @@ public class WebDriverEngine {
 	public void goBack() {
 		driver.navigate().back();
 	}
-
+	
+	public void refresh() {
+		driver.navigate().refresh();
+	}
 	public void goForward() {
 
 		driver.navigate().forward();
