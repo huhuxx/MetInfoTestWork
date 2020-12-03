@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MetInfo]">
+  <test thread-count="5" name="all(failed)">
+    <classes>
+      <class name="com.hxy.testCase.SearchBox_Test">
+        <methods>
+          <include name="SearchBox_set_content_symbol"/>
+          <include name="SearchBox_set_content_number"/>
+          <include name="SearchBox_set_content_text"/>
+          <include name="SearchBox_set_content_all"/>
+          <include name="doAfterMethod"/>
+          <include name="startBrowser"/>
+        </methods>
+      </class> <!-- com.hxy.testCase.SearchBox_Test -->
+    </classes>
+  </test> <!-- all(failed) -->
+</suite> <!-- Failed suite [MetInfo] -->
