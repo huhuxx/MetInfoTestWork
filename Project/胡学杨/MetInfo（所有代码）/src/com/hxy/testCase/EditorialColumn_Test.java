@@ -1,11 +1,15 @@
 package com.hxy.testCase;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.hxy.Listener.JavaCreateHtmlListener;
 import com.hxy.pageObjects.EditorialColumn;
 import com.hxy.util.BaseTest;
 
+
+@Listeners(JavaCreateHtmlListener.class)
 public class EditorialColumn_Test extends BaseTest {
 	//14¸ö
 	public EditorialColumn u(WebDriver webDriver) {
@@ -29,10 +33,10 @@ public class EditorialColumn_Test extends BaseTest {
 	public void EditorialColumn_set_setDisplay_tail() throws InterruptedException {
 		u(driver).set_setDisplay_tail();
 	}
-//	@Test
-//	public void EditorialColumn_set_setDisplay_no() throws InterruptedException {
-//		u(driver).set_setDisplay_no();
-//	}
+	@Test
+	public void EditorialColumn_set_setDisplay_no() throws InterruptedException {
+		u(driver).set_setDisplay_no();
+	}
 	@Test
 	public void EditorialColumn_set_setDisplay_all() throws InterruptedException {
 		u(driver).set_setDisplay_all();

@@ -1,13 +1,9 @@
 package com.hxy.dataProvider;
 
-import java.io.IOException;
 import java.sql.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 public class MysqlDataProvider {
 	

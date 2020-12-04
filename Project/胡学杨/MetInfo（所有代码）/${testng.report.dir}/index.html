@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-MetInfo">
-              <span class="suite-name border-failed">MetInfo</span>
+              <span class="suite-name border-skipped">MetInfo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,75 +93,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                    <span class="method-stats">4 methods,  4 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-MetInfo" class="hide-methods failed suite-MetInfo"> (hide)</a> <!-- hide-methods failed suite-MetInfo -->
-                      <a href="#" panel-name="suite-MetInfo" class="show-methods failed suite-MetInfo"> (show)</a> <!-- show-methods failed suite-MetInfo -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-MetInfo" class="hide-methods skipped suite-MetInfo"> (hide)</a> <!-- hide-methods skipped suite-MetInfo -->
+                      <a href="#" panel-name="suite-MetInfo" class="show-methods skipped suite-MetInfo"> (show)</a> <!-- show-methods skipped suite-MetInfo -->
                     </span>
-                    <div class="method-list-content failed suite-MetInfo">
+                    <div class="method-list-content skipped suite-MetInfo">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_content_all">SearchBox_set_content_all</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.ColumnManage_Test" hash-for-method="ColumnManage_addColumn">ColumnManage_addColumn</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_content_number">SearchBox_set_content_number</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.ColumnManage_Test" hash-for-method="ColumnManage_setDisplay_all">ColumnManage_setDisplay_all</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_content_symbol">SearchBox_set_content_symbol</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.ColumnManage_Test" hash-for-method="ColumnManage_setDisplay_head">ColumnManage_setDisplay_head</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_content_text">SearchBox_set_content_text</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.ColumnManage_Test" hash-for-method="ColumnManage_updateTitle">ColumnManage_updateTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-MetInfo -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-MetInfo" class="hide-methods passed suite-MetInfo"> (hide)</a> <!-- hide-methods passed suite-MetInfo -->
-                      <a href="#" panel-name="suite-MetInfo" class="show-methods passed suite-MetInfo"> (show)</a> <!-- show-methods passed suite-MetInfo -->
-                    </span>
-                    <div class="method-list-content passed suite-MetInfo">
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_range_1">SearchBox_set_range_1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_range_2">SearchBox_set_range_2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_style_all">SearchBox_set_style_all</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_style_content">SearchBox_set_style_content</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_style_tc">SearchBox_set_style_tc</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.hxy.testCase.SearchBox_Test" hash-for-method="SearchBox_set_style_title">SearchBox_set_style_title</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-MetInfo -->
+                    </div> <!-- method-list-content skipped suite-MetInfo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -173,25 +134,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-MetInfo" class="panel MetInfo">
-          <div class="suite-MetInfo-class-failed">
+          <div class="suite-MetInfo-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.hxy.testCase.SearchBox_Test</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.hxy.testCase.ColumnManage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchBox_set_content_all">
-                  </a> <!-- SearchBox_set_content_all -->
-                  <span class="method-name">SearchBox_set_content_all</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value=&apos;请输入你感兴趣的关键词；&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <a name="ColumnManage_addColumn">
+                  </a> <!-- ColumnManage_addColumn -->
+                  <span class="method-name">ColumnManage_addColumn</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-R6U7DT6&apos;, ip: &apos;192.168.43.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 20232, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cad3767-6c9f-4ce6-b0d7-d6a941bfd8ae
-*** Element info: {Using=xpath, value=//input[@value=&apos;请输入你感兴趣的关键词；&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -199,30 +159,27 @@ Session ID: 2cad3767-6c9f-4ce6-b0d7-d6a941bfd8ae
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-	at com.hxy.pageObjects.SearchBox.set_content_all(Unknown Source)
-	at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_all(Unknown Source)
+	at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 30 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchBox_set_content_number">
-                  </a> <!-- SearchBox_set_content_number -->
-                  <span class="method-name">SearchBox_set_content_number</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value=&apos;请输入你感兴趣的关键词；&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <a name="ColumnManage_setDisplay_all">
+                  </a> <!-- ColumnManage_setDisplay_all -->
+                  <span class="method-name">ColumnManage_setDisplay_all</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-R6U7DT6&apos;, ip: &apos;192.168.43.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 18476, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8757e1d0-084b-4ac6-ba39-3b1ae3def11b
-*** Element info: {Using=xpath, value=//input[@value=&apos;请输入你感兴趣的关键词；&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -230,30 +187,27 @@ Session ID: 8757e1d0-084b-4ac6-ba39-3b1ae3def11b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-	at com.hxy.pageObjects.SearchBox.set_content_number(Unknown Source)
-	at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_number(Unknown Source)
+	at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 30 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchBox_set_content_symbol">
-                  </a> <!-- SearchBox_set_content_symbol -->
-                  <span class="method-name">SearchBox_set_content_symbol</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value=&apos;请输入你感兴趣的关键词；&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <a name="ColumnManage_setDisplay_head">
+                  </a> <!-- ColumnManage_setDisplay_head -->
+                  <span class="method-name">ColumnManage_setDisplay_head</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-R6U7DT6&apos;, ip: &apos;192.168.43.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 15420, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 67feb4b8-819a-4f6d-84c7-5abee58825f0
-*** Element info: {Using=xpath, value=//input[@value=&apos;请输入你感兴趣的关键词；&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -261,30 +215,27 @@ Session ID: 67feb4b8-819a-4f6d-84c7-5abee58825f0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-	at com.hxy.pageObjects.SearchBox.set_content_symbol(Unknown Source)
-	at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_symbol(Unknown Source)
+	at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 30 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="SearchBox_set_content_text">
-                  </a> <!-- SearchBox_set_content_text -->
-                  <span class="method-name">SearchBox_set_content_text</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value=&apos;请输入你感兴趣的关键词；&apos;]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+                  <a name="ColumnManage_updateTitle">
+                  </a> <!-- ColumnManage_updateTitle -->
+                  <span class="method-name">ColumnManage_updateTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
 System info: host: &apos;DESKTOP-R6U7DT6&apos;, ip: &apos;192.168.43.98&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 13128, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 343b2e8d-d1c1-4b9a-b6f8-2b5fe541bbbe
-*** Element info: {Using=xpath, value=//input[@value=&apos;请输入你感兴趣的关键词；&apos;]}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -292,69 +243,17 @@ Session ID: 343b2e8d-d1c1-4b9a-b6f8-2b5fe541bbbe
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-	at com.hxy.pageObjects.SearchBox.set_content_text(Unknown Source)
-	at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_text(Unknown Source)
+	at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 	at java.util.ArrayList.forEach(Unknown Source)
-... Removed 30 stack frames
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MetInfo-class-failed -->
-          <div class="suite-MetInfo-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hxy.testCase.SearchBox_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_range_1">
-                  </a> <!-- SearchBox_set_range_1 -->
-                  <span class="method-name">SearchBox_set_range_1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_range_2">
-                  </a> <!-- SearchBox_set_range_2 -->
-                  <span class="method-name">SearchBox_set_range_2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_style_all">
-                  </a> <!-- SearchBox_set_style_all -->
-                  <span class="method-name">SearchBox_set_style_all</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_style_content">
-                  </a> <!-- SearchBox_set_style_content -->
-                  <span class="method-name">SearchBox_set_style_content</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_style_tc">
-                  </a> <!-- SearchBox_set_style_tc -->
-                  <span class="method-name">SearchBox_set_style_tc</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="SearchBox_set_style_title">
-                  </a> <!-- SearchBox_set_style_title -->
-                  <span class="method-name">SearchBox_set_style_title</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-MetInfo-class-passed -->
+          </div> <!-- suite-MetInfo-class-skipped -->
         </div> <!-- panel MetInfo -->
         <div panel-name="test-xml-MetInfo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -367,7 +266,7 @@ Session ID: 343b2e8d-d1c1-4b9a-b6f8-2b5fe541bbbe
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MetInfo&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;all&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.hxy.testCase.SearchBox_Test&quot;/&gt;
+      &lt;class name=&quot;com.hxy.testCase.ColumnManage_Test&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- all --&gt;
 &lt;/suite&gt; &lt;!-- MetInfo --&gt;
@@ -407,52 +306,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SearchBox_set_style_tc')
-data.setCell(0, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(0, 3, 7275);
+data.setCell(0, 1, 'ColumnManage_addColumn')
+data.setCell(0, 2, 'com.hxy.testCase.ColumnManage_Test')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SearchBox_set_style_title')
-data.setCell(1, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(1, 3, 6321);
+data.setCell(1, 1, 'ColumnManage_setDisplay_head')
+data.setCell(1, 2, 'com.hxy.testCase.ColumnManage_Test')
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SearchBox_set_range_1')
-data.setCell(2, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(2, 3, 6257);
+data.setCell(2, 1, 'ColumnManage_setDisplay_all')
+data.setCell(2, 2, 'com.hxy.testCase.ColumnManage_Test')
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SearchBox_set_range_2')
-data.setCell(3, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(3, 3, 6094);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'SearchBox_set_style_all')
-data.setCell(4, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(4, 3, 6038);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'SearchBox_set_style_content')
-data.setCell(5, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(5, 3, 6025);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'SearchBox_set_content_text')
-data.setCell(6, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(6, 3, 4935);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'SearchBox_set_content_number')
-data.setCell(7, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(7, 3, 4927);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'SearchBox_set_content_all')
-data.setCell(8, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(8, 3, 4839);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'SearchBox_set_content_symbol')
-data.setCell(9, 2, 'com.hxy.testCase.SearchBox_Test')
-data.setCell(9, 3, 4831);
+data.setCell(3, 1, 'ColumnManage_updateTitle')
+data.setCell(3, 2, 'com.hxy.testCase.ColumnManage_Test')
+data.setCell(3, 3, 0);
 window.suiteTableData['MetInfo']= { tableData: data, tableDiv: 'times-div-MetInfo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-MetInfo">
               </div> <!-- times-div-MetInfo -->
             </div> <!-- times-div -->
@@ -478,134 +353,56 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.hxy.testCase.SearchBox_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.hxy.testCase.ColumnManage_Test</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">startBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SearchBox_set_content_all</span>
-                <span class="method-start">8113 ms</span>
+                <span class="method-name">ColumnManage_addColumn</span>
+                <span class="method-start">3805 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">doAfterMethod</span>
-                <span class="method-start">12953 ms</span>
+                <span class="method-start">3805 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">15657 ms</span>
+                <span class="method-start">3805 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SearchBox_set_content_number</span>
-                <span class="method-start">23328 ms</span>
+                <span class="method-name">ColumnManage_setDisplay_all</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">doAfterMethod</span>
-                <span class="method-start">28256 ms</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">30875 ms</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SearchBox_set_content_symbol</span>
-                <span class="method-start">38526 ms</span>
+                <span class="method-name">ColumnManage_setDisplay_head</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">doAfterMethod</span>
-                <span class="method-start">43357 ms</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startBrowser</span>
-                <span class="method-start">45950 ms</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">SearchBox_set_content_text</span>
-                <span class="method-start">53591 ms</span>
+                <span class="method-name">ColumnManage_updateTitle</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">doAfterMethod</span>
-                <span class="method-start">58526 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">61128 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_range_1</span>
-                <span class="method-start">68765 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">75022 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">77641 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_range_2</span>
-                <span class="method-start">85305 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">91399 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">94000 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_style_all</span>
-                <span class="method-start">101639 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">107677 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">110378 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_style_content</span>
-                <span class="method-start">118043 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">124068 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">126661 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_style_tc</span>
-                <span class="method-start">134315 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">141590 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startBrowser</span>
-                <span class="method-start">144188 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">SearchBox_set_style_title</span>
-                <span class="method-start">151840 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">doAfterMethod</span>
-                <span class="method-start">158161 ms</span>
+                <span class="method-start">3806 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

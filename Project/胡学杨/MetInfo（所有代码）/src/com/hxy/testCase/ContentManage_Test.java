@@ -58,22 +58,22 @@ public class ContentManage_Test extends BaseTest {
 	}
 	@Test
 	public void ContentManage_editContent_text_size() throws InterruptedException {	
-		u(driver).editContent_text_size();
+		u(driver).editContent_text_size("5");
 	}
 	@Test
 	public void ContentManage_editContent_text_color() throws InterruptedException {	
-		u(driver).editContent_text_color();
+		u(driver).editContent_text_color("#1baadb");
 	}
 	@Test
 	public void ContentManage_editContent_model() throws InterruptedException {	
-		u(driver).editContent_model();
+		u(driver).editContent_model("AKG&HUAWEI");
 	}
 	@Test
 	public void ContentManage_editContent_JingDong() throws InterruptedException {	
-		u(driver).editContent_JingDong();
+		u(driver).editContent_JingDong("https://www.jd.com/");
 	}
 	@Test
 	public void ContentManage_editContent_Taobao() throws InterruptedException {	
-		u(driver).editContent_Taobao();
+		u(driver).editContent_Taobao("https://www.taobao.com/");
 	}
 }

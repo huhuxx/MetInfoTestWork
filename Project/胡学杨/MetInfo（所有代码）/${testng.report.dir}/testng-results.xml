@@ -1,37 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="4" ignored="0" total="10" passed="6">
+<testng-results skipped="4" failed="0" ignored="0" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="MetInfo" duration-ms="160874" started-at="2020-12-01T21:27:58 CST" finished-at="2020-12-01T21:30:39 CST">
+  <suite name="MetInfo" duration-ms="3824" started-at="2020-12-03T10:16:56 CST" finished-at="2020-12-03T10:17:00 CST">
     <groups>
     </groups>
-    <test name="all" duration-ms="160874" started-at="2020-12-01T21:27:58 CST" finished-at="2020-12-01T21:30:39 CST">
-      <class name="com.hxy.testCase.SearchBox_Test">
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="8112" started-at="2020-12-01T21:27:58 CST" finished-at="2020-12-01T21:28:06 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="FAIL" signature="SearchBox_set_content_all()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_content_all" duration-ms="4839" started-at="2020-12-01T21:28:06 CST" finished-at="2020-12-01T21:28:11 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test name="all" duration-ms="3824" started-at="2020-12-03T10:16:56 CST" finished-at="2020-12-03T10:17:00 CST">
+      <class name="com.hxy.testCase.ColumnManage_Test">
+        <test-method status="FAIL" signature="startBrowser()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="startBrowser" is-config="true" duration-ms="3803" started-at="2020-12-03T10:16:56 CST" finished-at="2020-12-03T10:17:00 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 20232, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cad3767-6c9f-4ce6-b0d7-d6a941bfd8ae
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 20232, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 2cad3767-6c9f-4ce6-b0d7-d6a941bfd8ae
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -43,18 +37,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-at com.hxy.pageObjects.SearchBox.set_content_all(Unknown Source)
-at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_all(Unknown Source)
+at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -78,39 +74,29 @@ at org.testng.TestNG.privateMain(TestNG.java:1371)
 at org.testng.TestNG.main(TestNG.java:1335)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_content_all -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2704" started-at="2020-12-01T21:28:11 CST" finished-at="2020-12-01T21:28:14 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7671" started-at="2020-12-01T21:28:14 CST" finished-at="2020-12-01T21:28:22 CST">
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="FAIL" signature="SearchBox_set_content_number()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_content_number" duration-ms="4927" started-at="2020-12-01T21:28:22 CST" finished-at="2020-12-01T21:28:27 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="ColumnManage_addColumn()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="ColumnManage_addColumn" duration-ms="0" started-at="2020-12-03T10:17:00 CST" finished-at="2020-12-03T10:17:00 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 18476, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8757e1d0-084b-4ac6-ba39-3b1ae3def11b
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 18476, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 8757e1d0-084b-4ac6-ba39-3b1ae3def11b
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -122,18 +108,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-at com.hxy.pageObjects.SearchBox.set_content_number(Unknown Source)
-at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_number(Unknown Source)
+at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -157,39 +145,37 @@ at org.testng.TestNG.privateMain(TestNG.java:1371)
 at org.testng.TestNG.main(TestNG.java:1335)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchBox_set_content_number -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2619" started-at="2020-12-01T21:28:27 CST" finished-at="2020-12-01T21:28:29 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7651" started-at="2020-12-01T21:28:29 CST" finished-at="2020-12-01T21:28:37 CST">
+        </test-method> <!-- ColumnManage_addColumn -->
+        <test-method status="SKIP" signature="startBrowser()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="startBrowser" is-config="true" duration-ms="-1606961820626" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="FAIL" signature="SearchBox_set_content_symbol()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_content_symbol" duration-ms="4831" started-at="2020-12-01T21:28:37 CST" finished-at="2020-12-01T21:28:42 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="doAfterMethod" is-config="true" duration-ms="-1606961820626" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="ColumnManage_setDisplay_head()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="ColumnManage_setDisplay_head" duration-ms="0" started-at="2020-12-03T10:17:00 CST" finished-at="2020-12-03T10:17:00 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 15420, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 67feb4b8-819a-4f6d-84c7-5abee58825f0
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 15420, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 67feb4b8-819a-4f6d-84c7-5abee58825f0
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -201,18 +187,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-at com.hxy.pageObjects.SearchBox.set_content_symbol(Unknown Source)
-at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_symbol(Unknown Source)
+at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -236,39 +224,37 @@ at org.testng.TestNG.privateMain(TestNG.java:1371)
 at org.testng.TestNG.main(TestNG.java:1335)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchBox_set_content_symbol -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2593" started-at="2020-12-01T21:28:42 CST" finished-at="2020-12-01T21:28:44 CST">
+        </test-method> <!-- ColumnManage_setDisplay_head -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="doAfterMethod" is-config="true" duration-ms="-1606961820627" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7641" started-at="2020-12-01T21:28:44 CST" finished-at="2020-12-01T21:28:52 CST">
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="doAfterMethod" is-config="true" duration-ms="-1606961820627" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="FAIL" signature="SearchBox_set_content_text()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_content_text" duration-ms="4935" started-at="2020-12-01T21:28:52 CST" finished-at="2020-12-01T21:28:57 CST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="SKIP" signature="ColumnManage_setDisplay_all()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="ColumnManage_setDisplay_all" duration-ms="0" started-at="2020-12-03T10:17:00 CST" finished-at="2020-12-03T10:17:00 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 13128, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 343b2e8d-d1c1-4b9a-b6f8-2b5fe541bbbe
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@value='请输入你感兴趣的关键词；']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 13128, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 343b2e8d-d1c1-4b9a-b6f8-2b5fe541bbbe
-*** Element info: {Using=xpath, value=//input[@value='请输入你感兴趣的关键词；']}
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -280,18 +266,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.hxy.pageObjects.SearchBox.get_input_text(Unknown Source)
-at com.hxy.pageObjects.SearchBox.set_content_text(Unknown Source)
-at com.hxy.testCase.SearchBox_Test.SearchBox_set_content_text(Unknown Source)
+at com.hxy.util.BaseTest.startBrowser(Unknown Source)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -315,87 +303,94 @@ at org.testng.TestNG.privateMain(TestNG.java:1371)
 at org.testng.TestNG.main(TestNG.java:1335)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchBox_set_content_text -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2602" started-at="2020-12-01T21:28:57 CST" finished-at="2020-12-01T21:28:59 CST">
+        </test-method> <!-- ColumnManage_setDisplay_all -->
+        <test-method status="SKIP" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="doAfterMethod" is-config="true" duration-ms="-1606961820627" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7637" started-at="2020-12-01T21:28:59 CST" finished-at="2020-12-01T21:29:07 CST">
+        <test-method status="SKIP" signature="startBrowser()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="startBrowser" is-config="true" duration-ms="-1606961820627" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_range_1()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_range_1" duration-ms="6257" started-at="2020-12-01T21:29:07 CST" finished-at="2020-12-01T21:29:13 CST">
+        <test-method status="SKIP" signature="ColumnManage_updateTitle()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="ColumnManage_updateTitle" duration-ms="0" started-at="2020-12-03T10:17:00 CST" finished-at="2020-12-03T10:17:00 CST">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-R6U7DT6', ip: '192.168.43.98', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 83.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201112153044, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 14284, moz:profile: C:\Users\HuXueyang\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 82310248-7b11-4869-b686-1e800b49c29f
+*** Element info: {Using=name, value=login_name}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.hxy.util.BaseTest.startBrowser(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.TestNG.privateMain(TestNG.java:1371)
+at org.testng.TestNG.main(TestNG.java:1335)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SearchBox_set_range_1 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2619" started-at="2020-12-01T21:29:13 CST" finished-at="2020-12-01T21:29:16 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7664" started-at="2020-12-01T21:29:16 CST" finished-at="2020-12-01T21:29:24 CST">
+        </test-method> <!-- ColumnManage_updateTitle -->
+        <test-method status="SKIP" signature="startBrowser()[pri:0, instance:com.hxy.testCase.ColumnManage_Test@174d20a]" name="startBrowser" is-config="true" duration-ms="-1606961820627" started-at="2020-12-03T10:17:00 CST" finished-at="1970-01-01T08:00:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_range_2()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_range_2" duration-ms="6094" started-at="2020-12-01T21:29:24 CST" finished-at="2020-12-01T21:29:30 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_range_2 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2601" started-at="2020-12-01T21:29:30 CST" finished-at="2020-12-01T21:29:32 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7639" started-at="2020-12-01T21:29:32 CST" finished-at="2020-12-01T21:29:40 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_style_all()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_style_all" duration-ms="6038" started-at="2020-12-01T21:29:40 CST" finished-at="2020-12-01T21:29:46 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_style_all -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2701" started-at="2020-12-01T21:29:46 CST" finished-at="2020-12-01T21:29:49 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7665" started-at="2020-12-01T21:29:49 CST" finished-at="2020-12-01T21:29:56 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_style_content()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_style_content" duration-ms="6025" started-at="2020-12-01T21:29:56 CST" finished-at="2020-12-01T21:30:02 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_style_content -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2593" started-at="2020-12-01T21:30:02 CST" finished-at="2020-12-01T21:30:05 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7654" started-at="2020-12-01T21:30:05 CST" finished-at="2020-12-01T21:30:13 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_style_tc()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_style_tc" duration-ms="7275" started-at="2020-12-01T21:30:13 CST" finished-at="2020-12-01T21:30:20 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_style_tc -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2598" started-at="2020-12-01T21:30:20 CST" finished-at="2020-12-01T21:30:22 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-        <test-method status="PASS" signature="startBrowser()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="startBrowser" is-config="true" duration-ms="7652" started-at="2020-12-01T21:30:22 CST" finished-at="2020-12-01T21:30:30 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startBrowser -->
-        <test-method status="PASS" signature="SearchBox_set_style_title()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="SearchBox_set_style_title" duration-ms="6321" started-at="2020-12-01T21:30:30 CST" finished-at="2020-12-01T21:30:36 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SearchBox_set_style_title -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.hxy.testCase.SearchBox_Test@1efbd816]" name="doAfterMethod" is-config="true" duration-ms="2697" started-at="2020-12-01T21:30:36 CST" finished-at="2020-12-01T21:30:39 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-      </class> <!-- com.hxy.testCase.SearchBox_Test -->
+      </class> <!-- com.hxy.testCase.ColumnManage_Test -->
     </test> <!-- all -->
   </suite> <!-- MetInfo -->
 </testng-results>
