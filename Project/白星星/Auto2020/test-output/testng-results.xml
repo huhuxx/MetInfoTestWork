@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="419351" started-at="2020-12-02T14:40:39 CST" finished-at="2020-12-02T14:47:38 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="419351" started-at="2020-12-02T14:40:39 CST" finished-at="2020-12-02T14:47:38 CST">
+      <class name="com.bxx.test.KehuanliEditTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="addListener" is-config="true" duration-ms="18" started-at="2020-12-02T14:40:39 CST" description="添加监听器" finished-at="2020-12-02T14:40:39 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2e32fc22]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="17522" started-at="2020-12-02T14:40:39 CST" finished-at="2020-12-02T14:40:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit1()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEdit1" duration-ms="13474" started-at="2020-12-02T14:40:56 CST" finished-at="2020-12-02T14:41:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1769" started-at="2020-12-02T14:41:10 CST" finished-at="2020-12-02T14:41:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15038" started-at="2020-12-02T14:41:11 CST" finished-at="2020-12-02T14:41:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit2()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEdit2" duration-ms="10322" started-at="2020-12-02T14:41:26 CST" finished-at="2020-12-02T14:41:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1742" started-at="2020-12-02T14:41:37 CST" finished-at="2020-12-02T14:41:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15583" started-at="2020-12-02T14:41:38 CST" finished-at="2020-12-02T14:41:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit3()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEdit3" duration-ms="20356" started-at="2020-12-02T14:41:54 CST" finished-at="2020-12-02T14:42:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1651" started-at="2020-12-02T14:42:14 CST" finished-at="2020-12-02T14:42:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15937" started-at="2020-12-02T14:42:16 CST" finished-at="2020-12-02T14:42:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd10()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd10" duration-ms="30592" started-at="2020-12-02T14:42:32 CST" finished-at="2020-12-02T14:43:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1747" started-at="2020-12-02T14:43:03 CST" finished-at="2020-12-02T14:43:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="16215" started-at="2020-12-02T14:43:04 CST" finished-at="2020-12-02T14:43:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd4()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd4" duration-ms="17041" started-at="2020-12-02T14:43:21 CST" finished-at="2020-12-02T14:43:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="2327" started-at="2020-12-02T14:43:38 CST" finished-at="2020-12-02T14:43:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15500" started-at="2020-12-02T14:43:40 CST" finished-at="2020-12-02T14:43:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd5()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd5" duration-ms="30788" started-at="2020-12-02T14:43:55 CST" finished-at="2020-12-02T14:44:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1826" started-at="2020-12-02T14:44:26 CST" finished-at="2020-12-02T14:44:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15825" started-at="2020-12-02T14:44:28 CST" finished-at="2020-12-02T14:44:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd6()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd6" duration-ms="23884" started-at="2020-12-02T14:44:44 CST" finished-at="2020-12-02T14:45:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1858" started-at="2020-12-02T14:45:08 CST" finished-at="2020-12-02T14:45:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="14973" started-at="2020-12-02T14:45:10 CST" finished-at="2020-12-02T14:45:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd7()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd7" duration-ms="33132" started-at="2020-12-02T14:45:25 CST" finished-at="2020-12-02T14:45:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="1705" started-at="2020-12-02T14:45:58 CST" finished-at="2020-12-02T14:45:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15831" started-at="2020-12-02T14:45:59 CST" finished-at="2020-12-02T14:46:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd8()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd8" duration-ms="32228" started-at="2020-12-02T14:46:15 CST" finished-at="2020-12-02T14:46:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="2009" started-at="2020-12-02T14:46:47 CST" finished-at="2020-12-02T14:46:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doBeforeClass" is-config="true" duration-ms="15281" started-at="2020-12-02T14:46:49 CST" finished-at="2020-12-02T14:47:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd9()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="testEditAdd9" duration-ms="30052" started-at="2020-12-02T14:47:05 CST" finished-at="2020-12-02T14:47:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="doAfterMethod" is-config="true" duration-ms="3078" started-at="2020-12-02T14:47:35 CST" finished-at="2020-12-02T14:47:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.bxx.test.KehuanliEditTest@27a5f880]" name="end" is-config="true" duration-ms="19714" started-at="2020-12-02T14:47:38 CST" finished-at="2020-12-02T14:47:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

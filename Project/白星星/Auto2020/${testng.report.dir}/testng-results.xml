@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="39" passed="39">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="1556451" started-at="2020-12-02T14:49:56 CST" finished-at="2020-12-02T15:15:53 CST">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="598762" started-at="2020-12-02T14:49:56 CST" finished-at="2020-12-02T14:59:55 CST">
+      <class name="com.bxx.test.JoinusjobTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="addListener" is-config="true" duration-ms="19" started-at="2020-12-02T14:49:56 CST" description="添加监听器" finished-at="2020-12-02T14:49:56 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@564fc235]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="18490" started-at="2020-12-02T14:49:56 CST" finished-at="2020-12-02T14:50:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6932" started-at="2020-12-02T14:50:15 CST" finished-at="2020-12-02T14:50:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test1" duration-ms="10001" started-at="2020-12-02T14:50:22 CST" finished-at="2020-12-02T14:50:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1788" started-at="2020-12-02T14:50:32 CST" finished-at="2020-12-02T14:50:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16031" started-at="2020-12-02T14:50:33 CST" finished-at="2020-12-02T14:50:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6944" started-at="2020-12-02T14:50:49 CST" finished-at="2020-12-02T14:50:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test10()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test10" duration-ms="6753" started-at="2020-12-02T14:50:56 CST" finished-at="2020-12-02T14:51:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1918" started-at="2020-12-02T14:51:03 CST" finished-at="2020-12-02T14:51:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15982" started-at="2020-12-02T14:51:05 CST" finished-at="2020-12-02T14:51:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6979" started-at="2020-12-02T14:51:21 CST" finished-at="2020-12-02T14:51:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test11()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test11" duration-ms="20030" started-at="2020-12-02T14:51:28 CST" finished-at="2020-12-02T14:51:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1733" started-at="2020-12-02T14:51:48 CST" finished-at="2020-12-02T14:51:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="16009" started-at="2020-12-02T14:51:50 CST" finished-at="2020-12-02T14:52:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6833" started-at="2020-12-02T14:52:06 CST" finished-at="2020-12-02T14:52:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test12()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test12" duration-ms="11554" started-at="2020-12-02T14:52:13 CST" finished-at="2020-12-02T14:52:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1755" started-at="2020-12-02T14:52:24 CST" finished-at="2020-12-02T14:52:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15948" started-at="2020-12-02T14:52:26 CST" finished-at="2020-12-02T14:52:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6810" started-at="2020-12-02T14:52:42 CST" finished-at="2020-12-02T14:52:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test13()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test13" duration-ms="15022" started-at="2020-12-02T14:52:49 CST" finished-at="2020-12-02T14:53:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="2123" started-at="2020-12-02T14:53:04 CST" finished-at="2020-12-02T14:53:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15912" started-at="2020-12-02T14:53:06 CST" finished-at="2020-12-02T14:53:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7053" started-at="2020-12-02T14:53:22 CST" finished-at="2020-12-02T14:53:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test14()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test14" duration-ms="13828" started-at="2020-12-02T14:53:29 CST" finished-at="2020-12-02T14:53:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="8133" started-at="2020-12-02T14:53:43 CST" finished-at="2020-12-02T14:53:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="23735" started-at="2020-12-02T14:53:51 CST" finished-at="2020-12-02T14:54:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7781" started-at="2020-12-02T14:54:14 CST" finished-at="2020-12-02T14:54:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test15()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test15" duration-ms="10289" started-at="2020-12-02T14:54:22 CST" finished-at="2020-12-02T14:54:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="9360" started-at="2020-12-02T14:54:32 CST" finished-at="2020-12-02T14:54:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="21768" started-at="2020-12-02T14:54:42 CST" finished-at="2020-12-02T14:55:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7138" started-at="2020-12-02T14:55:04 CST" finished-at="2020-12-02T14:55:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test16()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test16" duration-ms="13335" started-at="2020-12-02T14:55:11 CST" finished-at="2020-12-02T14:55:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="2235" started-at="2020-12-02T14:55:24 CST" finished-at="2020-12-02T14:55:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="18613" started-at="2020-12-02T14:55:26 CST" finished-at="2020-12-02T14:55:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7688" started-at="2020-12-02T14:55:45 CST" finished-at="2020-12-02T14:55:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test2" duration-ms="10049" started-at="2020-12-02T14:55:53 CST" finished-at="2020-12-02T14:56:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1775" started-at="2020-12-02T14:56:03 CST" finished-at="2020-12-02T14:56:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15423" started-at="2020-12-02T14:56:04 CST" finished-at="2020-12-02T14:56:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6952" started-at="2020-12-02T14:56:20 CST" finished-at="2020-12-02T14:56:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test3" duration-ms="3422" started-at="2020-12-02T14:56:27 CST" finished-at="2020-12-02T14:56:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1640" started-at="2020-12-02T14:56:30 CST" finished-at="2020-12-02T14:56:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15561" started-at="2020-12-02T14:56:32 CST" finished-at="2020-12-02T14:56:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6892" started-at="2020-12-02T14:56:47 CST" finished-at="2020-12-02T14:56:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test4" duration-ms="9890" started-at="2020-12-02T14:56:54 CST" finished-at="2020-12-02T14:57:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1614" started-at="2020-12-02T14:57:04 CST" finished-at="2020-12-02T14:57:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15537" started-at="2020-12-02T14:57:06 CST" finished-at="2020-12-02T14:57:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6852" started-at="2020-12-02T14:57:21 CST" finished-at="2020-12-02T14:57:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test5" duration-ms="10166" started-at="2020-12-02T14:57:28 CST" finished-at="2020-12-02T14:57:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1773" started-at="2020-12-02T14:57:38 CST" finished-at="2020-12-02T14:57:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15632" started-at="2020-12-02T14:57:40 CST" finished-at="2020-12-02T14:57:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6905" started-at="2020-12-02T14:57:56 CST" finished-at="2020-12-02T14:58:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test6()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test6" duration-ms="10443" started-at="2020-12-02T14:58:03 CST" finished-at="2020-12-02T14:58:13 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1659" started-at="2020-12-02T14:58:13 CST" finished-at="2020-12-02T14:58:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15431" started-at="2020-12-02T14:58:15 CST" finished-at="2020-12-02T14:58:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7104" started-at="2020-12-02T14:58:30 CST" finished-at="2020-12-02T14:58:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test7()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test7" duration-ms="10079" started-at="2020-12-02T14:58:37 CST" finished-at="2020-12-02T14:58:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1761" started-at="2020-12-02T14:58:47 CST" finished-at="2020-12-02T14:58:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15902" started-at="2020-12-02T14:58:49 CST" finished-at="2020-12-02T14:59:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="7279" started-at="2020-12-02T14:59:05 CST" finished-at="2020-12-02T14:59:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test8()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test8" duration-ms="10158" started-at="2020-12-02T14:59:12 CST" finished-at="2020-12-02T14:59:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1724" started-at="2020-12-02T14:59:23 CST" finished-at="2020-12-02T14:59:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doBeforeClass" is-config="true" duration-ms="15299" started-at="2020-12-02T14:59:24 CST" finished-at="2020-12-02T14:59:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="basictest()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="basictest" is-config="true" duration-ms="6943" started-at="2020-12-02T14:59:40 CST" finished-at="2020-12-02T14:59:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basictest -->
+        <test-method status="PASS" signature="test9()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="test9" duration-ms="6649" started-at="2020-12-02T14:59:46 CST" finished-at="2020-12-02T14:59:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinusjobTest@7dc7cbad]" name="doAfterMethod" is-config="true" duration-ms="1691" started-at="2020-12-02T14:59:53 CST" finished-at="2020-12-02T14:59:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.JoinusjobTest -->
+    </test> <!-- test -->
+    <test name="test2" duration-ms="271221" started-at="2020-12-02T14:59:55 CST" finished-at="2020-12-02T15:04:26 CST">
+      <class name="com.bxx.test.kehuanliPageTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-02T14:59:55 CST" description="添加监听器" finished-at="2020-12-02T14:59:55 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@65b7678a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="15297" started-at="2020-12-02T14:59:55 CST" finished-at="2020-12-02T15:00:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="8575" started-at="2020-12-02T15:00:10 CST" finished-at="2020-12-02T15:00:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="test5()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="test5" duration-ms="14042" started-at="2020-12-02T15:00:19 CST" finished-at="2020-12-02T15:00:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1726" started-at="2020-12-02T15:00:33 CST" finished-at="2020-12-02T15:00:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="15536" started-at="2020-12-02T15:00:35 CST" finished-at="2020-12-02T15:00:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="8368" started-at="2020-12-02T15:00:50 CST" finished-at="2020-12-02T15:00:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="testBanner1()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testBanner1" duration-ms="11289" started-at="2020-12-02T15:00:59 CST" finished-at="2020-12-02T15:01:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBanner1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1764" started-at="2020-12-02T15:01:10 CST" finished-at="2020-12-02T15:01:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="15592" started-at="2020-12-02T15:01:12 CST" finished-at="2020-12-02T15:01:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="7968" started-at="2020-12-02T15:01:27 CST" finished-at="2020-12-02T15:01:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="testEditDelete6()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEditDelete6" duration-ms="71613" started-at="2020-12-02T15:01:35 CST" finished-at="2020-12-02T15:02:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditDelete6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1478" started-at="2020-12-02T15:02:47 CST" finished-at="2020-12-02T15:02:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="15383" started-at="2020-12-02T15:02:48 CST" finished-at="2020-12-02T15:03:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="8009" started-at="2020-12-02T15:03:04 CST" finished-at="2020-12-02T15:03:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="testSearch2()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testSearch2" duration-ms="4412" started-at="2020-12-02T15:03:12 CST" finished-at="2020-12-02T15:03:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearch2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1632" started-at="2020-12-02T15:03:16 CST" finished-at="2020-12-02T15:03:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="14959" started-at="2020-12-02T15:03:18 CST" finished-at="2020-12-02T15:03:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="7892" started-at="2020-12-02T15:03:33 CST" finished-at="2020-12-02T15:03:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="testSwitch3()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testSwitch3" duration-ms="12633" started-at="2020-12-02T15:03:41 CST" finished-at="2020-12-02T15:03:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSwitch3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1580" started-at="2020-12-02T15:03:53 CST" finished-at="2020-12-02T15:03:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doBeforeClass" is-config="true" duration-ms="15249" started-at="2020-12-02T15:03:55 CST" finished-at="2020-12-02T15:04:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEnter()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="testEnter" is-config="true" duration-ms="8001" started-at="2020-12-02T15:04:10 CST" finished-at="2020-12-02T15:04:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnter -->
+        <test-method status="PASS" signature="test4()[pri:1, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="test4" duration-ms="6267" started-at="2020-12-02T15:04:18 CST" finished-at="2020-12-02T15:04:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.kehuanliPageTest@224edc67]" name="doAfterMethod" is-config="true" duration-ms="1955" started-at="2020-12-02T15:04:24 CST" finished-at="2020-12-02T15:04:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.kehuanliPageTest -->
+    </test> <!-- test2 -->
+    <test name="test3" duration-ms="117354" started-at="2020-12-02T15:04:26 CST" finished-at="2020-12-02T15:06:24 CST">
+      <class name="com.bxx.test.JoinuszhaopinTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-02T15:04:26 CST" description="添加监听器" finished-at="2020-12-02T15:04:26 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7699e60a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doBeforeClass" is-config="true" duration-ms="15520" started-at="2020-12-02T15:04:26 CST" finished-at="2020-12-02T15:04:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="before" is-config="true" duration-ms="10066" started-at="2020-12-02T15:04:42 CST" finished-at="2020-12-02T15:04:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="test1" duration-ms="23258" started-at="2020-12-02T15:04:52 CST" finished-at="2020-12-02T15:05:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doAfterMethod" is-config="true" duration-ms="1407" started-at="2020-12-02T15:05:15 CST" finished-at="2020-12-02T15:05:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doBeforeClass" is-config="true" duration-ms="15289" started-at="2020-12-02T15:05:17 CST" finished-at="2020-12-02T15:05:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="before" is-config="true" duration-ms="10207" started-at="2020-12-02T15:05:32 CST" finished-at="2020-12-02T15:05:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="test2" duration-ms="6761" started-at="2020-12-02T15:05:42 CST" finished-at="2020-12-02T15:05:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doAfterMethod" is-config="true" duration-ms="1611" started-at="2020-12-02T15:05:49 CST" finished-at="2020-12-02T15:05:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doBeforeClass" is-config="true" duration-ms="14877" started-at="2020-12-02T15:05:50 CST" finished-at="2020-12-02T15:06:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="before()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="before" is-config="true" duration-ms="10014" started-at="2020-12-02T15:06:05 CST" finished-at="2020-12-02T15:06:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="test3" duration-ms="6719" started-at="2020-12-02T15:06:15 CST" finished-at="2020-12-02T15:06:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuszhaopinTest@5b275dab]" name="doAfterMethod" is-config="true" duration-ms="1624" started-at="2020-12-02T15:06:22 CST" finished-at="2020-12-02T15:06:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.JoinuszhaopinTest -->
+    </test> <!-- test3 -->
+    <test name="test4" duration-ms="399886" started-at="2020-12-02T15:06:24 CST" finished-at="2020-12-02T15:13:04 CST">
+      <class name="com.bxx.test.KehuanliEditTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="addListener" is-config="true" duration-ms="1" started-at="2020-12-02T15:06:24 CST" description="添加监听器" finished-at="2020-12-02T15:06:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5bbc033f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="15092" started-at="2020-12-02T15:06:24 CST" finished-at="2020-12-02T15:06:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit1()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEdit1" duration-ms="13308" started-at="2020-12-02T15:06:39 CST" finished-at="2020-12-02T15:06:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1636" started-at="2020-12-02T15:06:52 CST" finished-at="2020-12-02T15:06:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="14902" started-at="2020-12-02T15:06:54 CST" finished-at="2020-12-02T15:07:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit2()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEdit2" duration-ms="10151" started-at="2020-12-02T15:07:09 CST" finished-at="2020-12-02T15:07:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1613" started-at="2020-12-02T15:07:19 CST" finished-at="2020-12-02T15:07:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="15151" started-at="2020-12-02T15:07:20 CST" finished-at="2020-12-02T15:07:36 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEdit3()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEdit3" duration-ms="13276" started-at="2020-12-02T15:07:36 CST" finished-at="2020-12-02T15:07:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1621" started-at="2020-12-02T15:07:49 CST" finished-at="2020-12-02T15:07:50 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="15005" started-at="2020-12-02T15:07:50 CST" finished-at="2020-12-02T15:08:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd10()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd10" duration-ms="29963" started-at="2020-12-02T15:08:05 CST" finished-at="2020-12-02T15:08:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1678" started-at="2020-12-02T15:08:35 CST" finished-at="2020-12-02T15:08:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="14928" started-at="2020-12-02T15:08:37 CST" finished-at="2020-12-02T15:08:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd4()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd4" duration-ms="16705" started-at="2020-12-02T15:08:52 CST" finished-at="2020-12-02T15:09:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1649" started-at="2020-12-02T15:09:09 CST" finished-at="2020-12-02T15:09:10 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="14911" started-at="2020-12-02T15:09:10 CST" finished-at="2020-12-02T15:09:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd5()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd5" duration-ms="30992" started-at="2020-12-02T15:09:25 CST" finished-at="2020-12-02T15:09:56 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1778" started-at="2020-12-02T15:09:56 CST" finished-at="2020-12-02T15:09:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="15479" started-at="2020-12-02T15:09:58 CST" finished-at="2020-12-02T15:10:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd6()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd6" duration-ms="23440" started-at="2020-12-02T15:10:14 CST" finished-at="2020-12-02T15:10:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1695" started-at="2020-12-02T15:10:37 CST" finished-at="2020-12-02T15:10:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="14920" started-at="2020-12-02T15:10:39 CST" finished-at="2020-12-02T15:10:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd7()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd7" duration-ms="33016" started-at="2020-12-02T15:10:54 CST" finished-at="2020-12-02T15:11:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1769" started-at="2020-12-02T15:11:27 CST" finished-at="2020-12-02T15:11:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="15107" started-at="2020-12-02T15:11:28 CST" finished-at="2020-12-02T15:11:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd8()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd8" duration-ms="31957" started-at="2020-12-02T15:11:43 CST" finished-at="2020-12-02T15:12:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1959" started-at="2020-12-02T15:12:15 CST" finished-at="2020-12-02T15:12:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doBeforeClass" is-config="true" duration-ms="14984" started-at="2020-12-02T15:12:17 CST" finished-at="2020-12-02T15:12:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd9()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="testEditAdd9" duration-ms="29656" started-at="2020-12-02T15:12:32 CST" finished-at="2020-12-02T15:13:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@68c4039c]" name="doAfterMethod" is-config="true" duration-ms="1543" started-at="2020-12-02T15:13:02 CST" finished-at="2020-12-02T15:13:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </test> <!-- test4 -->
+    <test name="test5" duration-ms="168944" started-at="2020-12-02T15:13:04 CST" finished-at="2020-12-02T15:15:53 CST">
+      <class name="com.bxx.test.JoinuspageTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="addListener" is-config="true" duration-ms="0" started-at="2020-12-02T15:13:04 CST" description="添加监听器" finished-at="2020-12-02T15:13:04 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@734a2c17]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doBeforeClass" is-config="true" duration-ms="15116" started-at="2020-12-02T15:13:04 CST" finished-at="2020-12-02T15:13:19 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="beforeall()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="beforeall" is-config="true" duration-ms="9514" started-at="2020-12-02T15:13:19 CST" finished-at="2020-12-02T15:13:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeall -->
+        <test-method status="PASS" signature="test2()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="test2" duration-ms="15165" started-at="2020-12-02T15:13:28 CST" finished-at="2020-12-02T15:13:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doAfterMethod" is-config="true" duration-ms="1602" started-at="2020-12-02T15:13:43 CST" finished-at="2020-12-02T15:13:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doBeforeClass" is-config="true" duration-ms="15277" started-at="2020-12-02T15:13:45 CST" finished-at="2020-12-02T15:14:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="beforeall()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="beforeall" is-config="true" duration-ms="8944" started-at="2020-12-02T15:14:00 CST" finished-at="2020-12-02T15:14:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeall -->
+        <test-method status="PASS" signature="test3()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="test3" duration-ms="16930" started-at="2020-12-02T15:14:09 CST" finished-at="2020-12-02T15:14:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doAfterMethod" is-config="true" duration-ms="1613" started-at="2020-12-02T15:14:26 CST" finished-at="2020-12-02T15:14:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doBeforeClass" is-config="true" duration-ms="14993" started-at="2020-12-02T15:14:28 CST" finished-at="2020-12-02T15:14:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="beforeall()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="beforeall" is-config="true" duration-ms="8988" started-at="2020-12-02T15:14:43 CST" finished-at="2020-12-02T15:14:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeall -->
+        <test-method status="PASS" signature="test4()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="test4" duration-ms="15814" started-at="2020-12-02T15:14:52 CST" finished-at="2020-12-02T15:15:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doAfterMethod" is-config="true" duration-ms="1724" started-at="2020-12-02T15:15:08 CST" finished-at="2020-12-02T15:15:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doBeforeClass" is-config="true" duration-ms="15382" started-at="2020-12-02T15:15:09 CST" finished-at="2020-12-02T15:15:25 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="beforeall()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="beforeall" is-config="true" duration-ms="8973" started-at="2020-12-02T15:15:25 CST" finished-at="2020-12-02T15:15:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeall -->
+        <test-method status="PASS" signature="text1()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="text1" duration-ms="17292" started-at="2020-12-02T15:15:34 CST" finished-at="2020-12-02T15:15:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- text1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="doAfterMethod" is-config="true" duration-ms="1615" started-at="2020-12-02T15:15:51 CST" finished-at="2020-12-02T15:15:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.bxx.test.JoinuspageTest@66a3ffec]" name="end" is-config="true" duration-ms="19815" started-at="2020-12-02T15:15:53 CST" finished-at="2020-12-02T15:16:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bxx.test.JoinuspageTest -->
+    </test> <!-- test5 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
