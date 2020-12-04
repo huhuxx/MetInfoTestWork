@@ -1,20 +1,23 @@
 package test;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import driver.BaseTest;
+import listener.JavaMailTestListener;
 
+//@Listeners(JavaMailTestListener.class)
 public class TestAuto extends BaseTest {
-	// 进入在线留言界面
+	// 进入在线留言
 	public void email() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@title='��������']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='editable-click']");
 		Thread.sleep(1000);
@@ -28,29 +31,29 @@ public class TestAuto extends BaseTest {
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='提交留言']");
+		webtest.mouseToElementandClick("xpath=//button[text()='�ύ����']");
 		Thread.sleep(3000);
 	}
 
 	// 进入在线反馈界面
 	public void email1() throws InterruptedException {
 		WebElement element = null;
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@title='��������']");
 		Thread.sleep(1000);
 		element = webtest.back("editable-click").get(36);
 		webtest.click(element);
 		Thread.sleep(1000);
 	}
 
-	// 1，成功添加测试在线留言
-	@Test
+	//1，成功添加测试在线留言
+	@Test(priority = 1)
 	public void yjltest1() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -70,11 +73,11 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 2，成功在前台显示留言
-	@Test
+	@Test(priority = 2)
 	public void yjltest2() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -82,17 +85,17 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
-		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
+//		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
 		webtest.type("xpath=//textarea[@name='useinfo']", "好");
 		webtest.click("xpath=//label[text()='审核通过并在前台显示']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/message/");
+		webtest.open("http://localhost:99/message/");
 	}
 
 	// 3，添加在线留言失败，添加Email格式错误
-	@Test
+	@Test(priority = 3)
 	public void yjltest3() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -111,7 +114,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 4,添加在线留言失败，姓名为空
-	@Test
+	@Test(priority = 4)
 	public void yjltest4() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "");
@@ -130,7 +133,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 5,添加在线留言失败,联系电话格式错误
-	@Test
+	@Test(priority = 5)
 	public void yjltest5() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -149,10 +152,10 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 6，添加在线留言失败，联系地址为空
-	@Test
+	@Test(priority = 6)
 	public void yjltest6() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
+		webtest.type("xpath=//input[@name='para137']","杨佳乐");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
@@ -168,7 +171,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 7,添加在线留言失败，联系地址为空
-	@Test
+	@Test(priority = 7)
 	public void yjltest7() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -187,7 +190,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 8,添加在线留言失败,留言内容为空
-	@Test
+	@Test(priority = 8)
 	public void yjltest8() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -206,7 +209,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 9,添加在线留言失败,Email格式错误（输入的是1837519045@qq.com11111）
-	@Test
+	@Test(priority = 9)
 	public void yjltest9() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -225,10 +228,10 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 10，添加在线留言失败，验证码为空
-	@Test
+	@Test(priority = 10)
 	public void yjltest10() throws InterruptedException {
 		email();
-		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
+		webtest.type("xpath=//input[@name='para137']","杨佳乐");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
@@ -244,7 +247,7 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 11，添加在线留言失败，验证码错误
-	@Test
+	@Test(priority = 11)
 	public void yjltest11() throws InterruptedException {
 		email();
 		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
@@ -263,11 +266,11 @@ public class TestAuto extends BaseTest {
 	}
 
 	// 12,留言在前台不显示
-	@Test
+	@Test(priority = 12)
 	public void yjltest12() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -279,15 +282,15 @@ public class TestAuto extends BaseTest {
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/message/");
+		webtest.open("http://localhost:99/message/");
 	}
 
 	// 13,回复留言并且不在前台界面显示
-	@Test
+	@Test(priority = 13)
 	public void yjltest13() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -300,15 +303,15 @@ public class TestAuto extends BaseTest {
 		webtest.down(3);
 		webtest.type("xpath=//textarea[@name='useinfo']", "好");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/message/");
+		webtest.open("http://localhost:99/message/");
 	}
 
 	// 14,后台成功删除留言
-	@Test
+	@Test(priority = 14)
 	public void yjltest14() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -318,15 +321,49 @@ public class TestAuto extends BaseTest {
 		webtest.leaveFrame();
 		webtest.click("xpath=//button[@class='btn btn-sm btn-default ']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
-		webtest.open("http://localhost:8090/message/");
+		webtest.open("http://localhost:99/message/");
 	}
 
-	// 15,修改前台显示留言的方式
-	@Test
+	// 15，在线留言查看已审核的留言
+	@Test(priority = 15)
 	public void yjltest15() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//button[@data-index='5']");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='checkok']");
+		webtest.click("xpath=//option[text()='是']");
+	}
+
+	// 16，在线留言中查看未阅读留言
+	@Test(priority = 16)
+	public void yjltest16() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//button[@data-index='5']");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='search_type']");
+		webtest.click("xpath=//option[text()='未阅读信息']");
+	}
+
+	// 17,修改前台显示留言的方式
+	@Test(priority = 17)
+	public void yjltest17() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -336,7 +373,7 @@ public class TestAuto extends BaseTest {
 		webtest.leaveFrame();
 		webtest.click("xpath=//input[@class='custom-control-input']");
 		webtest.click("xpath=//button[@class='btn btn-primary ']");
-		webtest.open("http://localhost:8090/admin/?lang=cn&n=ui_set");
+		webtest.open("http://localhost:99/admin/?lang=cn&n=ui_set");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
@@ -346,7 +383,7 @@ public class TestAuto extends BaseTest {
 		webtest.mouseToElement("xpath=//div[@m-id='message_form']");
 		webtest.down(4);
 		Thread.sleep(1000);
-		webtest.type("xpath=//input[@name='para137']", "杨佳乐");
+		webtest.type("xpath=//input[@name='para137']","杨佳乐");
 		Thread.sleep(1000);
 		webtest.type("xpath=//input[@name='para186']", "1837519045@qq.com");
 		Thread.sleep(1000);
@@ -360,13 +397,13 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 		sub();
 		webtest.alertAccept();
-		webtest.open("http://localhost:8090/message/");
+		webtest.open("http://localhost:99/message/");
 	}
 
-	// 16,防刷新时间
-	@Test
-	public void yjltest16() throws InterruptedException {
-		webtest.open("http://localhost:8090/");
+	// 18,防刷新时间
+	@Test(priority = 18)
+	public void yjltest18() throws InterruptedException {
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -403,12 +440,12 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 17,修改防刷新时间为300秒
-	@Test
-	public void yjltest17() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 19,修改防刷新时间为300秒
+	@Test(priority = 19)
+	public void yjltest19() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -418,7 +455,7 @@ public class TestAuto extends BaseTest {
 		webtest.leaveFrame();
 		webtest.typeAndClear("xpath=//input[@name='met_msg_time']", "300");
 		webtest.click("xpath=//button[@class='btn btn-primary ']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:root/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -455,14 +492,15 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 18，成功添加在线留言（前置条件为登录，在前端登录执行）
-	@Test
-	public void yjltest18() throws InterruptedException {
-		webtest.open("http://localhost:8090/");
+	// 20，成功添加在线留言（前置条件为登录，在前端登录执行）
+	@Test(priority = 20)
+	public void yjltest20() throws InterruptedException {
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='met_navbtn']");
 		webtest.type("xpath=//input[@name='username']", "user");
 		webtest.type("xpath=//input[@name='password']", "password");
+//		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block']");
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -484,12 +522,13 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 19，成功在前台显示留言（前置条件，前端登录）
-	@Test
-	public void yjltest19() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 21，成功在前台显示留言（前置条件，前端登录）
+	@Test(priority = 21)
+	public void yjltest21() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
+//		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -503,7 +542,7 @@ public class TestAuto extends BaseTest {
 		webtest.type("xpath=//textarea[@name='useinfo']", "好");
 		webtest.click("xpath=//label[text()='审核通过并在前台显示']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090");
+		webtest.open("http://localhost:99");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='met_navbtn']");
 		webtest.type("xpath=//input[@name='username']", "user");
@@ -515,23 +554,23 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	// 20，修改留言的内容设置（将姓名设为非必填项）
-	@Test
-	public void yjltest20() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 22，修改留言的内容设置（将姓名设为非必填项）
+	@Test(priority = 22)
+	public void yjltest22() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		webtest.click("xpath=//a[@title='关于我们']");
 		webtest.click("xpath=//a[@class='editable-click']");
-		webtest.click("xpath=//div[@data-index='6']//button[2]");
+//		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='wr_ok-137']");
-		webtest.click("xpath=//option[text()='否']");
+		webtest.click("xpath=//option[text()='��']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -553,12 +592,48 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 21,后台界面删除姓名输入框
-	@Test
-	public void yjltest21() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 23，修改姓名的字段类型为文本
+	@Test(priority = 23)
+	public void yjltest23() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='type-137']");
+		webtest.click("xpath=//option[text()='文本']");
+		webtest.click("xpath=//button[text()='保存']");
+	}
+
+	// 24，修改姓名的访问权限为普通会员
+	@Test(priority = 24)
+	public void yjltest24() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
+		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
+		webtest.enterFrame(0);
+		webtest.click("xpath=//a[@title='关于我们']");
+		webtest.click("xpath=//a[@class='editable-click']");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='access-137']");
+		webtest.click("xpath=//option[text()='普通会员']");
+		webtest.click("xpath=//button[text()='保存']");
+	}
+
+	// 25,后台界面删除姓名输入框
+	@Test(priority = 25)
+	public void yjltest25() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -569,19 +644,19 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//input[@name='id']");
 		webtest.click("xpath=//button[text()='删除']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='在线留言']");
 	}
 
-	// 22，后台界面添加姓名输入框
-	@Test
-	public void yjltest22() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 26，后台界面添加姓名输入框
+	@Test(priority = 26)
+	public void yjltest26() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -590,21 +665,21 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//button[text()='添加']");
-		webtest.type("xpath=//input[@name='name-new-0']", "姓名");
+		webtest.type("xpath=//input[@name='name-new-0']", "����");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='在线留言']");
 	}
 
-	// 23，姓名添加提示文字
-	@Test
-	public void yjltest23() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 27，姓名添加提示文字
+	@Test(priority = 27)
+	public void yjltest27() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -614,17 +689,16 @@ public class TestAuto extends BaseTest {
 		webtest.leaveFrame();
 		webtest.type("xpath=//input[@name='description-195']", "真实姓名");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='在线留言']");
 	}
 
-	// 24,成功添加在线反馈
-	// 勾选问题没有解决
-	@Test
-	public void yjltest24() throws InterruptedException {
+	// 28,成功添加在线反馈
+	@Test(priority = 28)
+	public void yjltest28() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='索取资料']");
@@ -636,7 +710,6 @@ public class TestAuto extends BaseTest {
 		webtest.type("xpath=//input[@name='para178']", "河北省");
 		webtest.type("xpath=//textarea[@name='para179']", "好");
 		webtest.socll();
-//		webtest.click("xpath=//*[text()='搜索引擎']");
 		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
@@ -646,9 +719,9 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 25，添加在线反馈失败（不选择反馈主题）
-	@Test
-	public void yjltest25() throws InterruptedException {
+	// 29，添加在线反馈失败（不选择反馈主题）
+	@Test(priority = 29)
+	public void yjltest29() throws InterruptedException {
 		email1();
 		webtest.type("xpath=//input[@name='para142']", "杨佳乐");
 		webtest.type("xpath=//input[@name='para143']", "无");
@@ -664,12 +737,11 @@ public class TestAuto extends BaseTest {
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
 		webtest.mouseToElementandClick("xpath=//button[text()='提交信息']");
 		Thread.sleep(1000);
-		webtest.alertAccept();
 	}
 
-	// 26，添加在线反馈失败（Email输入框为空）
-	@Test
-	public void yjltest26() throws InterruptedException {
+	// 30，添加在线反馈失败（Email输入框为空）
+	@Test(priority = 30)
+	public void yjltest30() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='索取资料']");
@@ -686,12 +758,11 @@ public class TestAuto extends BaseTest {
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
 		webtest.mouseToElementandClick("xpath=//button[text()='提交信息']");
 		Thread.sleep(1000);
-		webtest.alertAccept();
 	}
 
-	// 27，添加在线反馈失败（Email格式错误，输入“123”）
-	@Test
-	public void yjltest27() throws InterruptedException {
+	// 31，添加在线反馈失败（Email格式错误，输入“123”）
+	@Test(priority = 31)
+	public void yjltest31() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='索取资料']");
@@ -709,12 +780,11 @@ public class TestAuto extends BaseTest {
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
 		webtest.mouseToElementandClick("xpath=//button[text()='提交信息']");
 		Thread.sleep(1000);
-		webtest.alertAccept();
 	}
 
-	// 28，添加在线反馈失败（Email格式输入错误，输入“1837519045@qq.com11111”）
-	@Test
-	public void yjltest28() throws InterruptedException {
+	// 32，添加在线反馈失败（Email格式输入错误，输入“1837519045@qq.com11111”）
+	@Test(priority = 32)
+	public void yjltest32() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='索取资料']");
@@ -735,12 +805,12 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 29,添加在线反馈失败,验证码为空
-	@Test
-	public void yjltest29() throws InterruptedException {
+	// 33,添加在线反馈失败,验证码为空
+	@Test(priority = 33)
+	public void yjltest33() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
-		webtest.click("xpath=//option[@value='索取资料']");
+		webtest.click("xpath=//option[@value='']");
 		webtest.type("xpath=//input[@name='para142']", "杨佳乐");
 		webtest.type("xpath=//input[@name='para143']", "无");
 		webtest.type("xpath=//input[@name='para144']", "1837519045@qq.com");
@@ -755,12 +825,11 @@ public class TestAuto extends BaseTest {
 				"document.getElementsByClassName('btn btn-primary btn-lg btn-block btn-squared editable-click set')[0].className=''");
 		webtest.mouseToElementandClick("xpath=//button[text()='提交信息']");
 		Thread.sleep(1000);
-		webtest.alertAccept();
 	}
 
-	// 30，添加在线反馈失败，验证码错误
-	@Test
-	public void yjltest30() throws InterruptedException {
+	// 34，添加在线反馈失败，验证码错误
+	@Test(priority = 34)
+	public void yjltest34() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//select[@name='para141']");
 		webtest.click("xpath=//option[@value='索取资料']");
@@ -781,10 +850,10 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 31,防刷新时间
-	@Test
-	public void yjltest31() throws InterruptedException {
-		webtest.open("http://localhost:8090/");
+	// 35,防刷新时间
+	@Test(priority = 35)
+	public void yjltest35() throws InterruptedException {
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -821,15 +890,15 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 32,修改防刷新时间为300秒
-	@Test
-	public void yjltest32() throws InterruptedException {
+	// 36,修改防刷新时间为300秒
+	@Test(priority = 36)
+	public void yjltest36() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
 		webtest.typeAndClear("xpath=//input[@name='met_fd_time']", "300");
 		webtest.click("xpath=//button[@class='btn btn-primary ']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -866,14 +935,15 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 33，成功添加在线反馈（前置条件前端登录）
-	@Test
-	public void yjltest33() throws InterruptedException {
-		webtest.open("http://localhost:8090/");
+	// 37，成功添加在线反馈（前置条件前端登录）
+	@Test(priority = 37)
+	public void yjltest37() throws InterruptedException {
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='met_navbtn']");
 		webtest.type("xpath=//input[@name='username']", "user");
 		webtest.type("xpath=//input[@name='password']", "password");
+//		webtest.type("xpath=//input[@name='code']", "aaaa");
 		webtest.click("xpath=//button[@class='btn btn-lg btn-primary btn-squared btn-block']");
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -895,9 +965,9 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 34，后台成功删除反馈
-	@Test
-	public void yjltest34() throws InterruptedException {
+	// 38，后台成功删除反馈
+	@Test(priority = 38)
+	public void yjltest38() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
@@ -907,42 +977,38 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 	}
 
-	// 35,后台查看反馈信息
-	//重新测
-	@Test
-	public void yjltest35() throws InterruptedException {
+	// 39,查看在线反馈的未阅读的信息
+	@Test(priority = 39)
+	public void yjltest39() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//a[text()='反馈信息管理']");
-		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
-		webtest.click("xpath=//button[text()='保存']");
-	}
-	
-	//36，后台查看反馈信息编辑记录添加在线视频
-	//重新测
-	@Test
-	public void yjltest36() throws InterruptedException {
-		email1();
-		webtest.click("xpath=//div[@data-index='5']//button[2]");
-		webtest.leaveFrame();
-		webtest.click("xpath=//a[text()='反馈信息管理']");
-		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
-		webtest.down(6);
-//		webtest.socll();
-//		webtest.click("xpath=//button[text()='保存']");
+		webtest.click("xpath=//select[@name='search_type']");
+		webtest.click("xpath=//option[text()='未阅读']");
 	}
 
-	// 37，修改反馈内容设置（将反馈主题设置为非必填项）
-	@Test
-	public void yjltest37() throws InterruptedException {
+	// 40，查看反馈主题为所有产品的在线反馈
+	@Test(priority = 40)
+	public void yjltest40() throws InterruptedException {
+		email1();
+		webtest.click("xpath=//div[@data-index='5']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//a[text()='反馈信息管理']");
+		webtest.click("xpath=//select[@name='para_141']");
+		webtest.click("xpath=//option[text()='所有产品']");
+	}
+
+	// 41，修改反馈内容设置（将反馈主题设置为非必填项）
+	@Test(priority = 41)
+	public void yjltest41() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='wr_ok-141']");
 		webtest.click("xpath=//option[text()='否']");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -962,16 +1028,49 @@ public class TestAuto extends BaseTest {
 		webtest.alertAccept();
 	}
 
-	// 38,修改反馈内容设置（删除姓名）
-	@Test
-	public void yjltest38() throws InterruptedException {
+	// 42，修改姓名的字段类型为文本
+	@Test(priority = 42)
+	public void yjltest42() throws InterruptedException {
+		email1();
+		webtest.click("xpath=//div[@data-index='5']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='type-142']");
+		webtest.click("xpath=//option[text()='文本']");
+		webtest.click("xpath=//button[text()='保存']");
+	}
+
+	// 43,修改姓名的所属栏目为在线反馈
+	@Test(priority = 43)
+	public void yjltest43() throws InterruptedException {
+		email1();
+		webtest.click("xpath=//div[@data-index='5']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='class-142']");
+		webtest.click("xpath=//option[text()='在线反馈']");
+		webtest.click("xpath=//button[text()='保存']");
+	}
+
+	// 44,修改姓名的访问权限为普通会员
+	@Test(priority = 44)
+	public void yjltest44() throws InterruptedException {
+		email1();
+		webtest.click("xpath=//div[@data-index='5']//button[2]");
+		webtest.leaveFrame();
+		webtest.click("xpath=//select[@name='access-142']");
+		webtest.click("xpath=//option[text()='普通会员']");
+		webtest.click("xpath=//button[text()='保存']");
+	}
+
+	// 45,修改反馈内容设置（删除姓名）
+	@Test(priority = 45)
+	public void yjltest45() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//input[@value='142']");
 		webtest.click("xpath=//button[text()='删除']");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
@@ -979,80 +1078,43 @@ public class TestAuto extends BaseTest {
 		Thread.sleep(1000);
 	}
 
-	// 39,修改反馈内容设置（添加姓名）
-	@Test
-	public void yjltest39() throws InterruptedException {
+	// 46,修改反馈内容设置（添加姓名）
+	@Test(priority = 46)
+	public void yjltest46() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//button[text()='添加']");
 		webtest.type("xpath=//input[@name='name-new-0']", "姓名");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='在线反馈']");
 	}
 
-	// 40，职务添加提示文字
-	@Test
-	public void yjltest40() throws InterruptedException {
+	// 47，职务添加提示文字
+	@Test(priority = 47)
+	public void yjltest47() throws InterruptedException {
 		email1();
 		webtest.click("xpath=//div[@data-index='5']//button[2]");
 		webtest.leaveFrame();
 		webtest.type("xpath=//input[@name='description-143']", "具体职务");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='在线反馈']");
 	}
 
-	// 41，修改公司简介的内容
-	// 重改
-	@Test
-	public void yjltest41() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
-		webtest.enterFrame(0);
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//button[@data-index='5']");
-		webtest.leaveFrame();
-		webtest.typeAndClear("p", "杨佳乐2018011720");
-		webtest.click("xpath=//button[@class='btn btn-primary']");
-	}
-
-	// 42，修改联系我们的内容
-	// 打不开界面
-	// 输入有问题
-	@Test
-	public void yjltest42() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
-		webtest.enterFrame(0);
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@met-id='77']");
-		webtest.click("xpath=//button[@data-mid='noset']");
-	}
-
-	// 43，修改公司简介为公司介绍
-	@Test
-	public void yjltest43() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 48，修改公司简介为公司介绍
+	@Test(priority = 48)
+	public void yjltest48() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -1062,14 +1124,15 @@ public class TestAuto extends BaseTest {
 		webtest.mouseToElement("xpath=//a[@met-id='39']");
 		webtest.click("xpath=//button[@data-index='34']");
 		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "公司介绍");
+		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 	}
 
-	// 44，修改联系我们的背景图颜色
-	@Test
-	public void yjltest44() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 49，修改联系我们的背景图颜色
+	@Test(priority = 49)
+	public void yjltest49() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
@@ -1081,135 +1144,29 @@ public class TestAuto extends BaseTest {
 		webtest.leaveFrame();
 		webtest.typeAndClear("xpath=//input[@name='36_metinfo']", "#edb4ea");
 		webtest.click("xpath=//button[@class='btn btn-primary']");
-		webtest.open("http://localhost:8090/");
+		webtest.open("http://localhost:99/");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[text()='联系我们']");
 	}
 
-	// 45，在公司简介中加入在线视频
-	// 找不到输入网址的地方
-	@Test
-	public void yjltest45() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
+	// 50，修改在线反馈的背景图中的文字为反馈
+	@Test(priority = 50)
+	public void yjltest50() throws InterruptedException {
+		webtest.open("http://localhost:99/admin/index.php");
+		webtest.type("xpath=//input[@name='login_name']", "root");
+		webtest.type("xpath=//input[@name='login_pass']", "root");
 		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
-		webtest.click("xpath=//div[@data-index='5']//button");
-		webtest.leaveFrame();
-		webtest.click("xpath=//div[@id='edui167_body']");
-		webtest.enterFrame(0);
-		webtest.type("xpath=//input[@id='videoUrl']",
-				"https://haokan.baidu.com/v?vid=10864138390511576996&pd=bjh&fr=bjhauthor&type=video");
-		webtest.click("xpath=//div[text()='确认']");
-		webtest.leaveFrame();
-		webtest.click("xpath=//button[text()='保存']");
-		webtest.open("http://localhost:8090/");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-	}
-
-	// 46，在公司简介中加入在线图片
-	// 找不到在线
-	@Test
-	public void yjltest46() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
-		webtest.enterFrame(0);
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//div[@data-index='5']");
-		webtest.leaveFrame();
-		webtest.click("xpath=//div[@id='edui157_body']");
-		webtest.enterFrame(0);
-		webtest.click("xpath=//div[@id='tabhead']//span");
-		webtest.type("xpath=//input[@id='url']",
-				"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=998153380,1003080363&fm=26&gp=0.jpg");
-		webtest.click("xpath=//div[text()='确认']");
-		webtest.leaveFrame();
-		webtest.click("xpath=//button[text()='保存']");
-		webtest.open("http://localhost:8090/");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-	}
-
-	// 47，修改联系我们的内容的字体
-	// 全选内容
-	@Test
-	public void yjltest47() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
-		webtest.enterFrame(0);
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@met-id='77']");
-		webtest.click("xpath=//div[@data-index='3']//button");
-		webtest.leaveFrame();
-		webtest.click("xpath=//div[@id='edui12_state']");
-		webtest.click("xpath=//div[text()='楷体']");
-		webtest.click("xpath=//button[text()='保存']");
-		webtest.open("http://localhost:8090/");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[text()='联系我们']");
-	}
-
-	// 48，联系我们添加在线图片
-	// 没有测试
-	@Test
-	public void yjltest48() throws InterruptedException {
-		webtest.open("http://localhost:8090/admin/index.php");
-		webtest.type("xpath=//input[@name='login_name']", "username");
-		webtest.type("xpath=//input[@name='login_pass']", "password");
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
-		webtest.enterFrame(0);
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@met-id='77']");
-		webtest.click("xpath=//button[@data-index='5']");
-		webtest.leaveFrame();
-		webtest.click("xpath=//div[@id='edui793_body']");
-		webtest.enterFrame(0);
-		webtest.click("xpath=//span[text()='插入图片']");
-		webtest.type("xpath=//input[@id='url']",
-				"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=998153380,1003080363&fm=26&gp=0.jpg");
-		webtest.click("xpath=//div[text()='确认']");
-		webtest.leaveFrame();
-		webtest.click("xpath=//button[text()='保存']");
-		webtest.open("http://localhost:8090/");
-		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='关于我们']");
-		Thread.sleep(1000);
-	}
-	
-	//49,
-	@Test
-	public void yjltest49() {
-		
-	}
-	
-	//50,
-	@Test
-	public void yjltest50() {
-		
+		webtest.click("xpath=//a[@met-id='44']");
+		webtest.mouseToElement("xpath=//h3[@class='vertical-align-middle editable-click']");
+		webtest.click("xpath=//button[@data-index='33']");
+		webtest.typeAndClear("xpath=//input[@class='form-control input-sm']", "反馈");
+		webtest.click("xpath=//button[@class='btn btn-primary btn-xs editable-submit']");
 	}
 }
