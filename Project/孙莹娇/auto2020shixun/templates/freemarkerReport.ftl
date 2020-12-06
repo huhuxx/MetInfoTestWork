@@ -1,5 +1,5 @@
-<div style="font-size:12px">自动化测试报告----------${date?string("yyyy-MM-dd HH:mm:ss")}
-<br/>本次共运行自动化case:${casesize}，其中失败:${failcasesize}，成功:${successcasesize}，跳过${skipsize}
+<div style="font-size:12px">Automated test report----------${date?string("yyyy-MM-dd HH:mm:ss")}
+<br/>cases number:${casesize},failedNummer:${failcasesize},passedNumer:${successcasesize},skippedNumber:${skipsize}
 <br/>
 
 <br/>
@@ -8,10 +8,10 @@
 <body>
 	<table border="2" align="center" width="100%" cellspacing="0" bgcolor="#F0F8FF">
 		<tr style="text-align: center;">
-			<th class="spec">序号</th>
-			<th>测试方法</th>
-			<th>测试类</th>
-			<th>测试结果</th>
+			<th class="spec">ID</th>
+			<th>testMethod</th>
+			<th>testClass</th>
+			<th>test result</th>
 		</tr>
 		<#list testMethodsList as testMethods>
 		<tr style="text-align: center;">

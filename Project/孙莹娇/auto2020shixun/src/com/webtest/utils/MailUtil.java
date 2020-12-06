@@ -19,15 +19,15 @@ import javax.mail.internet.MimeMultipart;
 
 public class MailUtil extends FreeMarker{
 	
-	// 发送者
+	// sender
 	public String sender = ReadProperties.getPropertyValue("sender");
 
-	// 授权码
+	// auth code
 	public String auth_code = ReadProperties.getPropertyValue("auth_code");
-	// 接收方
+	// tomail
 	public String to = ReadProperties.getPropertyValue("tomail");
 	
-	// 协议
+	// protocol
 	public String pro1 = ReadProperties.getPropertyValue("pro1");
 	public String pro2 = ReadProperties.getPropertyValue("pro2");
 	public String pro3 = ReadProperties.getPropertyValue("pro3");
@@ -55,7 +55,7 @@ public class MailUtil extends FreeMarker{
 			}
 
 		});
-		// 设置发件人、收件人、主题、正文
+		// set sender-receiver-theme-body
 		Message message = new MimeMessage(session);
 		try {
 			
@@ -65,13 +65,11 @@ public class MailUtil extends FreeMarker{
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(toArray[i]));
 			}
 //			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-//			设置标题
-			message.setSubject("发送邮件-孙莹娇");
+//			set title
+			message.setSubject("send testReport --sunyingjiao");
 //			message.setText(content);
 			
-//			一个Multipart对象包含一个或多个bodypart对象，组成邮件正文
 			MimeMultipart mimeMultipart =new MimeMultipart();
-			//读取本地测试报告文件,将文件添加到"节点"
 			MimeBodyPart file=new MimeBodyPart();
 			SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
 			DataHandler dataHandler1 = new DataHandler(new FileDataSource(dir +"/report"+ft.format(date)+".html"));
@@ -81,7 +79,7 @@ public class MailUtil extends FreeMarker{
 	        message.setContent(mimeMultipart);
 					
 
-			// 发送邮件
+			// send email
 			Transport.send(message);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
@@ -89,3 +87,4 @@ public class MailUtil extends FreeMarker{
 		}
 	}
 }
+

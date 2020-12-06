@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="8" ignored="0" total="45" passed="37">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MetInfo" duration-ms="1220288" started-at="2020-12-06T09:02:08 CST" finished-at="2020-12-06T09:22:28 CST">
+    <groups>
+    </groups>
+    <test name="all" duration-ms="1220288" started-at="2020-12-06T09:02:08 CST" finished-at="2020-12-06T09:22:28 CST">
+      <class name="com.webtest.demo.BannerSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="doBeforeClass" is-config="true" duration-ms="14964" started-at="2020-12-06T09:02:08 CST" finished-at="2020-12-06T09:02:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="1095" started-at="2020-12-06T09:02:23 CST" finished-at="2020-12-06T09:02:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editBanner()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="editBanner" duration-ms="57942" started-at="2020-12-06T09:02:24 CST" finished-at="2020-12-06T09:03:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editBanner -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="1026" started-at="2020-12-06T09:03:22 CST" finished-at="2020-12-06T09:03:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="addBanner()[pri:1, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="addBanner" duration-ms="41531" started-at="2020-12-06T09:03:23 CST" finished-at="2020-12-06T09:04:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addBanner -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="1234" started-at="2020-12-06T09:04:04 CST" finished-at="2020-12-06T09:04:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="deleteBanner()[pri:2, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="deleteBanner" duration-ms="21393" started-at="2020-12-06T09:04:06 CST" finished-at="2020-12-06T09:04:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBanner -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="953" started-at="2020-12-06T09:04:27 CST" finished-at="2020-12-06T09:04:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="FAIL" signature="setTurns()[pri:3, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="setTurns" duration-ms="19365" started-at="2020-12-06T09:04:28 CST" finished-at="2020-12-06T09:04:47 CST">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at com.webtest.demo.BannerSetting.setTurns(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTurns -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="985" started-at="2020-12-06T09:04:47 CST" finished-at="2020-12-06T09:04:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="addButtons()[pri:4, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="addButtons" duration-ms="33731" started-at="2020-12-06T09:04:48 CST" finished-at="2020-12-06T09:05:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addButtons -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="963" started-at="2020-12-06T09:05:22 CST" finished-at="2020-12-06T09:05:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="setBtnColor()[pri:5, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="setBtnColor" duration-ms="14114" started-at="2020-12-06T09:05:23 CST" finished-at="2020-12-06T09:05:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBtnColor -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="954" started-at="2020-12-06T09:05:37 CST" finished-at="2020-12-06T09:05:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="setWordsSize()[pri:6, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="setWordsSize" duration-ms="13959" started-at="2020-12-06T09:05:38 CST" finished-at="2020-12-06T09:05:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setWordsSize -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="refreshPage" is-config="true" duration-ms="941" started-at="2020-12-06T09:05:52 CST" finished-at="2020-12-06T09:05:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="FAIL" signature="deleteBtn()[pri:7, instance:com.webtest.demo.BannerSetting@66d2e7d9]" name="deleteBtn" duration-ms="23078" started-at="2020-12-06T09:05:53 CST" finished-at="2020-12-06T09:06:16 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at com.webtest.demo.BannerSetting.deleteBtn(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteBtn -->
+      </class> <!-- com.webtest.demo.BannerSetting -->
+      <class name="com.webtest.demo.PhoneMenuSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="doBeforeClass" is-config="true" duration-ms="17195" started-at="2020-12-06T09:15:01 CST" finished-at="2020-12-06T09:15:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="editPhoneBtnText()[pri:1, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneBtnText" duration-ms="34872" started-at="2020-12-06T09:15:18 CST" finished-at="2020-12-06T09:15:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneBtnText -->
+        <test-method status="PASS" signature="editPhoneBtnUrl()[pri:2, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneBtnUrl" duration-ms="28260" started-at="2020-12-06T09:15:53 CST" finished-at="2020-12-06T09:16:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneBtnUrl -->
+        <test-method status="PASS" signature="deletePhoneBtnImg()[pri:3, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="deletePhoneBtnImg" duration-ms="21169" started-at="2020-12-06T09:16:21 CST" finished-at="2020-12-06T09:16:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePhoneBtnImg -->
+        <test-method status="PASS" signature="editPhoneBtnImg()[pri:4, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneBtnImg" duration-ms="29378" started-at="2020-12-06T09:16:42 CST" finished-at="2020-12-06T09:17:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneBtnImg -->
+        <test-method status="PASS" signature="editPhoneBtnColor()[pri:5, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneBtnColor" duration-ms="17408" started-at="2020-12-06T09:17:11 CST" finished-at="2020-12-06T09:17:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneBtnColor -->
+        <test-method status="PASS" signature="editPhoneTextColor()[pri:6, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneTextColor" duration-ms="17863" started-at="2020-12-06T09:17:29 CST" finished-at="2020-12-06T09:17:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneTextColor -->
+        <test-method status="PASS" signature="editPhoneBtnEnable()[pri:7, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="editPhoneBtnEnable" duration-ms="42866" started-at="2020-12-06T09:17:47 CST" finished-at="2020-12-06T09:18:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editPhoneBtnEnable -->
+        <test-method status="FAIL" signature="edtiPhoneBtnTurns()[pri:8, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="edtiPhoneBtnTurns" duration-ms="13028" started-at="2020-12-06T09:18:30 CST" finished-at="2020-12-06T09:18:43 CST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span> is not clickable at point (1256,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span> is not clickable at point (1256,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.PhoneMenuSetting.edtiPhoneBtnTurns(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- edtiPhoneBtnTurns -->
+        <test-method status="FAIL" signature="addPhoneBtn()[pri:9, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="addPhoneBtn" duration-ms="36" started-at="2020-12-06T09:18:43 CST" finished-at="2020-12-06T09:18:43 CST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-outline-light border-none dropdown-toggle menu-position-destroy" type="button"> is not clickable at point (384,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-outline-light border-none dropdown-toggle menu-position-destroy" type="button"> is not clickable at point (384,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.PhoneMenuSetting.openPhoneMenuSetting(Unknown Source)
+at com.webtest.demo.PhoneMenuSetting.addPhoneBtn(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPhoneBtn -->
+        <test-method status="FAIL" signature="deletePhoneBtn()[pri:10, instance:com.webtest.demo.PhoneMenuSetting@4de8b406]" name="deletePhoneBtn" duration-ms="39" started-at="2020-12-06T09:18:43 CST" finished-at="2020-12-06T09:18:43 CST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <button class="btn btn-outline-light border-none dropdown-toggle menu-position-destroy" type="button"> is not clickable at point (384,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <button class="btn btn-outline-light border-none dropdown-toggle menu-position-destroy" type="button"> is not clickable at point (384,25) because another element <div class="alertify-bg position-fixed h-100 w-100 bg-dark"> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.PhoneMenuSetting.openPhoneMenuSetting(Unknown Source)
+at com.webtest.demo.PhoneMenuSetting.deletePhoneBtn(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePhoneBtn -->
+      </class> <!-- com.webtest.demo.PhoneMenuSetting -->
+      <class name="com.webtest.demo.NowPageSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="doBeforeClass" is-config="true" duration-ms="23250" started-at="2020-12-06T09:18:43 CST" finished-at="2020-12-06T09:19:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="FAIL" signature="siteInfoSetting1()[pri:1, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="siteInfoSetting1" duration-ms="4701" started-at="2020-12-06T09:19:06 CST" finished-at="2020-12-06T09:19:11 CST">
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 0, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+at java.util.ArrayList.rangeCheck(Unknown Source)
+at java.util.ArrayList.get(Unknown Source)
+at com.webtest.demo.NowPageSetting.siteInfoSetting1(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- siteInfoSetting1 -->
+        <test-method status="PASS" signature="otherImg()[pri:2, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="otherImg" duration-ms="23730" started-at="2020-12-06T09:19:11 CST" finished-at="2020-12-06T09:19:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otherImg -->
+        <test-method status="PASS" signature="setBottomInf()[pri:4, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="setBottomInf" duration-ms="18826" started-at="2020-12-06T09:19:34 CST" finished-at="2020-12-06T09:19:53 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBottomInf -->
+        <test-method status="PASS" signature="setBottomOtherInf()[pri:5, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="setBottomOtherInf" duration-ms="20682" started-at="2020-12-06T09:19:53 CST" finished-at="2020-12-06T09:20:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBottomOtherInf -->
+        <test-method status="FAIL" signature="setTextStyle()[pri:6, instance:com.webtest.demo.NowPageSetting@3c756e4d]" name="setTextStyle" duration-ms="7817" started-at="2020-12-06T09:20:14 CST" finished-at="2020-12-06T09:20:22 CST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <input id="met_copyright_type1" class="custom-control-input" name="met_copyright_type" type="radio"> is not clickable at point (193,477) because another element <dd> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 29884, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c66e2ade-2387-4beb-8396-0f3ef5c0601a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <input id="met_copyright_type1" class="custom-control-input" name="met_copyright_type" type="radio"> is not clickable at point (193,477) because another element <dd> obscures it
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'DESKTOP-TNDKL02', ip: '10.7.86.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 29884, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c66e2ade-2387-4beb-8396-0f3ef5c0601a
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.webtest.core.WebDriverEngine.click(Unknown Source)
+at com.webtest.demo.NowPageSetting.setTextStyle(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTextStyle -->
+      </class> <!-- com.webtest.demo.NowPageSetting -->
+      <class name="com.webtest.demo.LanguageSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="doBeforeClass" is-config="true" duration-ms="16009" started-at="2020-12-06T09:12:24 CST" finished-at="2020-12-06T09:12:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="openBackLanguageSwitch()[pri:1, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="openBackLanguageSwitch" duration-ms="35449" started-at="2020-12-06T09:12:40 CST" finished-at="2020-12-06T09:13:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBackLanguageSwitch -->
+        <test-method status="PASS" signature="closeLanguageSwitch()[pri:2, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="closeLanguageSwitch" duration-ms="22574" started-at="2020-12-06T09:13:16 CST" finished-at="2020-12-06T09:13:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeLanguageSwitch -->
+        <test-method status="PASS" signature="closeCSLanguageSwtich()[pri:3, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="closeCSLanguageSwtich" duration-ms="22210" started-at="2020-12-06T09:13:38 CST" finished-at="2020-12-06T09:14:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeCSLanguageSwtich -->
+        <test-method status="PASS" signature="addNewLanguage()[pri:4, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="addNewLanguage" duration-ms="26470" started-at="2020-12-06T09:14:01 CST" finished-at="2020-12-06T09:14:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewLanguage -->
+        <test-method status="PASS" signature="editLanguage()[pri:5, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="editLanguage" duration-ms="19445" started-at="2020-12-06T09:14:27 CST" finished-at="2020-12-06T09:14:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editLanguage -->
+        <test-method status="PASS" signature="plugInsEdit()[pri:6, instance:com.webtest.demo.LanguageSetting@6a2bcfcb]" name="plugInsEdit" duration-ms="13982" started-at="2020-12-06T09:14:47 CST" finished-at="2020-12-06T09:15:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- plugInsEdit -->
+      </class> <!-- com.webtest.demo.LanguageSetting -->
+      <class name="com.webtest.demo.CustomerServiceSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="doBeforeClass" is-config="true" duration-ms="14669" started-at="2020-12-06T09:06:16 CST" finished-at="2020-12-06T09:06:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1401" started-at="2020-12-06T09:06:31 CST" finished-at="2020-12-06T09:06:32 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editCSName()[pri:1, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="editCSName" duration-ms="18489" started-at="2020-12-06T09:06:32 CST" finished-at="2020-12-06T09:06:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCSName -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1479" started-at="2020-12-06T09:06:51 CST" finished-at="2020-12-06T09:06:52 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editCSPhoneNum()[pri:2, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="editCSPhoneNum" duration-ms="21612" started-at="2020-12-06T09:06:52 CST" finished-at="2020-12-06T09:07:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCSPhoneNum -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1484" started-at="2020-12-06T09:07:14 CST" finished-at="2020-12-06T09:07:15 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editeCSType()[pri:3, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="editeCSType" duration-ms="26976" started-at="2020-12-06T09:07:15 CST" finished-at="2020-12-06T09:07:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editeCSType -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1032" started-at="2020-12-06T09:07:42 CST" finished-at="2020-12-06T09:07:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="deleteCSImg()[pri:4, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="deleteCSImg" duration-ms="21796" started-at="2020-12-06T09:07:43 CST" finished-at="2020-12-06T09:08:05 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCSImg -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1475" started-at="2020-12-06T09:08:05 CST" finished-at="2020-12-06T09:08:06 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editCSImg()[pri:5, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="editCSImg" duration-ms="29024" started-at="2020-12-06T09:08:06 CST" finished-at="2020-12-06T09:08:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCSImg -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1143" started-at="2020-12-06T09:08:35 CST" finished-at="2020-12-06T09:08:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="addCS()[pri:6, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="addCS" duration-ms="37787" started-at="2020-12-06T09:08:37 CST" finished-at="2020-12-06T09:09:14 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addCS -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1572" started-at="2020-12-06T09:09:14 CST" finished-at="2020-12-06T09:09:16 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="deleteCS()[pri:7, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="deleteCS" duration-ms="21530" started-at="2020-12-06T09:09:16 CST" finished-at="2020-12-06T09:09:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCS -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1290" started-at="2020-12-06T09:09:37 CST" finished-at="2020-12-06T09:09:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editFixedStyle()[pri:8, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="editFixedStyle" duration-ms="22888" started-at="2020-12-06T09:09:39 CST" finished-at="2020-12-06T09:10:02 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editFixedStyle -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1295" started-at="2020-12-06T09:10:02 CST" finished-at="2020-12-06T09:10:03 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="CSstyleSetting()[pri:9, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="CSstyleSetting" duration-ms="29730" started-at="2020-12-06T09:10:03 CST" finished-at="2020-12-06T09:10:33 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CSstyleSetting -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1047" started-at="2020-12-06T09:10:33 CST" finished-at="2020-12-06T09:10:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="otherSetting()[pri:10, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="otherSetting" duration-ms="54690" started-at="2020-12-06T09:10:34 CST" finished-at="2020-12-06T09:11:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- otherSetting -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1276" started-at="2020-12-06T09:11:28 CST" finished-at="2020-12-06T09:11:30 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="addColumn()[pri:11, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="addColumn" duration-ms="27280" started-at="2020-12-06T09:11:30 CST" finished-at="2020-12-06T09:11:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addColumn -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="refreshPage" is-config="true" duration-ms="1500" started-at="2020-12-06T09:11:57 CST" finished-at="2020-12-06T09:11:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="deleteColumn()[pri:12, instance:com.webtest.demo.CustomerServiceSetting@1efbd816]" name="deleteColumn" duration-ms="25902" started-at="2020-12-06T09:11:58 CST" finished-at="2020-12-06T09:12:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteColumn -->
+      </class> <!-- com.webtest.demo.CustomerServiceSetting -->
+      <class name="com.webtest.demo.TopSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="doBeforeClass" is-config="true" duration-ms="23584" started-at="2020-12-06T09:20:22 CST" finished-at="2020-12-06T09:20:45 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="refreshPage" is-config="true" duration-ms="3904" started-at="2020-12-06T09:20:45 CST" finished-at="2020-12-06T09:20:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="FAIL" signature="setPutDown()[pri:1, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="setPutDown" duration-ms="40827" started-at="2020-12-06T09:20:49 CST" finished-at="2020-12-06T09:21:30 CST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at com.webtest.demo.TopSetting.setPutDown(Unknown Source)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setPutDown -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="refreshPage" is-config="true" duration-ms="4509" started-at="2020-12-06T09:21:30 CST" finished-at="2020-12-06T09:21:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="languagePosition()[pri:2, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="languagePosition" duration-ms="16142" started-at="2020-12-06T09:21:35 CST" finished-at="2020-12-06T09:21:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- languagePosition -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="refreshPage" is-config="true" duration-ms="3961" started-at="2020-12-06T09:21:51 CST" finished-at="2020-12-06T09:21:55 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="nationalFlagSetting()[pri:3, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="nationalFlagSetting" duration-ms="5457" started-at="2020-12-06T09:21:55 CST" finished-at="2020-12-06T09:22:00 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nationalFlagSetting -->
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="refreshPage" is-config="true" duration-ms="4168" started-at="2020-12-06T09:22:00 CST" finished-at="2020-12-06T09:22:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="editHomePageName()[pri:4, instance:com.webtest.demo.TopSetting@7c0e2abd]" name="editHomePageName" duration-ms="23755" started-at="2020-12-06T09:22:04 CST" finished-at="2020-12-06T09:22:28 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editHomePageName -->
+      </class> <!-- com.webtest.demo.TopSetting -->
+    </test> <!-- all -->
+  </suite> <!-- MetInfo -->
+</testng-results>

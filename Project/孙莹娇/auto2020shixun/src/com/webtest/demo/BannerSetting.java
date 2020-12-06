@@ -19,16 +19,8 @@ import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
-public class BannerSetting extends BaseTest {
-	@BeforeClass
-	public void loginTest() throws InterruptedException {
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
-		webtest.type("name=login_name", ReadProperties.getPropertyValue("username"));
-		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-	}
 
+public class BannerSetting extends BaseTest {
 	@BeforeMethod
 	public void refreshPage() {
 		webtest.refresh();
@@ -124,6 +116,18 @@ public class BannerSetting extends BaseTest {
 		Thread.sleep(5000);
 		webtest.click("xpath=//button[@aria-label='Close']");
 		System.out.println("ID106编辑成功！");
+		//图片标题恢复为“米拓企业建站系统”
+		this.openBannerSetting();
+		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='编辑']");
+		Thread.sleep(5000);
+		webtest.mouseToElementandClick("xpath=//label[text()='Banner尺寸']");
+		webtest.down(10);
+//		修改图片标题为“米拓企业建站系统syj”
+		webtest.typeAndClear("xpath=//input[@name='img_title']", "米拓企业建站系统");
+//		保存关闭
+		webtest.click("xpath=//div[@class='float-right']//button[@class='btn btn-primary']");
+		Thread.sleep(5000);
+		webtest.click("xpath=//button[@aria-label='Close']");
 	}
 
 //17、	ID107 Banner管理-按钮-添加
@@ -131,7 +135,7 @@ public class BannerSetting extends BaseTest {
 	@Test(priority = 4)
 	public void addButtons() throws InterruptedException {
 		this.openBannerSetting();
-		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='按钮']");
+		webtest.click("xpath=//a[text()='米拓企业建站系统']/../../following-sibling::td[4]//button[text()='按钮']");
 		webtest.click("xpath=//button[text()='添加']");
 		// 按钮文字
 		webtest.type("xpath=//input[@name='but_text-new-0']", "百度");
@@ -163,7 +167,7 @@ public class BannerSetting extends BaseTest {
 	@Test(priority = 5)
 	public void setBtnColor() {
 		this.openBannerSetting();
-		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='按钮']");
+		webtest.click("xpath=//a[text()='米拓企业建站系统']/../../following-sibling::td[4]//button[text()='按钮']");
 		webtest.type("xpath=//input[@value='百度']/../../following-sibling::td[4]/div//input[@data-plugin='minicolors']",
 				"#ffffff");
 		webtest.click("xpath=//th[@colspan='11']//button[text()='保存']");
@@ -178,7 +182,7 @@ public class BannerSetting extends BaseTest {
 	@Test(priority = 6)
 	public void setWordsSize() {
 		this.openBannerSetting();
-		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='按钮']");
+		webtest.click("xpath=//a[text()='米拓企业建站系统']/../../following-sibling::td[4]//button[text()='按钮']");
 		webtest.type("xpath=//input[@value='百度']/../../following-sibling::td[6]//input[@data-plugin='select-fontsize']",
 				"20");
 		webtest.click("xpath=//th[@colspan='11']//button[text()='保存']");
@@ -199,7 +203,7 @@ public class BannerSetting extends BaseTest {
 		webtest.leaveFrame();
 		// 删除操作
 		this.openBannerSetting();
-		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='按钮']");
+		webtest.click("xpath=//a[text()='米拓企业建站系统']/../../following-sibling::td[4]//button[text()='按钮']");
 		webtest.click("xpath=//input[@value='百度']/../../following-sibling::td[10]");
 		webtest.click("xpath=//button[@class='ok btn btn-primary']");
 		// 关闭设置界面
@@ -222,7 +226,7 @@ public class BannerSetting extends BaseTest {
 	@Test(priority = 3)
 	public void setTurns() throws InterruptedException {
 		this.openBannerSetting();
-		webtest.click("xpath=//a[text()='米拓企业建站系统syj']/../../following-sibling::td[4]//button[text()='按钮']");
+		webtest.click("xpath=//a[text()='米拓企业建站系统']/../../following-sibling::td[4]//button[text()='按钮']");
 		// 获取表格集合，以便拖拽
 		List<WebElement> formGroup = webtest.getElementsList("xpath=//tr[@role='row']");
 		// 获得拖拽前的最后一个按钮的文字
@@ -254,14 +258,5 @@ public class BannerSetting extends BaseTest {
 			System.out.println("ID111 按钮顺序调整失败！");
 		}
 		Assert.assertEquals(beforeDrag_lastBtn, afterDrag_firstBtn);
-	}
-	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
 	}
 }

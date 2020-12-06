@@ -1,8 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="s1" verbose="1" parallel="none">
+<suite name="MetInfo" verbose="1" parallel="none">
 	<listeners>
-			<listener class-name="com.webtest.core.WebTestListener"></listener>
+			<listener class-name="com.webtest.core.JavaMailTestListener"></listener>
 	</listeners>
+	<test name="all">
+	    <classes>
+	    	<class name="com.webtest.demo.BannerSetting"/>
+	    	<class name="com.webtest.demo.CustomerServiceSetting"/>
+	    	<class name="com.webtest.demo.LanguageSetting"/>
+	    	<class name="com.webtest.demo.PhoneMenuSetting"/>
+	    	<class name="com.webtest.demo.NowPageSetting"/>
+	    	<class name="com.webtest.demo.TopSetting"/>
+	    </classes>
+	    
+	</test>
 	
 </suite>

@@ -9,9 +9,8 @@ import org.openqa.selenium.WebElement;
 
 import com.webtest.utils.Log;
 /**
- * author:lihuanzhen
- * ����Ԫ����
- */
+ * author:sunyingjiao
+ *  */
 public class ElementFinder {
 	
 	WebDriver driver;

@@ -15,20 +15,15 @@ import org.testng.annotations.Test;
 
 import com.webtest.core.BaseTest;
 import com.webtest.core.JavaMailTestListener;
+import com.webtest.dataprovider.NSDataProvider;
 import com.webtest.utils.FreeMarker;
 import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
+
 public class NowPageSetting extends BaseTest {
-	@BeforeClass
-	public void loginTest() throws InterruptedException {
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
-		webtest.type("name=login_name",ReadProperties.getPropertyValue("username"));
-		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-	}
+
 	public void chooseLocalImg(String fileName,String imgTitle) throws InterruptedException {
 		webtest.doubleClick("xpath=//a[@data-path='/upload/"+fileName+"']");
 		Thread.sleep(2000);
@@ -36,8 +31,8 @@ public class NowPageSetting extends BaseTest {
 		webtest.click("xpath=//div[@class='modal-dialog modal-dialog- modal-xl my-0 mx-auto h-100']/div//button[@class='btn btn-primary']");
 	}
 //1、	ID20 当前页设置网站基本信息设置
-	@Test(priority = 1)
-	public void siteInfoSetting1() throws InterruptedException {
+	@Test(priority = 1,dataProvider = "logoInfoExcel",dataProviderClass =NSDataProvider.class)
+	public void siteInfoSetting1(String logoInfo) throws InterruptedException {
 		//点击顶部“当前页设置”
 		webtest.click("xpath=//a[@title='当前页面系统参数设置']");
 //		修改网站名称为 ‘SYJ的网站’
@@ -47,7 +42,7 @@ public class NowPageSetting extends BaseTest {
 		List<WebElement> chooseImgBtnList=webtest.getElementsList("xpath=//button[text()='从图片库选择']");
 		webtest.click(chooseImgBtnList.get(0));
 		Thread.sleep(2000);
-		this.chooseLocalImg("201807", "1532139830.png");
+		this.chooseLocalImg("201807", logoInfo);
 		
 //		修改手机LOGO为从图片库中任选一张图片
 		webtest.click("xpath=//label[text()='手机站LOGO']");
@@ -55,7 +50,7 @@ public class NowPageSetting extends BaseTest {
 		Thread.sleep(2000);
 		webtest.click(chooseImgBtnList.get(1));
 		Thread.sleep(2000);
-		this.chooseLocalImg("201807", "1532139830.png");
+		this.chooseLocalImg("201807", logoInfo);
 		
 //		添加网站关键词为“,关键词syj”
 		webtest.runJs("window.scrollTo(0, document.body.scrollHeight)");
@@ -198,15 +193,5 @@ public class NowPageSetting extends BaseTest {
 		System.out.println("修改后的的系统版权文字风格为："+bottomInfoList.get(bottomInfoList.size()-2).getText());
 		Assert.assertEquals(bottomInfoList.get(bottomInfoList.size()-1).getText(), "本站基于 米拓企业建站系统 7.1.0 搭建");
 		System.out.println("ID176 设置系统版权文字风格为第二个选项成功！");
-	}
-	
-	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
 	}
 }

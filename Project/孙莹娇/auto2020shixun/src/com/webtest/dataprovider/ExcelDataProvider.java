@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import org.apache.poi.ddf.EscherColorRef.SysIndexProcedure;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -16,7 +16,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 /*
- * ExcelÊı¾İÇı¶¯Àà
+ * Excel
  */
 
 public class ExcelDataProvider {
@@ -37,17 +37,14 @@ public class ExcelDataProvider {
 			wbook = new HSSFWorkbook(inputstream);
 		}
 		Sheet sheet = wbook.getSheet(sheetName);
-		// Í¨¹ısheetNameÉú³ÉSheet¶ÔÏó
 		int rowCount = sheet.getLastRowNum() - sheet.getFirstRowNum();
-		// »ñÈ¡µ±Ç°sheetĞĞÊı£¬ĞĞºÅºÍÁĞºÅ¶¼ÊÇ´Ó£°¿ªÊ¼
 		List<Object[]> records = new ArrayList<Object[]>();
-		// Ê¹ÓÃË«Ñ­»·»ñÈ¡excelÎÄ¼şµÄËùÓĞÊı¾İ£¨µÚÒ»ĞĞ³ıÍâ£©
 		for (int i = 1; i < rowCount + 1; i++) {
 			Row row = sheet.getRow(i);
 			String fields[] = new String[row.getLastCellNum()];
 			for (int j = 0; j < row.getLastCellNum(); j++) {
-				// »ñÈ¡µ¥Ôª¸ñÊı¾İ
 				fields[j] = row.getCell(j).getStringCellValue();
+				System.out.println("è¡¨æ ¼å†…å®¹ï¼š"+row.getCell(j).getStringCellValue());
 			}
 			records.add(fields);
 		}

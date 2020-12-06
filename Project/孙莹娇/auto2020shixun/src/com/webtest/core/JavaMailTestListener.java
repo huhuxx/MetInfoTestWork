@@ -12,7 +12,7 @@ import org.testng.TestListenerAdapter;
 import com.webtest.utils.TestMethods;
 
 public class JavaMailTestListener extends TestListenerAdapter{
-	public static String content="失败的测试用例："; 
+	public static String content="failed testcase"; 
 	public static int caseSize=0;
 	public static int successSize=0;
 	public static int failSize=0;
@@ -23,15 +23,15 @@ public class JavaMailTestListener extends TestListenerAdapter{
 	public void onFinish(ITestContext testContext) {
 		// TODO Auto-generated method stub
 //		super.onFinish(testContext);
-		//打印出总的测试用例数目
+	
 		ITestNGMethod[] methods= this.getAllTestMethods();
-		System.out.println("一共执行了："+methods.length);
+		System.out.println("all cases number:"+methods.length);
 		caseSize=methods.length;
 		
-		//失败的测试用例类名和方法
+		//classNames and methods of failed testcase
 		List<ITestResult> failList=this.getFailedTests();
 		failSize=failList.size();
-		System.out.println("失败的测试用例个数:"+failSize);
+		System.out.println("failed testcases number is:"+failSize);
 		
 		for (int i = 0; i < failSize; i++) {
 			ITestResult trFail=failList.get(i);
@@ -43,17 +43,17 @@ public class JavaMailTestListener extends TestListenerAdapter{
 			testMethod.setStatus("Failed");
 			
 			testMethodsList.add(testMethod);
-			String text="类名："+trFail.getInstanceName()+" 方法名:"+trFail.getName()+";";
+			String text="className:"+trFail.getInstanceName()+"methodName:"+trFail.getName()+";";
 			content=content+text+" ";
 			System.out.println(text);
 		}
 		System.out.println("*******");
 		System.out.println(content);
 		
-		//成功的测试用例
+		//"passed testcases
 		List<ITestResult> successList=this.getPassedTests();
 		successSize=successList.size();
-		System.out.println("成功的测试用例个数:"+successSize);
+		System.out.println("passed testcases number is:"+successSize);
 		
 		for (int i = 0; i < successSize; i++) {
 			ITestResult trSuccess=successList.get(i);
@@ -66,10 +66,10 @@ public class JavaMailTestListener extends TestListenerAdapter{
 			testMethodsList.add(testMethod);
 		}	
 		
-		//跳过的测试用例
+		//skipped testcases
 		List<ITestResult> skipList=this.getSkippedTests();
 		skipSize=skipList.size();
-		System.out.println("跳过的测试用例的个数："+skipSize);
+		System.out.println("skipped testcases number is:"+skipSize);
 		
 		for (int i = 0; i < skipSize; i++) {
 			ITestResult trSkip=skipList.get(i);

@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 8 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-MetInfo">
+              <span class="suite-name border-failed">MetInfo</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-MetInfo">
+                    <span>E:\D3\project-training\myProjects\auto2020shixun\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-MetInfo">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-MetInfo">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-MetInfo">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-MetInfo">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MetInfo">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-MetInfo">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">45 methods, 8 failed,   37 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MetInfo" class="hide-methods failed suite-MetInfo"> (hide)</a> <!-- hide-methods failed suite-MetInfo -->
+                      <a href="#" panel-name="suite-MetInfo" class="show-methods failed suite-MetInfo"> (show)</a> <!-- show-methods failed suite-MetInfo -->
+                    </span>
+                    <div class="method-list-content failed suite-MetInfo">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="addPhoneBtn">addPhoneBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="deleteBtn">deleteBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="deletePhoneBtn">deletePhoneBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="edtiPhoneBtnTurns">edtiPhoneBtnTurns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.TopSetting" hash-for-method="setPutDown">setPutDown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.NowPageSetting" hash-for-method="setTextStyle">setTextStyle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="setTurns">setTurns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.NowPageSetting" hash-for-method="siteInfoSetting1">siteInfoSetting1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MetInfo -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MetInfo" class="hide-methods passed suite-MetInfo"> (hide)</a> <!-- hide-methods passed suite-MetInfo -->
+                      <a href="#" panel-name="suite-MetInfo" class="show-methods passed suite-MetInfo"> (show)</a> <!-- show-methods passed suite-MetInfo -->
+                    </span>
+                    <div class="method-list-content passed suite-MetInfo">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="CSstyleSetting">CSstyleSetting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="addBanner">addBanner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="addButtons">addButtons</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="addCS">addCS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="addColumn">addColumn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="addNewLanguage">addNewLanguage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="closeCSLanguageSwtich">closeCSLanguageSwtich</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="closeLanguageSwitch">closeLanguageSwitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="deleteBanner">deleteBanner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="deleteCS">deleteCS</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="deleteCSImg">deleteCSImg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="deleteColumn">deleteColumn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="deletePhoneBtnImg">deletePhoneBtnImg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="editBanner">editBanner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="editCSImg">editCSImg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="editCSName">editCSName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="editCSPhoneNum">editCSPhoneNum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="editFixedStyle">editFixedStyle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.TopSetting" hash-for-method="editHomePageName">editHomePageName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="editLanguage">editLanguage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneBtnColor">editPhoneBtnColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneBtnEnable">editPhoneBtnEnable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneBtnImg">editPhoneBtnImg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneBtnText">editPhoneBtnText</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneBtnUrl">editPhoneBtnUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.PhoneMenuSetting" hash-for-method="editPhoneTextColor">editPhoneTextColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="editeCSType">editeCSType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.TopSetting" hash-for-method="languagePosition">languagePosition</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.TopSetting" hash-for-method="nationalFlagSetting">nationalFlagSetting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="openBackLanguageSwitch">openBackLanguageSwitch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.NowPageSetting" hash-for-method="otherImg">otherImg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.CustomerServiceSetting" hash-for-method="otherSetting">otherSetting</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.LanguageSetting" hash-for-method="plugInsEdit">plugInsEdit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.NowPageSetting" hash-for-method="setBottomInf">setBottomInf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.NowPageSetting" hash-for-method="setBottomOtherInf">setBottomOtherInf</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="setBtnColor">setBtnColor</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MetInfo" title="com.webtest.demo.BannerSetting" hash-for-method="setWordsSize">setWordsSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MetInfo -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MetInfo" class="panel MetInfo">
+          <div class="suite-MetInfo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.NowPageSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setTextStyle">
+                  </a> <!-- setTextStyle -->
+                  <span class="method-name">setTextStyle</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;input id=&quot;met_copyright_type1&quot; class=&quot;custom-control-input&quot; name=&quot;met_copyright_type&quot; type=&quot;radio&quot;&gt; is not clickable at point (193,477) because another element &lt;dd&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-TNDKL02&apos;, ip: &apos;10.7.86.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 29884, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c66e2ade-2387-4beb-8396-0f3ef5c0601a
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(Unknown Source)
+	at com.webtest.demo.NowPageSetting.setTextStyle(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="siteInfoSetting1">
+                  </a> <!-- siteInfoSetting1 -->
+                  <span class="method-name">siteInfoSetting1</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.webtest.demo.NowPageSetting.siteInfoSetting1(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-failed -->
+          <div class="suite-MetInfo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.PhoneMenuSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPhoneBtn">
+                  </a> <!-- addPhoneBtn -->
+                  <span class="method-name">addPhoneBtn</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-outline-light border-none dropdown-toggle menu-position-destroy&quot; type=&quot;button&quot;&gt; is not clickable at point (384,25) because another element &lt;div class=&quot;alertify-bg position-fixed h-100 w-100 bg-dark&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-TNDKL02&apos;, ip: &apos;10.7.86.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(Unknown Source)
+	at com.webtest.demo.PhoneMenuSetting.openPhoneMenuSetting(Unknown Source)
+	at com.webtest.demo.PhoneMenuSetting.addPhoneBtn(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePhoneBtn">
+                  </a> <!-- deletePhoneBtn -->
+                  <span class="method-name">deletePhoneBtn</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;btn btn-outline-light border-none dropdown-toggle menu-position-destroy&quot; type=&quot;button&quot;&gt; is not clickable at point (384,25) because another element &lt;div class=&quot;alertify-bg position-fixed h-100 w-100 bg-dark&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-TNDKL02&apos;, ip: &apos;10.7.86.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(Unknown Source)
+	at com.webtest.demo.PhoneMenuSetting.openPhoneMenuSetting(Unknown Source)
+	at com.webtest.demo.PhoneMenuSetting.deletePhoneBtn(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="edtiPhoneBtnTurns">
+                  </a> <!-- edtiPhoneBtnTurns -->
+                  <span class="method-name">edtiPhoneBtnTurns</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;span&gt; is not clickable at point (1256,25) because another element &lt;div class=&quot;alertify-bg position-fixed h-100 w-100 bg-dark&quot;&gt; obscures it
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-TNDKL02&apos;, ip: &apos;10.7.86.177&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_212&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 27564, moz:profile: C:\Users\dell\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bdea20a-9ba0-4feb-a312-a98906aefcf5
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.webtest.core.WebDriverEngine.click(Unknown Source)
+	at com.webtest.demo.PhoneMenuSetting.edtiPhoneBtnTurns(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-failed -->
+          <div class="suite-MetInfo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.TopSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="setPutDown">
+                  </a> <!-- setPutDown -->
+                  <span class="method-name">setPutDown</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.webtest.demo.TopSetting.setPutDown(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-failed -->
+          <div class="suite-MetInfo-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.webtest.demo.BannerSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBtn">
+                  </a> <!-- deleteBtn -->
+                  <span class="method-name">deleteBtn</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at com.webtest.demo.BannerSetting.deleteBtn(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setTurns">
+                  </a> <!-- setTurns -->
+                  <span class="method-name">setTurns</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at com.webtest.demo.BannerSetting.setTurns(Unknown Source)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-failed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.NowPageSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="otherImg">
+                  </a> <!-- otherImg -->
+                  <span class="method-name">otherImg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setBottomInf">
+                  </a> <!-- setBottomInf -->
+                  <span class="method-name">setBottomInf</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setBottomOtherInf">
+                  </a> <!-- setBottomOtherInf -->
+                  <span class="method-name">setBottomOtherInf</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.CustomerServiceSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CSstyleSetting">
+                  </a> <!-- CSstyleSetting -->
+                  <span class="method-name">CSstyleSetting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCS">
+                  </a> <!-- addCS -->
+                  <span class="method-name">addCS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addColumn">
+                  </a> <!-- addColumn -->
+                  <span class="method-name">addColumn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCS">
+                  </a> <!-- deleteCS -->
+                  <span class="method-name">deleteCS</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCSImg">
+                  </a> <!-- deleteCSImg -->
+                  <span class="method-name">deleteCSImg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteColumn">
+                  </a> <!-- deleteColumn -->
+                  <span class="method-name">deleteColumn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCSImg">
+                  </a> <!-- editCSImg -->
+                  <span class="method-name">editCSImg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCSName">
+                  </a> <!-- editCSName -->
+                  <span class="method-name">editCSName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCSPhoneNum">
+                  </a> <!-- editCSPhoneNum -->
+                  <span class="method-name">editCSPhoneNum</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editFixedStyle">
+                  </a> <!-- editFixedStyle -->
+                  <span class="method-name">editFixedStyle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editeCSType">
+                  </a> <!-- editeCSType -->
+                  <span class="method-name">editeCSType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="otherSetting">
+                  </a> <!-- otherSetting -->
+                  <span class="method-name">otherSetting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.LanguageSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewLanguage">
+                  </a> <!-- addNewLanguage -->
+                  <span class="method-name">addNewLanguage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeCSLanguageSwtich">
+                  </a> <!-- closeCSLanguageSwtich -->
+                  <span class="method-name">closeCSLanguageSwtich</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeLanguageSwitch">
+                  </a> <!-- closeLanguageSwitch -->
+                  <span class="method-name">closeLanguageSwitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editLanguage">
+                  </a> <!-- editLanguage -->
+                  <span class="method-name">editLanguage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="openBackLanguageSwitch">
+                  </a> <!-- openBackLanguageSwitch -->
+                  <span class="method-name">openBackLanguageSwitch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="plugInsEdit">
+                  </a> <!-- plugInsEdit -->
+                  <span class="method-name">plugInsEdit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.PhoneMenuSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePhoneBtnImg">
+                  </a> <!-- deletePhoneBtnImg -->
+                  <span class="method-name">deletePhoneBtnImg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneBtnColor">
+                  </a> <!-- editPhoneBtnColor -->
+                  <span class="method-name">editPhoneBtnColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneBtnEnable">
+                  </a> <!-- editPhoneBtnEnable -->
+                  <span class="method-name">editPhoneBtnEnable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneBtnImg">
+                  </a> <!-- editPhoneBtnImg -->
+                  <span class="method-name">editPhoneBtnImg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneBtnText">
+                  </a> <!-- editPhoneBtnText -->
+                  <span class="method-name">editPhoneBtnText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneBtnUrl">
+                  </a> <!-- editPhoneBtnUrl -->
+                  <span class="method-name">editPhoneBtnUrl</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPhoneTextColor">
+                  </a> <!-- editPhoneTextColor -->
+                  <span class="method-name">editPhoneTextColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.TopSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editHomePageName">
+                  </a> <!-- editHomePageName -->
+                  <span class="method-name">editHomePageName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="languagePosition">
+                  </a> <!-- languagePosition -->
+                  <span class="method-name">languagePosition</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="nationalFlagSetting">
+                  </a> <!-- nationalFlagSetting -->
+                  <span class="method-name">nationalFlagSetting</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+          <div class="suite-MetInfo-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.webtest.demo.BannerSetting</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addBanner">
+                  </a> <!-- addBanner -->
+                  <span class="method-name">addBanner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addButtons">
+                  </a> <!-- addButtons -->
+                  <span class="method-name">addButtons</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteBanner">
+                  </a> <!-- deleteBanner -->
+                  <span class="method-name">deleteBanner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editBanner">
+                  </a> <!-- editBanner -->
+                  <span class="method-name">editBanner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setBtnColor">
+                  </a> <!-- setBtnColor -->
+                  <span class="method-name">setBtnColor</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setWordsSize">
+                  </a> <!-- setWordsSize -->
+                  <span class="method-name">setWordsSize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MetInfo-class-passed -->
+        </div> <!-- panel MetInfo -->
+        <div panel-name="test-xml-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\D3\project-training\myProjects\auto2020shixun\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;MetInfo&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.webtest.core.JavaMailTestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;all&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.webtest.demo.BannerSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.CustomerServiceSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.LanguageSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.PhoneMenuSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.NowPageSetting&quot;/&gt;
+      &lt;class name=&quot;com.webtest.demo.TopSetting&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- all --&gt;
+&lt;/suite&gt; &lt;!-- MetInfo --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MetInfo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">all (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MetInfo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MetInfo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MetInfo');
+function tableData_MetInfo() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(45);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'editBanner')
+data.setCell(0, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(0, 3, 57942);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'otherSetting')
+data.setCell(1, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(1, 3, 54690);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'editPhoneBtnEnable')
+data.setCell(2, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(2, 3, 42866);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addBanner')
+data.setCell(3, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(3, 3, 41531);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'setPutDown')
+data.setCell(4, 2, 'com.webtest.demo.TopSetting')
+data.setCell(4, 3, 40827);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'addCS')
+data.setCell(5, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(5, 3, 37787);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'openBackLanguageSwitch')
+data.setCell(6, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(6, 3, 35449);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'editPhoneBtnText')
+data.setCell(7, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(7, 3, 34872);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'addButtons')
+data.setCell(8, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(8, 3, 33731);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'CSstyleSetting')
+data.setCell(9, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(9, 3, 29730);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'editPhoneBtnImg')
+data.setCell(10, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(10, 3, 29378);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'editCSImg')
+data.setCell(11, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(11, 3, 29024);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'editPhoneBtnUrl')
+data.setCell(12, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(12, 3, 28260);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'addColumn')
+data.setCell(13, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(13, 3, 27280);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'editeCSType')
+data.setCell(14, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(14, 3, 26976);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'addNewLanguage')
+data.setCell(15, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(15, 3, 26470);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'deleteColumn')
+data.setCell(16, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(16, 3, 25902);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'editHomePageName')
+data.setCell(17, 2, 'com.webtest.demo.TopSetting')
+data.setCell(17, 3, 23755);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'otherImg')
+data.setCell(18, 2, 'com.webtest.demo.NowPageSetting')
+data.setCell(18, 3, 23730);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'deleteBtn')
+data.setCell(19, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(19, 3, 23078);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'editFixedStyle')
+data.setCell(20, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(20, 3, 22888);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'closeLanguageSwitch')
+data.setCell(21, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(21, 3, 22574);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'closeCSLanguageSwtich')
+data.setCell(22, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(22, 3, 22210);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'deleteCSImg')
+data.setCell(23, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(23, 3, 21796);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'editCSPhoneNum')
+data.setCell(24, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(24, 3, 21612);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'deleteCS')
+data.setCell(25, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(25, 3, 21530);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'deleteBanner')
+data.setCell(26, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(26, 3, 21393);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'deletePhoneBtnImg')
+data.setCell(27, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(27, 3, 21169);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'setBottomOtherInf')
+data.setCell(28, 2, 'com.webtest.demo.NowPageSetting')
+data.setCell(28, 3, 20682);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'editLanguage')
+data.setCell(29, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(29, 3, 19445);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'setTurns')
+data.setCell(30, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(30, 3, 19365);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'setBottomInf')
+data.setCell(31, 2, 'com.webtest.demo.NowPageSetting')
+data.setCell(31, 3, 18826);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'editCSName')
+data.setCell(32, 2, 'com.webtest.demo.CustomerServiceSetting')
+data.setCell(32, 3, 18489);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'editPhoneTextColor')
+data.setCell(33, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(33, 3, 17863);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'editPhoneBtnColor')
+data.setCell(34, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(34, 3, 17408);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'languagePosition')
+data.setCell(35, 2, 'com.webtest.demo.TopSetting')
+data.setCell(35, 3, 16142);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'setBtnColor')
+data.setCell(36, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(36, 3, 14114);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'plugInsEdit')
+data.setCell(37, 2, 'com.webtest.demo.LanguageSetting')
+data.setCell(37, 3, 13982);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'setWordsSize')
+data.setCell(38, 2, 'com.webtest.demo.BannerSetting')
+data.setCell(38, 3, 13959);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'edtiPhoneBtnTurns')
+data.setCell(39, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(39, 3, 13028);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'setTextStyle')
+data.setCell(40, 2, 'com.webtest.demo.NowPageSetting')
+data.setCell(40, 3, 7817);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'nationalFlagSetting')
+data.setCell(41, 2, 'com.webtest.demo.TopSetting')
+data.setCell(41, 3, 5457);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'siteInfoSetting1')
+data.setCell(42, 2, 'com.webtest.demo.NowPageSetting')
+data.setCell(42, 3, 4701);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'deletePhoneBtn')
+data.setCell(43, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(43, 3, 39);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'addPhoneBtn')
+data.setCell(44, 2, 'com.webtest.demo.PhoneMenuSetting')
+data.setCell(44, 3, 36);
+window.suiteTableData['MetInfo']= { tableData: data, tableDiv: 'times-div-MetInfo'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 17 minutes</span>
+              <div id="times-div-MetInfo">
+              </div> <!-- times-div-MetInfo -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MetInfo</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MetInfo" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.BannerSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">14978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editBanner</span>
+                <span class="method-start">16074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">74037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addBanner</span>
+                <span class="method-start">75063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">116594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteBanner</span>
+                <span class="method-start">117828 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">139221 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setTurns</span>
+                <span class="method-start">140174 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">159541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addButtons</span>
+                <span class="method-start">160526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">194258 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setBtnColor</span>
+                <span class="method-start">195222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">209338 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setWordsSize</span>
+                <span class="method-start">210292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">224252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteBtn</span>
+                <span class="method-start">225193 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.CustomerServiceSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">248272 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">262941 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editCSName</span>
+                <span class="method-start">264342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">282831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editCSPhoneNum</span>
+                <span class="method-start">284310 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">305923 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editeCSType</span>
+                <span class="method-start">307407 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">334384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteCSImg</span>
+                <span class="method-start">335416 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">357214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editCSImg</span>
+                <span class="method-start">358689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">387714 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addCS</span>
+                <span class="method-start">388857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">426645 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteCS</span>
+                <span class="method-start">428217 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">449748 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editFixedStyle</span>
+                <span class="method-start">451038 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">473927 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CSstyleSetting</span>
+                <span class="method-start">475222 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">504953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">otherSetting</span>
+                <span class="method-start">506000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">560691 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addColumn</span>
+                <span class="method-start">561968 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">589249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">deleteColumn</span>
+                <span class="method-start">590749 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.LanguageSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">616651 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">openBackLanguageSwitch</span>
+                <span class="method-start">632660 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeLanguageSwitch</span>
+                <span class="method-start">668110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeCSLanguageSwtich</span>
+                <span class="method-start">690684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addNewLanguage</span>
+                <span class="method-start">712894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editLanguage</span>
+                <span class="method-start">739367 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">plugInsEdit</span>
+                <span class="method-start">758813 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.PhoneMenuSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">772797 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">editPhoneBtnText</span>
+                <span class="method-start">789992 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editPhoneBtnUrl</span>
+                <span class="method-start">824865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePhoneBtnImg</span>
+                <span class="method-start">853127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editPhoneBtnImg</span>
+                <span class="method-start">874297 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editPhoneBtnColor</span>
+                <span class="method-start">903676 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editPhoneTextColor</span>
+                <span class="method-start">921084 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editPhoneBtnEnable</span>
+                <span class="method-start">938947 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">edtiPhoneBtnTurns</span>
+                <span class="method-start">981814 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addPhoneBtn</span>
+                <span class="method-start">994843 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deletePhoneBtn</span>
+                <span class="method-start">994880 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.NowPageSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">994920 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">siteInfoSetting1</span>
+                <span class="method-start">1018171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">otherImg</span>
+                <span class="method-start">1022878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setBottomInf</span>
+                <span class="method-start">1046611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">setBottomOtherInf</span>
+                <span class="method-start">1065437 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setTextStyle</span>
+                <span class="method-start">1086120 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.webtest.demo.TopSetting</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1093940 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">1117533 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setPutDown</span>
+                <span class="method-start">1121438 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">1162274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">languagePosition</span>
+                <span class="method-start">1166783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">1182926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">nationalFlagSetting</span>
+                <span class="method-start">1186888 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">refreshPage</span>
+                <span class="method-start">1192347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editHomePageName</span>
+                <span class="method-start">1196515 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

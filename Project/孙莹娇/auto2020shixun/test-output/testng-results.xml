@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="9" passed="1">
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32350" started-at="2020-12-02T08:29:01 CST" finished-at="2020-12-02T08:29:33 CST">
+  <suite name="Default suite" duration-ms="100298" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:22:38 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32350" started-at="2020-12-02T08:29:01 CST" finished-at="2020-12-02T08:29:33 CST">
-      <class name="com.webtest.demo.PhoneMenuSetting">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.PhoneMenuSetting@63e2203c]" name="doBeforeClass" is-config="true" duration-ms="4397" started-at="2020-12-02T08:29:01 CST" finished-at="2020-12-02T08:29:05 CST">
+    <test name="Default test" duration-ms="100298" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:22:38 CST">
+      <class name="com.webtest.demo.NowPageSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="doBeforeClass" is-config="true" duration-ms="13059" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:21:10 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:com.webtest.demo.PhoneMenuSetting@63e2203c]" name="loginTest" is-config="true" duration-ms="8601" started-at="2020-12-02T08:29:05 CST" finished-at="2020-12-02T08:29:14 CST">
+        <test-method status="PASS" signature="siteInfoSetting1(java.lang.String)[pri:1, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="siteInfoSetting1" duration-ms="42585" started-at="2020-12-06T10:21:12 CST" data-provider="logoInfoExcel" finished-at="2020-12-06T10:21:54 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1532139830.png]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="deletePhoneBtn()[pri:10, instance:com.webtest.demo.PhoneMenuSetting@63e2203c]" name="deletePhoneBtn" duration-ms="19316" started-at="2020-12-02T08:29:14 CST" finished-at="2020-12-02T08:29:33 CST">
+        </test-method> <!-- siteInfoSetting1 -->
+        <test-method status="PASS" signature="siteInfoSetting1(java.lang.String)[pri:1, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="siteInfoSetting1" duration-ms="42390" started-at="2020-12-06T10:21:54 CST" data-provider="logoInfoExcel" finished-at="2020-12-06T10:22:37 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1532137488.png]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deletePhoneBtn -->
-      </class> <!-- com.webtest.demo.PhoneMenuSetting -->
+        </test-method> <!-- siteInfoSetting1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="doAfterMethod" is-config="true" duration-ms="1100" started-at="2020-12-06T10:22:37 CST" finished-at="2020-12-06T10:22:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+      </class> <!-- com.webtest.demo.NowPageSetting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

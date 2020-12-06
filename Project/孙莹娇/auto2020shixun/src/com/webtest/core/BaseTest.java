@@ -22,9 +22,12 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-
+import com.webtest.utils.FreeMarker;
 import com.webtest.utils.Log;
+import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
+
+import freemarker.template.TemplateException;
 
 
 
@@ -35,7 +38,15 @@ public class BaseTest {
 	public String driverType;
 
 	
-	
+//	@AfterSuite
+	public void mailUtil() throws IOException, TemplateException {
+		FreeMarker freeMarker=new FreeMarker();
+		freeMarker.makeReport();
+		
+		MailUtil m=new MailUtil();
+		m.sendMail();
+		
+	}
 
 	private WebDriver newWebDriver(String driverType) throws IOException {
 		WebDriver driver = null;
@@ -67,19 +78,22 @@ public class BaseTest {
 
 	@BeforeClass
 	public void doBeforeClass() throws Exception {
-
+		//open driver
 		driverType=ReadProperties.getPropertyValue("driverType");
 		driver = this.newWebDriver(driverType);
 		driver.manage().window().maximize();
 		Log.info(driverType);
 		webtest = new WebDriverEngine(driver);
-	
-	
+		//login
+		webtest.open(ReadProperties.getPropertyValue("base_url"));
+		webtest.type("name=login_name", ReadProperties.getPropertyValue("username"));
+		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
+		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
 	
 	}
 
 
-//	@AfterClass
+	@AfterClass
 	public void doAfterMethod() {
 		if(this.driver != null){
 			this.driver.quit();

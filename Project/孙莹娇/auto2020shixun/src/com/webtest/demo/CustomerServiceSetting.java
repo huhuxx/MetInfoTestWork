@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -18,28 +19,21 @@ import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
+
 public class CustomerServiceSetting extends BaseTest{
-	@BeforeClass
-	public void loginTest() throws InterruptedException {
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
-		webtest.type("name=login_name",ReadProperties.getPropertyValue("username"));
-		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-	}
-//	@BeforeMethod
-	public void refreshPage() {
+	@BeforeMethod
+	public void refreshPage() throws InterruptedException {
 		webtest.refresh();
 	}
 	//CustomerService以CS代称
 	public void openCSList() throws InterruptedException {
-		Thread.sleep(3000);
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
-		Thread.sleep(3000);
-		webtest.click("xpath=//div[@data-index='13']//button[text()='内容']");
+		webtest.click("xpath=//div[@data-mid='online']/button[2]");
+		Thread.sleep(2000);
 		webtest.leaveFrame();
 	}
+	
 //35、ID196 客服设置-客服列表-客服名称修改  
 	@Test(priority = 1)
 	public void editCSName() throws InterruptedException {
@@ -59,7 +53,7 @@ public class CustomerServiceSetting extends BaseTest{
 		System.out.println("ID196 客服设置-客服列表-客服名称修改 成功！");
 	}
 //36、ID197 客服设置-客服列表-类型修改
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void editeCSType() throws InterruptedException {
 		//打开“客服设置-客服列表”界面
 		this.openCSList();
@@ -77,7 +71,7 @@ public class CustomerServiceSetting extends BaseTest{
 		System.out.println("ID197 客服设置-客服列表-类型修改 成功！");
 	}
 //37、ID198 客服设置-客服列表-号码/链接/图片修改 	
-	@Test(priority = 3)
+	@Test(priority = 2)
 	public void editCSPhoneNum() throws InterruptedException {
 		//打开“客服设置-客服列表”界面
 		this.openCSList();
@@ -111,6 +105,8 @@ public class CustomerServiceSetting extends BaseTest{
 		System.out.println("ID200 客服设置-客服列表-图标删除成功！");
 	}
 //39、 ID199 客服设置-客服列表-图标修改
+	/*
+	 * */
 	@Test(priority = 5)
 	public void editCSImg() throws InterruptedException {
 		//打开“客服设置-客服列表”界面
@@ -159,15 +155,15 @@ public class CustomerServiceSetting extends BaseTest{
 		String facebookImg=webtest.getValue("xpath=//p[text()='脸书']//preceding-sibling::i[1]","class");
 		System.out.println(facebookImg);
 		webtest.leaveFrame();
-		System.out.println("ID199 客服设置-客服列表-图标修改 成功！");
+		System.out.println("ID201 客服设置-客服列表-添加客服  成功！");
 	}
 //41、ID202 客服设置-客服列表-删除客服	
 	@Test(priority = 7)
 	public void deleteCS() throws InterruptedException {
 		//删除“脸书”前
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		System.out.println("删除前，脸书客服是否存在："+webtest.isElementPresent("xpath=//p[text()='脸书']"));
-		webtest.leaveFrame();
+//		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+//		System.out.println("删除前，脸书客服是否存在："+webtest.isElementPresent("xpath=//p[text()='脸书']"));
+//		webtest.leaveFrame();
 		//打开“客服设置-客服列表”界面
 		this.openCSList();
 		//删除“脸书”客服
@@ -177,6 +173,7 @@ public class CustomerServiceSetting extends BaseTest{
 		//删除后，进入前台页面验证修改
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
 		System.out.println("删除后，脸书客服是否存在："+webtest.isElementPresent("xpath=//p[text()='脸书']"));
+		Assert.assertEquals(webtest.isElementPresent("xpath=//p[text()='脸书']"), false);
 		webtest.leaveFrame();
 		System.out.println("ID202 客服设置-客服列表-删除客服成功！");
 	}
@@ -188,7 +185,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
 		Thread.sleep(3000);
-		webtest.click("xpath=//div[@data-index='13']/button");
+		webtest.click("xpath=//div[@data-mid='online']/button[1]");
 		webtest.leaveFrame();
 		//修改在线交流方式为“固定于页面左边”
 		webtest.click("xpath=//label[text()='固定于页面左边']");
@@ -211,7 +208,7 @@ public class CustomerServiceSetting extends BaseTest{
 		System.out.println("修改前客服列表的颜色风格为："+beforeEdit_CScolor);
 		webtest.mouseToElement("xpath=//div[@class='onlinebox_one_list']");
 		Thread.sleep(3000);
-		webtest.click("xpath=//div[@data-index='13']/button");
+		webtest.click("xpath=//div[@data-mid='online']/button[1]");
 		webtest.leaveFrame();
 		//修改颜色风格为#71f086，风格选择为“风格2”
 		webtest.typeAndClear("xpath=//input[@name='met_online_color']", "#71f086");
@@ -237,7 +234,7 @@ public class CustomerServiceSetting extends BaseTest{
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
 		webtest.mouseToElement("xpath=//div[@id='onlinebox']");
 		Thread.sleep(3000);
-		webtest.click("xpath=//div[@data-index='13']/button");
+		webtest.click("xpath=//div[@data-mid='online']/button[1]");
 		webtest.leaveFrame();
 		//设置界面风格为“风格3”(因为“其他信息”仅在风格3中生效)
 		webtest.down(5);
@@ -259,6 +256,18 @@ public class CustomerServiceSetting extends BaseTest{
 		System.out.println("其他设置信息为："+otherInfo);
 		webtest.leaveFrame();
 		System.out.println("ID205 客服设置-客服设置-其它设置 成功！");
+		//界面风格恢复为“风格1”
+		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		webtest.mouseToElement("xpath=//div[@id='onlinebox']");
+		Thread.sleep(3000);
+		webtest.click("xpath=//div[@data-mid='online']/button[1]");
+		webtest.leaveFrame();
+		webtest.down(5);
+		webtest.selectByValue("tag=select", "1");
+		//保存
+		webtest.click("xpath=//button[text()='保存']");
+		//关闭界面
+		webtest.click("xpath=//button[text()='关闭']");
 	}
 //45、ID	241 栏目管理-添加一级栏目
 	@Test(priority = 11)
@@ -312,14 +321,5 @@ public class CustomerServiceSetting extends BaseTest{
 		Assert.assertEquals(afterDelete_newExist, false);
 		webtest.leaveFrame();
 		System.out.println("ID11033 栏目管理-删除一级栏目 成功！");
-	}
-	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
 	}
 }

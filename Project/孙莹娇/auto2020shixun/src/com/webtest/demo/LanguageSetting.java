@@ -19,7 +19,6 @@ import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
 public class LanguageSetting extends BaseTest{
 	public String style;
 	public String nowStyle;
@@ -35,13 +34,7 @@ public class LanguageSetting extends BaseTest{
 		webtest.click("xpath=//a[@data-url='language']");
 		webtest.click("xpath=//a[@data-url='language/setting']");
 	}
-	@BeforeClass
-	public void loginTest() throws InterruptedException {
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
-		webtest.type("name=login_name",ReadProperties.getPropertyValue("username"));
-		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-	}
+	
 //4、	ID24 语言设置-开启”后台语言切换“ 
 	@Test(priority = 1)
 	public void openBackLanguageSwitch() throws InterruptedException {
@@ -173,14 +166,6 @@ public class LanguageSetting extends BaseTest{
 		webtest.click("xpath=//a[text()='导出语言包']");
 		System.out.println("ID29:导出语言包成功！");
 	}
-	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-		
-	}
+
 	
 }

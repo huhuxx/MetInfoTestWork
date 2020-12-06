@@ -17,15 +17,9 @@ import com.webtest.utils.MailUtil;
 import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
-@Listeners(JavaMailTestListener.class)
+
 public class PhoneMenuSetting extends BaseTest{
-	@BeforeClass
-	public void loginTest() throws InterruptedException {
-		webtest.open(ReadProperties.getPropertyValue("base_url"));
-		webtest.type("name=login_name",ReadProperties.getPropertyValue("username"));
-		webtest.type("name=login_pass", ReadProperties.getPropertyValue("password"));
-		webtest.click("xpath=//button[@class='btn btn-primary px-4']");
-	}
+	
 	public void openPhoneMenuSetting() {
 		webtest.click("xpath=//button[text()='风格']");
 		webtest.click("xpath=//a[text()='手机菜单']");
@@ -48,14 +42,17 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//span[text()='×']");
 		//返回前台页面验证修改
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-//		List<WebElement> btnTextList=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']/div//span");
-//		WebElement homeText=webtest.getElement("xpath=//span[text()='联系']");
-//		System.out.println("修改后的按钮文字为："+homeText.getText());
-//		Assert.assertEquals(homeText.getText(), "手机首页");
-		System.out.println(webtest.isElementPresent("xpath=//span[text()='手机首页']"));
+		System.out.println("手机首页 是否存在："+webtest.isElementPresent("xpath=//span[text()='手机首页']"));
+		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='手机首页']"), true);
 		webtest.leaveFrame();
 		Thread.sleep(2000);
 		System.out.println("ID184 手机菜单-按钮文字修改 成功！");
+		//恢复“首页”名称
+		this.openPhoneMenuSetting();
+		webtest.typeAndClear("xpath=//input[@value='手机首页']", "首页");
+		//保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
 	}
 //26、	ID185 手机菜单-链接修改 
 //	修改“联系”按钮的链接为https://www.baidu.com/
@@ -84,7 +81,7 @@ public class PhoneMenuSetting extends BaseTest{
 	public void deletePhoneBtnImg() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//点击“新闻”的图标的删除按钮
+		//点击“新闻”图标的删除按钮
 		webtest.click("xpath=//input[@value='新闻']/../../following-sibling::td[2]/div[2]/button");
 		//保存、关闭
 		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
@@ -102,7 +99,7 @@ public class PhoneMenuSetting extends BaseTest{
 	public void editPhoneBtnImg() {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//点击“新闻”的图标的删除按钮
+		//点击“新闻”的"选择图标"
 		webtest.click("xpath=//input[@value='新闻']/../../following-sibling::td[2]/div[2]//button[text()='选择图标']");
 		//选择web-icons图标库的grid-9图标
 		webtest.click("xpath=//h2[text()='web-icons']/following-sibling::button[1]");
@@ -188,9 +185,15 @@ public class PhoneMenuSetting extends BaseTest{
 			webtest.leaveFrame();
 			System.out.println("ID190 手机菜单-启用修改-新闻按钮已成功开启启用！");
 		}
+		//将“新闻”按钮启用改回“是”
+		this.openPhoneMenuSetting();
+		webtest.selectByValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "1");
+		//保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		webtest.click("xpath=//span[text()='×']");
 	}
 //32、	ID191 手机菜单-按钮顺序修改
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void edtiPhoneBtnTurns() throws InterruptedException {
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
@@ -237,14 +240,13 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		List<WebElement> btnsList=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
-		System.out.println(btnsList.get(btnsList.size()-1).getText());
-		Assert.assertEquals(btnsList.get(btnsList.size()-1).getText(), "新按钮");
+		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新按钮']"), true);
+		webtest.leaveFrame();
 		System.out.println("ID192 手机菜单-新按钮添加成功！");
 	}
 //34、ID194 手机菜单-按钮删除 	
 	@Test(priority = 10)
-	public void deletePhoneBtn() {
+	public void deletePhoneBtn() throws InterruptedException {
 		
 		//打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
@@ -255,20 +257,12 @@ public class PhoneMenuSetting extends BaseTest{
 		webtest.click("xpath=//span[text()='×']");
 		//进入前台页面验证修改
 		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		List<WebElement> btnsList=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
-		System.out.println("最后一个手机按钮文字为："+ btnsList.get(btnsList.size()-1).getText());
-		if (!btnsList.get(btnsList.size()-1).getText().equals("新按钮")) {
+		Thread.sleep(2000);
+		if (!webtest.isElementPresent("xpath=//span[text()='新按钮']")) {
 			System.out.println("ID192 手机菜单-新按钮删除成功！");
+		}else {
+			System.out.println("ID192 手机菜单-新按钮删除失败！");
 		}
 		
 	}
-//	@AfterSuite
-	public void mailUtil() throws IOException, TemplateException {
-		FreeMarker freeMarker=new FreeMarker();
-		freeMarker.makeReport();
-		
-		MailUtil m=new MailUtil();
-		m.sendMail();
-	}
-		
 }

@@ -22,9 +22,9 @@ public class NSDataProvider {
 		
 	}
 
-	@DataProvider(name="excel")
+	@DataProvider(name="logoInfoExcel")
 	public Object[][] getExcelDada() throws IOException{
-		return new ExcelDataProvider().getTestDataByExcel("data/user.xlsx","Sheet1");
+		return new ExcelDataProvider().getTestDataByExcel("data/logo.xlsx","Sheet1");
 	}
 	
 	@DataProvider(name="mysql")
