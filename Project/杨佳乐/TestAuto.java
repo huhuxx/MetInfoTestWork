@@ -6,7 +6,14 @@ import org.testng.annotations.Test;
 import driver.BaseTest;
 import listener.JavaMailTestListener;
 
-//@Listeners(JavaMailTestListener.class)
+/**
+ * 
+ * @author 杨佳乐
+ * 50条测试用例
+ *
+ */
+
+@Listeners(JavaMailTestListener.class)
 public class TestAuto extends BaseTest {
 	// 进入在线留言
 	public void email() throws InterruptedException {
@@ -17,7 +24,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='��������']");
+		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		webtest.click("xpath=//a[@class='editable-click']");
 		Thread.sleep(1000);
@@ -31,7 +38,7 @@ public class TestAuto extends BaseTest {
 		webtest.mouseToElement("xpath=//div[@class='form-group m-b-0']");
 		webtest.runJs(
 				"document.getElementsByClassName('btn btn-primary btn-block btn-squared editable-click set')[0].className=''");
-		webtest.mouseToElementandClick("xpath=//button[text()='�ύ����']");
+		webtest.mouseToElementandClick("xpath=//button[text()='提交留言']");
 		Thread.sleep(3000);
 	}
 
@@ -45,7 +52,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//button[@class='btn btn-default no-prompt']");
 		webtest.enterFrame(0);
 		Thread.sleep(1000);
-		webtest.click("xpath=//a[@title='��������']");
+		webtest.click("xpath=//a[@title='关于我们']");
 		Thread.sleep(1000);
 		element = webtest.back("editable-click").get(36);
 		webtest.click(element);
@@ -85,7 +92,7 @@ public class TestAuto extends BaseTest {
 		webtest.click("xpath=//a[@class='editable-click']");
 		webtest.click("xpath=//button[@data-index='5']");
 		webtest.leaveFrame();
-//		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
+		webtest.click("xpath=//button[@class='btn btn-sm btn-primary mr-1']");
 		webtest.mouseToElementandClick("xpath=//div[@class='modal-body  oya met-scrollbar']");
 		webtest.down(3);
 		webtest.type("xpath=//textarea[@name='useinfo']", "好");
@@ -565,7 +572,7 @@ public class TestAuto extends BaseTest {
 		webtest.enterFrame(0);
 		webtest.click("xpath=//a[@title='关于我们']");
 		webtest.click("xpath=//a[@class='editable-click']");
-//		webtest.click("xpath=//div[@data-index='6']//button[2]");
+		webtest.click("xpath=//div[@data-index='6']//button[2]");
 		webtest.leaveFrame();
 		webtest.click("xpath=//select[@name='wr_ok-137']");
 		webtest.click("xpath=//option[text()='��']");
