@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="9" total="12" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="97378" started-at="2020-12-06T09:18:52 CST" finished-at="2020-12-06T09:20:29 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="97378" started-at="2020-12-06T09:18:52 CST" finished-at="2020-12-06T09:20:29 CST">
+      <class name="com.bxx.test.KehuanliEditTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="addListener" is-config="true" duration-ms="14" started-at="2020-12-06T09:18:52 CST" description="添加监听器" finished-at="2020-12-06T09:18:52 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@367b22e5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doBeforeClass" is-config="true" duration-ms="15541" started-at="2020-12-06T09:18:52 CST" finished-at="2020-12-06T09:19:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="testEditAdd4" duration-ms="16466" started-at="2020-12-06T09:19:08 CST" data-provider="photo" finished-at="2020-12-06T09:19:24 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doAfterMethod" is-config="true" duration-ms="1405" started-at="2020-12-06T09:19:24 CST" finished-at="2020-12-06T09:19:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doBeforeClass" is-config="true" duration-ms="13759" started-at="2020-12-06T09:19:26 CST" finished-at="2020-12-06T09:19:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="testEditAdd4" duration-ms="16440" started-at="2020-12-06T09:19:40 CST" data-provider="photo" finished-at="2020-12-06T09:19:56 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\2.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doAfterMethod" is-config="true" duration-ms="1460" started-at="2020-12-06T09:19:56 CST" finished-at="2020-12-06T09:19:58 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doBeforeClass" is-config="true" duration-ms="13845" started-at="2020-12-06T09:19:58 CST" finished-at="2020-12-06T09:20:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBeforeClass -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="testEditAdd4" duration-ms="16407" started-at="2020-12-06T09:20:11 CST" data-provider="photo" finished-at="2020-12-06T09:20:28 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\3.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="doAfterMethod" is-config="true" duration-ms="1413" started-at="2020-12-06T09:20:28 CST" finished-at="2020-12-06T09:20:29 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.bxx.test.KehuanliEditTest@167fdd33]" name="end" is-config="true" duration-ms="19698" started-at="2020-12-06T09:20:29 CST" finished-at="2020-12-06T09:20:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

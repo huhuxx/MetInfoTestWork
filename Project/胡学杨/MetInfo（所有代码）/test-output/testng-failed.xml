@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hxy.testCase.ColumnManage_Test">
+      <class name="com.hxy.testCase.SearchBox_Test">
         <methods>
-          <include name="ColumnManage_updateTitle"/>
+          <include name="SearchBox_set_content_all"/>
           <include name="doAfterMethod"/>
           <include name="startBrowser"/>
         </methods>
-      </class> <!-- com.hxy.testCase.ColumnManage_Test -->
+      </class> <!-- com.hxy.testCase.SearchBox_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

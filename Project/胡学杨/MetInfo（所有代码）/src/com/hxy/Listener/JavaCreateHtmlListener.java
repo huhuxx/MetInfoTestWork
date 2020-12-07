@@ -7,8 +7,6 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.hxy.freemarker.testFreemarker;
-import com.hxy.mail.MailUtilHtml;
-import com.hxy.readproperties.ReadProperties;
 
 import freemarker.template.TemplateException;
 
@@ -41,10 +39,8 @@ public class JavaCreateHtmlListener implements ITestListener{
 		testFreemarker.testSum(testsum, ssum, fsum);
 		System.out.println(testsum);
 		try {	
-			String mymail = ReadProperties.getPropertyValue("mymail");
 			testFreemarker.createHtml();
 			Thread.sleep(1000);
-			MailUtilHtml.sendMail(mymail);
 		} catch (IOException | TemplateException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

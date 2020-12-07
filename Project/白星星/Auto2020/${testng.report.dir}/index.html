@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite1">
+              <span class="suite-name border-passed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite1">
+                    <span>D:\eclipse\WorkSpace201109\project2020\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite1">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">39 methods,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuszhaopinTest" hash-for-method="test1">test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test10">test10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test11">test11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test12">test12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test13">test13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test14">test14</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test15">test15</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test16">test16</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuszhaopinTest" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuspageTest" hash-for-method="test2">test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuszhaopinTest" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuspageTest" hash-for-method="test3">test3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuspageTest" hash-for-method="test4">test4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="test5">test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test6">test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test7">test7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test8">test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinusjobTest" hash-for-method="test9">test9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="testBanner1">testBanner1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEdit1">testEdit1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEdit2">testEdit2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEdit3">testEdit3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd10">testEditAdd10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd4">testEditAdd4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd5">testEditAdd5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd6">testEditAdd6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd7">testEditAdd7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd8">testEditAdd8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.KehuanliEditTest" hash-for-method="testEditAdd9">testEditAdd9</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="testEditDelete6">testEditDelete6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="testSearch2">testSearch2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.kehuanliPageTest" hash-for-method="testSwitch3">testSwitch3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.bxx.test.JoinuspageTest" hash-for-method="text1">text1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bxx.test.JoinusjobTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test10">
+                  </a> <!-- test10 -->
+                  <span class="method-name">test10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test11">
+                  </a> <!-- test11 -->
+                  <span class="method-name">test11</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test12">
+                  </a> <!-- test12 -->
+                  <span class="method-name">test12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test13">
+                  </a> <!-- test13 -->
+                  <span class="method-name">test13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test14">
+                  </a> <!-- test14 -->
+                  <span class="method-name">test14</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test15">
+                  </a> <!-- test15 -->
+                  <span class="method-name">test15</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test16">
+                  </a> <!-- test16 -->
+                  <span class="method-name">test16</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test6">
+                  </a> <!-- test6 -->
+                  <span class="method-name">test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test7">
+                  </a> <!-- test7 -->
+                  <span class="method-name">test7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test8">
+                  </a> <!-- test8 -->
+                  <span class="method-name">test8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test9">
+                  </a> <!-- test9 -->
+                  <span class="method-name">test9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bxx.test.JoinuspageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="text1">
+                  </a> <!-- text1 -->
+                  <span class="method-name">text1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bxx.test.kehuanliPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test4">
+                  </a> <!-- test4 -->
+                  <span class="method-name">test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test5">
+                  </a> <!-- test5 -->
+                  <span class="method-name">test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testBanner1">
+                  </a> <!-- testBanner1 -->
+                  <span class="method-name">testBanner1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditDelete6">
+                  </a> <!-- testEditDelete6 -->
+                  <span class="method-name">testEditDelete6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearch2">
+                  </a> <!-- testSearch2 -->
+                  <span class="method-name">testSearch2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSwitch3">
+                  </a> <!-- testSwitch3 -->
+                  <span class="method-name">testSwitch3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bxx.test.KehuanliEditTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEdit1">
+                  </a> <!-- testEdit1 -->
+                  <span class="method-name">testEdit1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEdit2">
+                  </a> <!-- testEdit2 -->
+                  <span class="method-name">testEdit2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEdit3">
+                  </a> <!-- testEdit3 -->
+                  <span class="method-name">testEdit3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd10">
+                  </a> <!-- testEditAdd10 -->
+                  <span class="method-name">testEditAdd10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd4">
+                  </a> <!-- testEditAdd4 -->
+                  <span class="method-name">testEditAdd4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd5">
+                  </a> <!-- testEditAdd5 -->
+                  <span class="method-name">testEditAdd5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd6">
+                  </a> <!-- testEditAdd6 -->
+                  <span class="method-name">testEditAdd6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd7">
+                  </a> <!-- testEditAdd7 -->
+                  <span class="method-name">testEditAdd7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd8">
+                  </a> <!-- testEditAdd8 -->
+                  <span class="method-name">testEditAdd8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditAdd9">
+                  </a> <!-- testEditAdd9 -->
+                  <span class="method-name">testEditAdd9</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bxx.test.JoinuszhaopinTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test2">
+                  </a> <!-- test2 -->
+                  <span class="method-name">test2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test3">
+                  </a> <!-- test3 -->
+                  <span class="method-name">test3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\eclipse\WorkSpace201109\project2020\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bxx.test.JoinusjobTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bxx.test.kehuanliPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test2 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test3&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bxx.test.JoinuszhaopinTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test3 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test4&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bxx.test.KehuanliEditTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test4 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;test5&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bxx.test.JoinuspageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test5 --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test2 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test3 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test4 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">test5 (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(39);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testEditDelete6')
+data.setCell(0, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(0, 3, 71613);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testEditAdd7')
+data.setCell(1, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(1, 3, 33016);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEditAdd8')
+data.setCell(2, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(2, 3, 31957);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testEditAdd5')
+data.setCell(3, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(3, 3, 30992);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testEditAdd10')
+data.setCell(4, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(4, 3, 29963);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testEditAdd9')
+data.setCell(5, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(5, 3, 29656);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testEditAdd6')
+data.setCell(6, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(6, 3, 23440);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'test1')
+data.setCell(7, 2, 'com.bxx.test.JoinuszhaopinTest')
+data.setCell(7, 3, 23258);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'test11')
+data.setCell(8, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(8, 3, 20030);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'text1')
+data.setCell(9, 2, 'com.bxx.test.JoinuspageTest')
+data.setCell(9, 3, 17292);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'test3')
+data.setCell(10, 2, 'com.bxx.test.JoinuspageTest')
+data.setCell(10, 3, 16930);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testEditAdd4')
+data.setCell(11, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(11, 3, 16705);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'test4')
+data.setCell(12, 2, 'com.bxx.test.JoinuspageTest')
+data.setCell(12, 3, 15814);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'test2')
+data.setCell(13, 2, 'com.bxx.test.JoinuspageTest')
+data.setCell(13, 3, 15165);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'test13')
+data.setCell(14, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(14, 3, 15022);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'test5')
+data.setCell(15, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(15, 3, 14042);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'test14')
+data.setCell(16, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(16, 3, 13828);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'test16')
+data.setCell(17, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(17, 3, 13335);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testEdit1')
+data.setCell(18, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(18, 3, 13308);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testEdit3')
+data.setCell(19, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(19, 3, 13276);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSwitch3')
+data.setCell(20, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(20, 3, 12633);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'test12')
+data.setCell(21, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(21, 3, 11554);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testBanner1')
+data.setCell(22, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(22, 3, 11289);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'test6')
+data.setCell(23, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(23, 3, 10443);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'test15')
+data.setCell(24, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(24, 3, 10289);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'test5')
+data.setCell(25, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(25, 3, 10166);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'test8')
+data.setCell(26, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(26, 3, 10158);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testEdit2')
+data.setCell(27, 2, 'com.bxx.test.KehuanliEditTest')
+data.setCell(27, 3, 10151);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'test7')
+data.setCell(28, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(28, 3, 10079);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'test2')
+data.setCell(29, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(29, 3, 10049);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'test1')
+data.setCell(30, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(30, 3, 10001);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'test4')
+data.setCell(31, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(31, 3, 9890);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'test2')
+data.setCell(32, 2, 'com.bxx.test.JoinuszhaopinTest')
+data.setCell(32, 3, 6761);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'test10')
+data.setCell(33, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(33, 3, 6753);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'test3')
+data.setCell(34, 2, 'com.bxx.test.JoinuszhaopinTest')
+data.setCell(34, 3, 6719);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'test9')
+data.setCell(35, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(35, 3, 6649);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'test4')
+data.setCell(36, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(36, 3, 6267);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'testSearch2')
+data.setCell(37, 2, 'com.bxx.test.kehuanliPageTest')
+data.setCell(37, 3, 4412);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'test3')
+data.setCell(38, 2, 'com.bxx.test.JoinusjobTest')
+data.setCell(38, 3, 3422);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 minutes</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bxx.test.JoinusjobTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">addListener(org.testng.TestRunner@564fc235)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">43 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">18534 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">25466 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">35469 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">37257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">53288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test10</span>
+                <span class="method-start">60232 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">66986 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">68904 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">84886 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test11</span>
+                <span class="method-start">91865 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">111895 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">113628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">129637 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test12</span>
+                <span class="method-start">136470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">148024 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">149779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">165727 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test13</span>
+                <span class="method-start">172537 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">187559 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">189682 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">205594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test14</span>
+                <span class="method-start">212647 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">226475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">234608 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">258343 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test15</span>
+                <span class="method-start">266124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">276413 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">285773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">307541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test16</span>
+                <span class="method-start">314679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">328014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">330249 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">348862 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">356550 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">366599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">368374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">383797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">390749 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">394171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">395811 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">411372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">418264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">428154 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">429768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">445305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">452157 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">462323 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">464096 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">479728 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test6</span>
+                <span class="method-start">486633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">497076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">498735 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">514166 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test7</span>
+                <span class="method-start">521270 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">531349 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">533110 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">549012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test8</span>
+                <span class="method-start">556291 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">566449 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">568173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">basictest</span>
+                <span class="method-start">583472 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test9</span>
+                <span class="method-start">590415 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">597064 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bxx.test.kehuanliPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">addListener(org.testng.TestRunner@65b7678a)</span>
+                <span class="method-start">598941 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">598942 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">614239 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test5</span>
+                <span class="method-start">622814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">636856 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">638582 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">654118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testBanner1</span>
+                <span class="method-start">662486 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">673775 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">675539 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">691131 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditDelete6</span>
+                <span class="method-start">699099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">770712 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">772190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">787573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearch2</span>
+                <span class="method-start">795582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">799994 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">801626 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">816585 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSwitch3</span>
+                <span class="method-start">824477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">837110 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">838690 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">testEnter</span>
+                <span class="method-start">853939 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">861940 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">868207 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bxx.test.JoinuszhaopinTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">addListener(org.testng.TestRunner@7699e60a)</span>
+                <span class="method-start">870208 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">870209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">885729 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test1</span>
+                <span class="method-start">895795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">919053 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">920460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">935749 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">945956 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">952717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">954328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">969205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">979219 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">985938 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bxx.test.KehuanliEditTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">addListener(org.testng.TestRunner@5bbc033f)</span>
+                <span class="method-start">987585 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">987587 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEdit1</span>
+                <span class="method-start">1002679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1015987 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1017623 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEdit2</span>
+                <span class="method-start">1032525 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1042676 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1044289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEdit3</span>
+                <span class="method-start">1059440 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1072716 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1074337 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd10</span>
+                <span class="method-start">1089342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1119305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1120983 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd4</span>
+                <span class="method-start">1135911 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1152616 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1154265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd5</span>
+                <span class="method-start">1169176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1200168 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1201946 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd6</span>
+                <span class="method-start">1217425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1240865 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1242560 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd7</span>
+                <span class="method-start">1257480 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1290496 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1292265 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd8</span>
+                <span class="method-start">1307372 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1339329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1341288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testEditAdd9</span>
+                <span class="method-start">1356272 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1385928 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bxx.test.JoinuspageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">addListener(org.testng.TestRunner@734a2c17)</span>
+                <span class="method-start">1387502 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1387503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeall</span>
+                <span class="method-start">1402619 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test2</span>
+                <span class="method-start">1412133 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1427298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1428900 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeall</span>
+                <span class="method-start">1444177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test3</span>
+                <span class="method-start">1453121 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1470051 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1471664 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeall</span>
+                <span class="method-start">1486657 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test4</span>
+                <span class="method-start">1495645 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1511459 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">doBeforeClass</span>
+                <span class="method-start">1513183 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeall</span>
+                <span class="method-start">1528565 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">text1</span>
+                <span class="method-start">1537538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">doAfterMethod</span>
+                <span class="method-start">1554831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">end</span>
+                <span class="method-start">1556490 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

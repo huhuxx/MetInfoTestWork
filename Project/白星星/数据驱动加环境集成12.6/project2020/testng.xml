@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+	
+	<listeners>
+		<listener class-name="com.bxx.core.WebTestListener1"/>
+		<listener class-name="com.bxx.core.WebTestListener2"/>
+	</listeners>
+	
+	<test name="test">
+		<classes>		
+			<class name="com.bxx.test.KehuanliEditTest"/>
+			<class name="com.bxx.test.JoinuspageTest"/>
+			<class name="com.bxx.test.JoinusjianliTest"/>
+			<class name="com.bxx.test.JoinusjobTest"/>
+			<class name="com.bxx.test.JoinuszhaopinTest"/>
+			<class name="com.bxx.test.kehuanliPageTest"/>
+		</classes>
+	</test>
+	
+</suite>
