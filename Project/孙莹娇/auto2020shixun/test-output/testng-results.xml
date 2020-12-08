@@ -1,43 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+<testng-results skipped="0" failed="0" ignored="11" total="12" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="100298" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:22:38 CST">
+  <suite name="Default suite" duration-ms="45332" started-at="2020-12-08T19:10:38 CST" finished-at="2020-12-08T19:11:23 CST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="100298" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:22:38 CST">
-      <class name="com.webtest.demo.NowPageSetting">
-        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="doBeforeClass" is-config="true" duration-ms="13059" started-at="2020-12-06T10:20:57 CST" finished-at="2020-12-06T10:21:10 CST">
+    <test name="Default test" duration-ms="45332" started-at="2020-12-08T19:10:38 CST" finished-at="2020-12-08T19:11:23 CST">
+      <class name="com.webtest.demo.CustomerServiceSetting">
+        <test-method status="PASS" signature="doBeforeClass()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efed156]" name="doBeforeClass" is-config="true" duration-ms="13110" started-at="2020-12-08T19:10:38 CST" finished-at="2020-12-08T19:10:51 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBeforeClass -->
-        <test-method status="PASS" signature="siteInfoSetting1(java.lang.String)[pri:1, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="siteInfoSetting1" duration-ms="42585" started-at="2020-12-06T10:21:12 CST" data-provider="logoInfoExcel" finished-at="2020-12-06T10:21:54 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1532139830.png]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="refreshPage()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efed156]" name="refreshPage" is-config="true" duration-ms="794" started-at="2020-12-08T19:10:51 CST" finished-at="2020-12-08T19:10:52 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- siteInfoSetting1 -->
-        <test-method status="PASS" signature="siteInfoSetting1(java.lang.String)[pri:1, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="siteInfoSetting1" duration-ms="42390" started-at="2020-12-06T10:21:54 CST" data-provider="logoInfoExcel" finished-at="2020-12-06T10:22:37 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1532137488.png]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- refreshPage -->
+        <test-method status="PASS" signature="CSstyleSetting()[pri:9, instance:com.webtest.demo.CustomerServiceSetting@1efed156]" name="CSstyleSetting" duration-ms="31385" started-at="2020-12-08T19:10:52 CST" finished-at="2020-12-08T19:11:23 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- siteInfoSetting1 -->
-        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.webtest.demo.NowPageSetting@72b6cbcc]" name="doAfterMethod" is-config="true" duration-ms="1100" started-at="2020-12-06T10:22:37 CST" finished-at="2020-12-06T10:22:38 CST">
+        </test-method> <!-- CSstyleSetting -->
+        <test-method status="PASS" signature="mailUtil()[pri:0, instance:com.webtest.demo.CustomerServiceSetting@1efed156]" name="mailUtil" is-config="true" duration-ms="1559" started-at="2020-12-08T19:11:23 CST" finished-at="2020-12-08T19:11:25 CST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- doAfterMethod -->
-      </class> <!-- com.webtest.demo.NowPageSetting -->
+        </test-method> <!-- mailUtil -->
+      </class> <!-- com.webtest.demo.CustomerServiceSetting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

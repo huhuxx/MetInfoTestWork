@@ -6,36 +6,53 @@
   </listeners>
   <test thread-count="5" name="all(failed)">
     <classes>
-      <class name="com.webtest.demo.NowPageSetting">
+      <class name="com.webtest.demo.BannerSetting">
         <methods>
-          <include name="setTextStyle"/>
-          <include name="siteInfoSetting1"/>
+          <include name="setTurns"/>
+          <include name="mailUtil"/>
+          <include name="doAfterMethod"/>
+          <include name="refreshPage"/>
           <include name="doBeforeClass"/>
         </methods>
-      </class> <!-- com.webtest.demo.NowPageSetting -->
+      </class> <!-- com.webtest.demo.BannerSetting -->
       <class name="com.webtest.demo.PhoneMenuSetting">
         <methods>
           <include name="edtiPhoneBtnTurns"/>
+          <include name="mailUtil"/>
+          <include name="doAfterMethod"/>
           <include name="addPhoneBtn"/>
           <include name="doBeforeClass"/>
           <include name="deletePhoneBtn"/>
         </methods>
       </class> <!-- com.webtest.demo.PhoneMenuSetting -->
+      <class name="com.webtest.demo.DataDownload">
+        <methods>
+          <include name="mailUtil"/>
+          <include name="dataCopy"/>
+          <include name="doAfterMethod"/>
+          <include name="addData"/>
+          <include name="deleteData"/>
+          <include name="doBeforeClass"/>
+        </methods>
+      </class> <!-- com.webtest.demo.DataDownload -->
       <class name="com.webtest.demo.TopSetting">
         <methods>
+          <include name="mailUtil"/>
           <include name="setPutDown"/>
+          <include name="doAfterMethod"/>
           <include name="doBeforeClass"/>
           <include name="refreshPage"/>
         </methods>
       </class> <!-- com.webtest.demo.TopSetting -->
-      <class name="com.webtest.demo.BannerSetting">
+      <class name="com.webtest.demo.CustomerServiceSetting">
         <methods>
-          <include name="deleteBtn"/>
-          <include name="setTurns"/>
-          <include name="refreshPage"/>
+          <include name="mailUtil"/>
+          <include name="doAfterMethod"/>
+          <include name="CSstyleSetting"/>
           <include name="doBeforeClass"/>
+          <include name="refreshPage"/>
         </methods>
-      </class> <!-- com.webtest.demo.BannerSetting -->
+      </class> <!-- com.webtest.demo.CustomerServiceSetting -->
     </classes>
   </test> <!-- all(failed) -->
 </suite> <!-- Failed suite [MetInfo] -->

@@ -23,8 +23,12 @@ public class NSDataProvider {
 	}
 
 	@DataProvider(name="logoInfoExcel")
-	public Object[][] getExcelDada() throws IOException{
+	public Object[][] getExcelLogoInfo() throws IOException{
 		return new ExcelDataProvider().getTestDataByExcel("data/logo.xlsx","Sheet1");
+	}
+	@DataProvider(name="localImg")
+	public Object[][] getExcelLocalImg() throws IOException{
+		return new ExcelDataProvider().getTestDataByExcel("data/localImg.xlsx","Sheet1");
 	}
 	
 	@DataProvider(name="mysql")

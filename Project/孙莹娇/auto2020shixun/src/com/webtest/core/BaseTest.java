@@ -93,7 +93,7 @@ public class BaseTest {
 	}
 
 
-	@AfterClass
+//	@AfterClass
 	public void doAfterMethod() {
 		if(this.driver != null){
 			this.driver.quit();

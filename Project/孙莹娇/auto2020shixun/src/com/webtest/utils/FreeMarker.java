@@ -17,7 +17,11 @@ import com.webtest.core.JavaMailTestListener;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
-
+/**
+ * 加载FreeMarker模板
+ * @author sunyingjiao
+ *
+ */
 public class FreeMarker extends JavaMailTestListener {
 	public String dir=ReadProperties.getPropertyValue("dir");
 	public static Date date;

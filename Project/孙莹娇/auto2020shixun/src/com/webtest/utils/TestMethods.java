@@ -1,4 +1,9 @@
 package com.webtest.utils;
+/**
+ * 测试方法类
+ * @author dell
+ *
+ */
 
 public class TestMethods {
 	public int index;

@@ -27,7 +27,7 @@ import com.webtest.utils.Log;
 import com.webtest.utils.ReadProperties;
 
 /**
- * author:lihuanzhen
+ * @author:sunyingjiao
  * 
  */
 public class WebDriverEngine {
@@ -302,12 +302,10 @@ public class WebDriverEngine {
 		driver.switchTo().window(windows.get(i));
 	}
 
-	// �Ҽ�
 	public void rightClickMouse(String locator) throws InterruptedException {
 		action.contextClick(finder.findElement(locator)).perform();
 	}
 
-	// Tab��
 	public void tapClick() {
 
 		action.sendKeys(Keys.TAB).perform();
@@ -328,7 +326,7 @@ public class WebDriverEngine {
 	public void getWindow(int i) {
 		List<String> windows = new ArrayList<String>();
 		for (String handle : driver.getWindowHandles()) {
-			// System.out.println(handle); //杩涘叆鍒扮浜屼釜椤甸潰
+			// System.out.println(handle);
 			windows.add(handle);
 		}
 		driver.switchTo().window(windows.get(i));
