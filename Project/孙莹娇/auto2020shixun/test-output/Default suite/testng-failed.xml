@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.webtest.demo.NowPageSetting">
+      <class name="com.webtest.demo.CustomerServiceSetting">
         <methods>
-          <include name="mailUtil"/>
-          <include name="siteInfoSetting1"/>
-          <include name="doAfterMethod"/>
           <include name="doBeforeClass"/>
+          <include name="otherSetting"/>
+          <include name="refreshPage"/>
         </methods>
-      </class> <!-- com.webtest.demo.NowPageSetting -->
+      </class> <!-- com.webtest.demo.CustomerServiceSetting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

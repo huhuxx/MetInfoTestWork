@@ -12,6 +12,7 @@
 	    	<class name="com.webtest.demo.PhoneMenuSetting"/>
 	    	<class name="com.webtest.demo.NowPageSetting"/>
 	    	<class name="com.webtest.demo.TopSetting"/>
+	    	<class name="com.webtest.demo.DataDownload"/>
 	    </classes>
 	    
 	</test>

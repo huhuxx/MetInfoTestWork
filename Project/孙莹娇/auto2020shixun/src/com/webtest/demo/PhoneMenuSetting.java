@@ -18,251 +18,295 @@ import com.webtest.utils.ReadProperties;
 
 import freemarker.template.TemplateException;
 
-public class PhoneMenuSetting extends BaseTest{
-	
+/**
+ * 网站首页-手机菜单设置测试类
+ * 
+ * @author sunyingjiao
+ *
+ */
+public class PhoneMenuSetting extends BaseTest {
+	/**
+	 * 打开手机菜单设置页面
+	 */
 	public void openPhoneMenuSetting() {
 		webtest.click("xpath=//button[text()='风格']");
 		webtest.click("xpath=//a[text()='手机菜单']");
 	}
-//25、	ID184 手机菜单-按钮文字修改 
+
+	/**
+	 * 测试方法25 ID184 手机菜单-按钮文字修改
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Test(priority = 1)
 	public void editPhoneBtnText() throws InterruptedException {
-//		打开“手机菜单”设置界面方法一：
-//		鼠标移动到 手机菜单 div上，点击“内容”按钮
-//		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-//		webtest.mouseToElement("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']");
-//		webtest.click("xpath=//button[@data-type='menu']");
-//		webtest.leaveFrame();
-//		打开“手机菜单”设置界面方法二：
+		/*
+		 * 打开“手机菜单”设置界面方法一： 鼠标移动到 手机菜单 div上，点击“内容”按钮 webtest.enterFrame1(
+		 * "xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		 * webtest.
+		 * mouseToElement("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']"
+		 * ); webtest.click("xpath=//button[@data-type='menu']"); webtest.leaveFrame();
+		 */
+		// 打开“手机菜单”设置界面方法二：
 		this.openPhoneMenuSetting();
-		//修改第一个按钮文字“首页”为“手机首页”
+		// 修改第一个按钮文字“首页”为“手机首页”
 		webtest.typeAndClear("xpath=//input[@value='首页']", "手机首页");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//返回前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		System.out.println("手机首页 是否存在："+webtest.isElementPresent("xpath=//span[text()='手机首页']"));
+		// 返回前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		System.out.println("手机首页 是否存在：" + webtest.isElementPresent("xpath=//span[text()='手机首页']"));
 		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='手机首页']"), true);
 		webtest.leaveFrame();
 		Thread.sleep(2000);
 		System.out.println("ID184 手机菜单-按钮文字修改 成功！");
-		//恢复“首页”名称
+		// 恢复“首页”名称
 		this.openPhoneMenuSetting();
 		webtest.typeAndClear("xpath=//input[@value='手机首页']", "首页");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
 	}
-//26、	ID185 手机菜单-链接修改 
-//	修改“联系”按钮的链接为https://www.baidu.com/
+
+	/**
+	 * 测试方法26 ID185 手机菜单-链接修改：修改“联系”按钮的链接为https://www.baidu.com/
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Test(priority = 2)
 	public void editPhoneBtnUrl() throws InterruptedException {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//修改链接
-		webtest.typeAndClear("xpath=//input[@value='联系']/../../following-sibling::td[1]/input", "https://www.baidu.com/");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 修改链接
+		webtest.typeAndClear("xpath=//input[@value='联系']/../../following-sibling::td[1]/input",
+				"https://www.baidu.com/");
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
 		webtest.click("xpath=//span[text()='联系']");
 		Thread.sleep(5000);
-		boolean status= webtest.isElementPresent("xpath=//div[text()='百度热榜']");
-		System.out.println("是否进入百度页面："+status);
+		boolean status = webtest.isElementPresent("xpath=//div[text()='百度热榜']");
+		System.out.println("是否进入百度页面：" + status);
 		Assert.assertEquals(status, true);
 		webtest.goBack();
 		webtest.leaveFrame();
 		System.out.println("ID184  手机菜单-链接修改  成功！");
 	}
-//27、ID186 手机菜单-图标删除 	
+
+	/**
+	 * 测试方法27 ID186 手机菜单-图标删除
+	 */
 	@Test(priority = 3)
 	public void deletePhoneBtnImg() {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//点击“新闻”图标的删除按钮
+		// 点击“新闻”图标的删除按钮
 		webtest.click("xpath=//input[@value='新闻']/../../following-sibling::td[2]/div[2]/button");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		WebElement newsImgElement=webtest.getElement
-				("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		WebElement newsImgElement = webtest.getElement("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
 		Assert.assertEquals(newsImgElement.getText(), "");
 		webtest.leaveFrame();
 		System.out.println("ID186 手机菜单-新闻图标删除成功！");
-	}	
-//28、ID187 手机菜单-图标修改	
+	}
+
+	/**
+	 * 测试方法28 ID187 手机菜单-图标修改
+	 */
 	@Test(priority = 4)
 	public void editPhoneBtnImg() {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//点击“新闻”的"选择图标"
+		// 点击“新闻”的"选择图标"
 		webtest.click("xpath=//input[@value='新闻']/../../following-sibling::td[2]/div[2]//button[text()='选择图标']");
-		//选择web-icons图标库的grid-9图标
+		// 选择web-icons图标库的grid-9图标
 		webtest.click("xpath=//h2[text()='web-icons']/following-sibling::button[1]");
 		webtest.click("xpath=//div[text()='grid-9']");
-		//保存
-		List<WebElement> submitBtns=webtest.getElementsList("xpath=//button[text()='保存']");
+		// 保存
+		List<WebElement> submitBtns = webtest.getElementsList("xpath=//button[text()='保存']");
 		webtest.click(submitBtns.get(1));
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		WebElement newsImgElement=webtest.getElement
-				("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
-		Assert.assertEquals(webtest.getValue(newsImgElement, "class"),"icon wb-grid-9");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		WebElement newsImgElement = webtest.getElement("xpath=//span[text()='新闻']/preceding-sibling::i[1]");
+		Assert.assertEquals(webtest.getValue(newsImgElement, "class"), "icon wb-grid-9");
 		webtest.leaveFrame();
 		System.out.println("ID186 手机菜单-新闻的图标修改成功！");
-		
+
 	}
-//29、ID188 手机菜单-按钮颜色修改
+
+	/**
+	 * 测试方法29 ID188 手机菜单-按钮颜色修改
+	 */
 	@Test(priority = 5)
 	public void editPhoneBtnColor() {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//修改“产品”的按钮颜色为#1bdb51
+		// 修改“产品”的按钮颜色为#1bdb51
 		webtest.typeAndClear("xpath=//input[@value='产品']/../../following-sibling::td[3]/div/input", "#1bdb51");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		WebElement productBtnDiv=webtest.getElement
-				("xpath=//span[text()='产品']/preceding-sibling::i[1]/../..");
-		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"),"background-color: rgb(27, 219, 81);");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		WebElement productBtnDiv = webtest.getElement("xpath=//span[text()='产品']/preceding-sibling::i[1]/../..");
+		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"), "background-color: rgb(27, 219, 81);");
 		webtest.leaveFrame();
 		System.out.println("ID186 手机菜单-产品的按钮颜色修改成功！");
 	}
-//30、ID189 手机菜单-文字颜色修改
+
+	/**
+	 * 测试方法30 ID189 手机菜单-文字颜色修改
+	 */
 	@Test(priority = 6)
 	public void editPhoneTextColor() {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//修改“联系”按钮的文字颜色为#1bdb51
+		// 修改“联系”按钮的文字颜色为#1bdb51
 		webtest.typeAndClear("xpath=//input[@value='联系']/../../following-sibling::td[4]/div/input", "#1bdb51");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		WebElement productBtnDiv=webtest.getElement
-				("xpath=//span[text()='联系']/preceding-sibling::i[1]/..");
-		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"),"color: rgb(27, 219, 81);");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		WebElement productBtnDiv = webtest.getElement("xpath=//span[text()='联系']/preceding-sibling::i[1]/..");
+		Assert.assertEquals(webtest.getValue(productBtnDiv, "style"), "color: rgb(27, 219, 81);");
 		webtest.leaveFrame();
 		System.out.println("ID189 手机菜单-产品按钮的文字颜色修改成功！");
 	}
-//31、ID190 手机菜单-启用修改
+
+	/**
+	 * 测试方法31 ID190 手机菜单-启用修改
+	 */
 	@Test(priority = 7)
 	public void editPhoneBtnEnable() {
-		//打开“手机菜单”设置界面，修改“新闻”按钮的启用
+		// 打开“手机菜单”设置界面，修改“新闻”按钮的启用
 		this.openPhoneMenuSetting();
-		String newsEnable=webtest.getValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "data-checked");
+		String newsEnable = webtest.getValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select",
+				"data-checked");
 		if (newsEnable.equals("1")) {
 			webtest.selectByValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "0");
-			//保存、关闭
-			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+			// 保存、关闭
+			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 			webtest.click("xpath=//span[text()='×']");
-			//进入前台页面验证修改
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-			System.out.println("新闻按钮是否已启用："+webtest.isElementPresent("xpath=//span[text()='新闻']"));
-			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"),false);
+			// 进入前台页面验证修改
+			webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+			System.out.println("新闻按钮是否已启用：" + webtest.isElementPresent("xpath=//span[text()='新闻']"));
+			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"), false);
 			webtest.leaveFrame();
 			System.out.println("ID190 手机菜单-启用修改-新闻按钮已成功关闭启用！");
 		}
-		if(newsEnable.equals("0")){
+		if (newsEnable.equals("0")) {
 			webtest.selectByValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "1");
-			//保存、关闭
-			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+			// 保存、关闭
+			webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 			webtest.click("xpath=//span[text()='×']");
-			//进入前台页面验证修改
-			webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-			System.out.println("新闻按钮是否已启用："+webtest.isElementPresent("xpath=//span[text()='新闻']"));
-			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"),true);
+			// 进入前台页面验证修改
+			webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+			System.out.println("新闻按钮是否已启用：" + webtest.isElementPresent("xpath=//span[text()='新闻']"));
+			Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新闻']"), true);
 			webtest.leaveFrame();
 			System.out.println("ID190 手机菜单-启用修改-新闻按钮已成功开启启用！");
 		}
-		//将“新闻”按钮启用改回“是”
+		// 将“新闻”按钮启用改回“是”
 		this.openPhoneMenuSetting();
 		webtest.selectByValue("xpath=//input[@value='新闻']/../../following-sibling::td[5]/select", "1");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
 	}
-//32、	ID191 手机菜单-按钮顺序修改
+
+	/**
+	 * 测试方法32 ID191 手机菜单-按钮顺序修改
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Test(priority = 8)
 	public void edtiPhoneBtnTurns() throws InterruptedException {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//获取表格集合，以便拖拽
-		List<WebElement> formGroup=webtest.getElementsList("xpath=//tr[@role='row']");
-		System.out.println("formGroup:"+formGroup.size());
-		
-		//获得拖拽前的最后一个按钮的文字
-		String beforeDrag_lastBtn=webtest.getValue("xpath=//tbody/tr[last()]/child::td[2]//input", "value");
-		System.out.println("beforeDrag_lastBtn:"+beforeDrag_lastBtn);
-				
-		//将最后一个表格拖拽到第一的位置
-		webtest.dragAndDrop(formGroup.get(formGroup.size()-1),formGroup.get(0));
+		// 获取表格集合，以便拖拽
+		List<WebElement> formGroup = webtest.getElementsList("xpath=//tr[@role='row']");
+		System.out.println("formGroup:" + formGroup.size());
+		// 获得拖拽前的最后一个按钮的文字
+		String beforeDrag_lastBtn = webtest.getValue("xpath=//tbody/tr[last()]/child::td[2]//input", "value");
+		System.out.println("beforeDrag_lastBtn:" + beforeDrag_lastBtn);
+		// 将最后一个表格拖拽到第一的位置
+		webtest.dragAndDrop(formGroup.get(formGroup.size() - 1), formGroup.get(0));
 		Thread.sleep(2000);
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
-		//验证拖拽是否对前台页面起作用
-		List<WebElement> afterDrag_btnText=webtest.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
+		// 验证拖拽是否对前台页面起作用
+		List<WebElement> afterDrag_btnText = webtest
+				.getElementsList("xpath=//div[@class='met-menu-list text-xs-center     iskeshi set']//span");
 		System.out.println(afterDrag_btnText.size());
-		String afterDrag_firstBtn=afterDrag_btnText.get(0).getText();
-		System.out.println("拖拽前，最后一个按钮文字为："+beforeDrag_lastBtn);
-		System.out.println("拖拽后前台页面的第一个按钮文字为："+afterDrag_firstBtn);
-		//预期：拖拽前最后一个按钮文字 和 拖拽后前台页面的第一个按钮文字相同
+		String afterDrag_firstBtn = afterDrag_btnText.get(0).getText();
+		System.out.println("拖拽前，最后一个按钮文字为：" + beforeDrag_lastBtn);
+		System.out.println("拖拽后前台页面的第一个按钮文字为：" + afterDrag_firstBtn);
+		// 预期：拖拽前最后一个按钮文字 和 拖拽后前台页面的第一个按钮文字相同
 		if (beforeDrag_lastBtn.equals(afterDrag_btnText)) {
 			System.out.println("ID191  手机菜单按钮顺序调整成功！");
-		}else {
+		} else {
 			System.out.println("ID191 手机菜单按钮顺序调整失败！");
 		}
 		Assert.assertEquals(beforeDrag_lastBtn, afterDrag_firstBtn);
 	}
-//33、 ID192 手机菜单-按钮添加	
+
+	/**
+	 * 测试方法33 ID192 手机菜单-按钮添加
+	 */
 	@Test(priority = 9)
 	public void addPhoneBtn() {
-		//打开“手机菜单”设置界面
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//添加按钮
+		// 添加按钮
 		webtest.click("xpath=//button[text()='添加']");
 		webtest.type("xpath=//input[@name='name-new-0']", "新按钮");
-		//保存、关闭
-		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");	
+		// 保存、关闭
+		webtest.click("xpath=//tfoot/tr/th[2]//button[@class='btn btn-primary']");
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
 		Assert.assertEquals(webtest.isElementPresent("xpath=//span[text()='新按钮']"), true);
 		webtest.leaveFrame();
 		System.out.println("ID192 手机菜单-新按钮添加成功！");
 	}
-//34、ID194 手机菜单-按钮删除 	
+
+	/**
+	 * 测试方法34 ID194 手机菜单-按钮删除
+	 * 
+	 * @throws InterruptedException
+	 */
 	@Test(priority = 10)
 	public void deletePhoneBtn() throws InterruptedException {
-		
-		//打开“手机菜单”设置界面
+
+		// 打开“手机菜单”设置界面
 		this.openPhoneMenuSetting();
-		//删除按钮
+		// 删除按钮
 		webtest.click("xpath=//tbody/tr[last()]/td[last()]/button");
 		webtest.click("xpath=//div[@class='dialog']/div/nav/button[text()='确定']");
-		//关闭
+		// 关闭
 		webtest.click("xpath=//span[text()='×']");
-		//进入前台页面验证修改
-		webtest.enterFrame1("xpath=//iframe[@src='http://localhost:98/index.php?lang=cn&pageset=1']");
+		// 进入前台页面验证修改
+		webtest.enterFrame1("xpath=//iframe[@src='" + ReadProperties.getPropertyValue("iframe_src") + "']");
 		Thread.sleep(2000);
 		if (!webtest.isElementPresent("xpath=//span[text()='新按钮']")) {
 			System.out.println("ID192 手机菜单-新按钮删除成功！");
-		}else {
+		} else {
 			System.out.println("ID192 手机菜单-新按钮删除失败！");
 		}
-		
+		webtest.leaveFrame();
+
 	}
 }

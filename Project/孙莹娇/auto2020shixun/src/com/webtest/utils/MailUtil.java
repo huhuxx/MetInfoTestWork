@@ -19,15 +19,10 @@ import javax.mail.internet.MimeMultipart;
 
 public class MailUtil extends FreeMarker{
 	
-	// sender
-	public String sender = ReadProperties.getPropertyValue("sender");
 
-	// auth code
+	public String sender = ReadProperties.getPropertyValue("sender");
 	public String auth_code = ReadProperties.getPropertyValue("auth_code");
-	// tomail
 	public String to = ReadProperties.getPropertyValue("tomail");
-	
-	// protocol
 	public String pro1 = ReadProperties.getPropertyValue("pro1");
 	public String pro2 = ReadProperties.getPropertyValue("pro2");
 	public String pro3 = ReadProperties.getPropertyValue("pro3");
@@ -64,11 +59,8 @@ public class MailUtil extends FreeMarker{
 			for (int i = 0; i < toArray.length; i++) {
 				message.addRecipient(Message.RecipientType.TO, new InternetAddress(toArray[i]));
 			}
-//			message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
-//			set title
-			message.setSubject("send testReport --sunyingjiao");
-//			message.setText(content);
-			
+			//set title
+			message.setSubject("Send testReport --sunyingjiao");			
 			MimeMultipart mimeMultipart =new MimeMultipart();
 			MimeBodyPart file=new MimeBodyPart();
 			SimpleDateFormat ft = new SimpleDateFormat ("yyyyMMddhhmmss");
@@ -77,8 +69,6 @@ public class MailUtil extends FreeMarker{
 	        
 	        mimeMultipart.addBodyPart(file);
 	        message.setContent(mimeMultipart);
-					
-
 			// send email
 			Transport.send(message);
 		} catch (MessagingException e) {
