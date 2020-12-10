@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="com.bxx.core.WebTestListener1"/>
+    <listener class-name="com.bxx.core.WebTestListener2"/>
+  </listeners>
+  <test thread-count="5" name="test(failed)">
+    <classes>
+      <class name="com.bxx.test.JoinusjianliTest">
+        <methods>
+          <include name="doBeforeClass"/>
+          <include name="doAfterMethod"/>
+          <include name="test4"/>
+          <include name="end"/>
+          <include name="addListener"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.bxx.test.JoinusjianliTest -->
+      <class name="com.bxx.test.KehuanliEditTest">
+        <methods>
+          <include name="testEditAdd5"/>
+          <include name="doBeforeClass"/>
+          <include name="doAfterMethod"/>
+          <include name="end"/>
+          <include name="addListener"/>
+        </methods>
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+      <class name="com.bxx.test.kehuanliPageTest">
+        <methods>
+          <include name="doBeforeClass"/>
+          <include name="testEditDelete6"/>
+          <include name="testEnter"/>
+          <include name="doAfterMethod"/>
+          <include name="test4"/>
+          <include name="end"/>
+          <include name="addListener"/>
+        </methods>
+      </class> <!-- com.bxx.test.kehuanliPageTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

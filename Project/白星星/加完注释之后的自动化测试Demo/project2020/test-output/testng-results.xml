@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="478961" started-at="2020-12-10T19:16:47 CST" finished-at="2020-12-10T19:24:46 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="478961" started-at="2020-12-10T19:16:47 CST" finished-at="2020-12-10T19:24:46 CST">
+      <class name="com.bxx.test.KehuanliEditTest">
+        <test-method status="PASS" signature="addListener(org.testng.ITestContext)[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="addListener" is-config="true" duration-ms="18" started-at="2020-12-10T19:16:47 CST" description="添加监听器" finished-at="2020-12-10T19:16:47 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2bab618]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addListener -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="21008" started-at="2020-12-10T19:16:47 CST" description="打开页面并登录" finished-at="2020-12-10T19:17:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEdit3()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEdit3" duration-ms="13260" started-at="2020-12-10T19:17:08 CST" description="将回收站所有的内容删除" finished-at="2020-12-10T19:17:22 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit3 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1825" started-at="2020-12-10T19:17:22 CST" description="关闭浏览器" finished-at="2020-12-10T19:17:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14883" started-at="2020-12-10T19:17:24 CST" description="打开页面并登录" finished-at="2020-12-10T19:17:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd10()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd10" duration-ms="30470" started-at="2020-12-10T19:17:38 CST" description="详细内容中多图上传" finished-at="2020-12-10T19:18:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd10 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1995" started-at="2020-12-10T19:18:09 CST" description="关闭浏览器" finished-at="2020-12-10T19:18:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="13871" started-at="2020-12-10T19:18:12 CST" description="打开页面并登录" finished-at="2020-12-10T19:18:26 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd4" duration-ms="16689" started-at="2020-12-10T19:18:26 CST" description="添加新的内容带有本地图片" data-provider="photo" finished-at="2020-12-10T19:18:43 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\1.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="3564" started-at="2020-12-10T19:18:43 CST" description="关闭浏览器" finished-at="2020-12-10T19:18:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14859" started-at="2020-12-10T19:18:47 CST" description="打开页面并登录" finished-at="2020-12-10T19:19:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd4" duration-ms="16811" started-at="2020-12-10T19:19:01 CST" description="添加新的内容带有本地图片" data-provider="photo" finished-at="2020-12-10T19:19:18 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\2.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1860" started-at="2020-12-10T19:19:18 CST" description="关闭浏览器" finished-at="2020-12-10T19:19:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="15345" started-at="2020-12-10T19:19:20 CST" description="打开页面并登录" finished-at="2020-12-10T19:19:35 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd4(java.lang.String)[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd4" duration-ms="16828" started-at="2020-12-10T19:19:35 CST" description="添加新的内容带有本地图片" data-provider="photo" finished-at="2020-12-10T19:19:52 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D:\\ABCD\\3.jpg]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd4 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="2157" started-at="2020-12-10T19:19:52 CST" description="关闭浏览器" finished-at="2020-12-10T19:19:54 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14510" started-at="2020-12-10T19:19:54 CST" description="打开页面并登录" finished-at="2020-12-10T19:20:09 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd5()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd5" duration-ms="30504" started-at="2020-12-10T19:20:09 CST" description="添加新的内容" finished-at="2020-12-10T19:20:39 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd5 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1938" started-at="2020-12-10T19:20:39 CST" description="关闭浏览器" finished-at="2020-12-10T19:20:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="15681" started-at="2020-12-10T19:20:41 CST" description="打开页面并登录" finished-at="2020-12-10T19:20:57 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd6()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd6" duration-ms="23652" started-at="2020-12-10T19:20:57 CST" description="添加新的内容带有网络图片" finished-at="2020-12-10T19:21:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd6 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="2036" started-at="2020-12-10T19:21:21 CST" description="关闭浏览器" finished-at="2020-12-10T19:21:23 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14903" started-at="2020-12-10T19:21:23 CST" description="打开页面并登录" finished-at="2020-12-10T19:21:38 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd7()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd7" duration-ms="33122" started-at="2020-12-10T19:21:38 CST" description="添加新的内容带有本地视频的内容" finished-at="2020-12-10T19:22:11 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd7 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1599" started-at="2020-12-10T19:22:11 CST" description="关闭浏览器" finished-at="2020-12-10T19:22:12 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14371" started-at="2020-12-10T19:22:12 CST" description="打开页面并登录" finished-at="2020-12-10T19:22:27 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd8()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd8" duration-ms="32416" started-at="2020-12-10T19:22:27 CST" description="添加新的内容带有网络视频的内容" finished-at="2020-12-10T19:22:59 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd8 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="2090" started-at="2020-12-10T19:22:59 CST" description="关闭浏览器" finished-at="2020-12-10T19:23:01 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="15424" started-at="2020-12-10T19:23:01 CST" description="打开页面并登录" finished-at="2020-12-10T19:23:17 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEditAdd9()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEditAdd9" duration-ms="29968" started-at="2020-12-10T19:23:17 CST" description="添加新的内容带有超链接的内容" finished-at="2020-12-10T19:23:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEditAdd9 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1924" started-at="2020-12-10T19:23:47 CST" description="关闭浏览器" finished-at="2020-12-10T19:23:49 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="15604" started-at="2020-12-10T19:23:49 CST" description="打开页面并登录" finished-at="2020-12-10T19:24:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEdit1()[pri:1, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEdit1" duration-ms="13318" started-at="2020-12-10T19:24:04 CST" description="将第二个放入回收站" finished-at="2020-12-10T19:24:18 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit1 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1981" started-at="2020-12-10T19:24:18 CST" description="关闭浏览器" finished-at="2020-12-10T19:24:20 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="doBefore()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doBefore" is-config="true" duration-ms="14832" started-at="2020-12-10T19:24:20 CST" description="打开页面并登录" finished-at="2020-12-10T19:24:34 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBefore -->
+        <test-method status="PASS" signature="testEdit2()[pri:2, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="testEdit2" duration-ms="9996" started-at="2020-12-10T19:24:34 CST" description="将第二个从回收站恢复" finished-at="2020-12-10T19:24:44 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEdit2 -->
+        <test-method status="PASS" signature="doAfterMethod()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="doAfterMethod" is-config="true" duration-ms="1955" started-at="2020-12-10T19:24:44 CST" description="关闭浏览器" finished-at="2020-12-10T19:24:46 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doAfterMethod -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.bxx.test.KehuanliEditTest@7f13d6e]" name="end" is-config="true" duration-ms="20543" started-at="2020-12-10T19:24:46 CST" description="freemarker制作测试结果页面、压缩、发邮件" finished-at="2020-12-10T19:25:07 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.bxx.test.KehuanliEditTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
