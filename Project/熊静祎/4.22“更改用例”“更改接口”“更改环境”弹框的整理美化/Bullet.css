@@ -1,0 +1,178 @@
+@charset "UTF-8";
+<script type="text/javascript">
+	function bconfirm(){
+		//window.opener.location.href=window.opener.location.href; 
+		window.close();
+	  }
+	  function bcancel(){
+	     window.close();
+	  }
+</script>
+
+<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	html,body{
+    	height: 100%;
+    	padding: 0; 
+    	margin: 0;
+	}
+	#title{
+		background-color: #2B2E34;
+		color:#fff;
+		border-radius:6px 6px 6px 6px;
+		height:50px;
+	}
+	#title_text{
+		position:relative;
+		width: 240px;
+		height: 39px;
+		left:10px;
+		top:10px;
+		font-size:28px;
+		font_family:SourceHanSansSC-regular;
+	}
+	ul{
+		list-style:none;
+		width:844px;
+	}
+	ul li{
+		float:left;
+		font-size: 20px;
+		width:160px;
+	}
+	#form1{
+		width:820px;
+	}
+	#li_title{
+		float:left;
+		position:relative;
+		top:10px;
+		border-top:1px solid rgba(187, 187, 187, 100);
+		border-bottom:1px solid rgba(187, 187, 187, 100);
+		border-radius:6px 6px 6px 6px;
+	}
+	#ul_title{
+		position:relative;
+		top:-7px;
+	}
+	#li_text{
+		float:left;
+		position:relative;
+		left:-15px;
+		top:10px;
+		border-bottom:1px solid rgba(187, 187, 187, 100);
+		border-radius:6px 6px 6px 6px;
+	}
+	#ul_text{
+		position:relative;
+		top:-7px;
+	}
+	#submit{
+		clear:both;
+		position:relative;
+		top:70px;
+		left:550px;
+	}
+	input[name="implementName"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:150px;
+		color:#888888;
+	}
+	input[name="environmentName"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:150px;
+		color:#888888;
+	}
+	input[name="projectName"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:200px;
+		color:#888888;
+	}
+	input[name="url"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:150px;
+		color:#888888;
+	}
+	input[name="projectDescription"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:300px;
+		color:#888888;
+	}
+	input[name="IenvironmentId"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:200px;
+		position:relative;
+		left:20px;
+		color:#888888;
+	}
+	input[name="IimplementId"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:200px;
+		position:relative;
+		left:20px;
+		color:#888888;
+	}
+	input[name="IprojectId"]{
+		border-radius:10px 10px 10px 10px;
+		height:51px;
+		width:200px;
+		position:relative;
+		left:20px;
+		color:#888888;
+	}
+	input[name="inputbox"]{
+   		background-color:#1194FE;
+   		border:1px solid #888888;
+   		border-radius:10px 10px 10px 10px;
+   		height:41px;
+   		width:120px;
+	}
+	input[name="inputboxbs"]{
+   		background-color:transparent;
+   		border:1px solid #888888;
+   		border-radius:10px 10px 10px 10px;
+   		height:41px;
+   		width:120px;
+	}
+	#environment{
+		appearance: none;
+        height:51px;
+        width:120px;
+        border:1px solid #888888;
+        border-radius:10px 10px 10px 10px;
+	}
+	#requestStyle{
+		appearance: none;
+        height:51px;
+        width:120px;
+        border:1px solid #888888;
+        border-radius:10px 10px 10px 10px;
+	}
+	#dataStyle{
+		appearance: none;
+        height:51px;
+        width:120px;
+        border:1px solid #888888;
+        border-radius:10px 10px 10px 10px;
+	}
+	#req{
+		left:-20px;
+	}
+	#project{
+		appearance: none;
+        height:51px;
+        width:140px;
+        border:1px solid #888888;
+        border-radius:10px 10px 10px 10px;
+	}
+</style>
