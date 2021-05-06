@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="396" started-at="2021-04-30T17:14:08 CST" finished-at="2021-04-30T17:14:08 CST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="396" started-at="2021-04-30T17:14:08 CST" finished-at="2021-04-30T17:14:08 CST">
+      <class name="testcases.TestDbData">
+        <test-method status="PASS" signature="testmethod1(java.util.Map)[pri:0, instance:testcases.TestDbData@65e2dbf3]" name="testmethod1" duration-ms="9" started-at="2021-04-30T17:14:08 CST" data-provider="dbDataMethod" finished-at="2021-04-30T17:14:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=19831125535, pwd=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+        <test-method status="PASS" signature="testmethod1(java.util.Map)[pri:0, instance:testcases.TestDbData@65e2dbf3]" name="testmethod1" duration-ms="2" started-at="2021-04-30T17:14:08 CST" data-provider="dbDataMethod" finished-at="2021-04-30T17:14:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=18210061413, pwd=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+        <test-method status="PASS" signature="testmethod1(java.util.Map)[pri:0, instance:testcases.TestDbData@65e2dbf3]" name="testmethod1" duration-ms="2" started-at="2021-04-30T17:14:08 CST" data-provider="dbDataMethod" finished-at="2021-04-30T17:14:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=15701228161, pwd=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+        <test-method status="PASS" signature="testmethod1(java.util.Map)[pri:0, instance:testcases.TestDbData@65e2dbf3]" name="testmethod1" duration-ms="1" started-at="2021-04-30T17:14:08 CST" data-provider="dbDataMethod" finished-at="2021-04-30T17:14:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=15226500915, pwd=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+        <test-method status="PASS" signature="testmethod1(java.util.Map)[pri:0, instance:testcases.TestDbData@65e2dbf3]" name="testmethod1" duration-ms="1" started-at="2021-04-30T17:14:08 CST" data-provider="dbDataMethod" finished-at="2021-04-30T17:14:08 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{phone=19831125536, pwd=123456}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testmethod1 -->
+      </class> <!-- testcases.TestDbData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,3 +1,0 @@
-1.assertEquals(webElement,webElement)找元素，找不到直接报错
-2.单选框，通过selected属性找到被选属性，然后assertEquals(w.getText(),"text")
-3.input，assertEquals(w.getAttribute("value"),"value");
