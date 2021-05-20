@@ -1,0 +1,4 @@
+1、模拟器中装好被测软件
+2、打开sdk-tools-bin中的uiautomatorviewer.bat，开启服务
+3、在Android Studio中新建空项目，File-Project Structure-Dependencies添加uiautomator的依赖
+4、编写BaseTest类和测试类
